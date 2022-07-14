@@ -3,6 +3,12 @@
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="5AC901.IPLK-00" Type="5AC901.IPLK-00" Version="1.8.0.1">
     <Connection Connector="SL" TargetModule="5APC3100_KBU1_000" TargetConnector="SL2" />
+    <Connector Name="IF1">
+      <Parameter ID="MtuSize" Value="1500" />
+      <Parameter ID="CycleTime" Value="400" />
+      <Parameter ID="InternetAddress" Value="192.168.200.240" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+    </Connector>
   </Module>
   <Module Name="5APC3100_KBU1_000" Type="5APC3100.KBU1-000" Version="2.2.1.0">
     <Connector Name="IF3">
@@ -40,33 +46,33 @@
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>
   <Module Name="8EI8X8MWT10.0100-1" Type="8EI8X8MWT10.0100-1" Version="2.3.1.1">
-    <Connection Connector="PLK1" TargetModule="X20BC0083" TargetConnector="PLK2" NodeNumber="1">
+    <Connection Connector="PLK1" TargetModule="8EI8X8MWT10.0500-1" TargetConnector="PLK1" NodeNumber="5">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
-    <Connection Connector="PLK2" TargetModule="8EI8X8MWT10.0100-1a" TargetConnector="PLK1" NodeNumber="1">
+    <Connection Connector="PLK2" TargetModule="VSS112Q21.031P-000" TargetConnector="PLK2" NodeNumber="5">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
   </Module>
-  <Module Name="8EI8X8MWT10.0100-1a" Type="8EI8X8MWT10.0100-1" Version="2.3.1.1">
-    <Connection Connector="PLK1" TargetModule="8EI8X8MWT10.0100-1" TargetConnector="PLK2" NodeNumber="2">
+  <Module Name="8EI8X8MWT10.0500-1" Type="8EI8X8MWT10.0500-1" Version="2.3.1.1">
+    <Connection Connector="PLK1" TargetModule="8EI8X8MWT10.0100-1" TargetConnector="PLK1" NodeNumber="4">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
-    <Connection Connector="PLK2" TargetModule="VSS112Q21.031P-000" TargetConnector="PLK2" NodeNumber="2">
+    <Connection Connector="PLK2" TargetModule="X20BC0083" TargetConnector="PLK2" NodeNumber="4">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
   </Module>
   <Module Name="VSS112Q21.031P-000" Type="VSS112Q21.031P-000" Version="1.6.0.543">
-    <Connection Connector="PLK2" TargetModule="8EI8X8MWT10.0100-1a" TargetConnector="PLK2" NodeNumber="3">
+    <Connection Connector="PLK2" TargetModule="8EI8X8MWT10.0100-1" TargetConnector="PLK2" NodeNumber="6">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
     <Parameter ID="VisionConfig" Value="gCamera" />
   </Module>
   <Module Name="X20BB80" Type="X20BB80" Version="1.1.0.0" />
   <Module Name="X20BC0083" Type="X20BC0083" Version="2.12.0.0">
-    <Connection Connector="PLK1" TargetModule="5AC901.IPLK-00" TargetConnector="IF1" NodeNumber="7">
+    <Connection Connector="PLK1" TargetModule="5AC901.IPLK-00" TargetConnector="IF1" NodeNumber="3">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
-    <Connection Connector="PLK2" TargetModule="8EI8X8MWT10.0100-1" TargetConnector="PLK1" NodeNumber="7">
+    <Connection Connector="PLK2" TargetModule="8EI8X8MWT10.0500-1" TargetConnector="PLK2" NodeNumber="3">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
     <Connection Connector="SL" TargetModule="X20BB80" TargetConnector="SL1" />
@@ -74,8 +80,8 @@
   <Module Name="X20BM11" Type="X20BM11" Version="1.1.0.0">
     <Connection Connector="X2X1" TargetModule="X20BB80" TargetConnector="IF1" />
   </Module>
-  <Module Name="X20BM11a" Type="X20BM11" Version="1.1.0.0">
-    <Connection Connector="X2X1" TargetModule="X20BM11" TargetConnector="X2X2" />
+  <Module Name="X20BM15" Type="X20BM15" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11" TargetConnector="X2X2" NodeNumber="3" />
   </Module>
   <Module Name="X20DI9371" Type="X20DI9371" Version="1.3.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
@@ -83,7 +89,7 @@
   </Module>
   <Module Name="X20DO9322" Type="X20DO9322" Version="1.4.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12b" TargetConnector="SS" />
-    <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
+    <Connection Connector="SL" TargetModule="X20BM15" TargetConnector="SL1" />
   </Module>
   <Module Name="X20PS9400" Type="X20PS9400" Version="1.7.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
