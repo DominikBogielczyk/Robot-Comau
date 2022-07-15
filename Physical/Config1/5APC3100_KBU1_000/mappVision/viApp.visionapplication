@@ -52,7 +52,7 @@
         <Property ID="VfExecutionNr" Value="1" />
         <Selector ID="VfType" Value="vf-matching">
           <Group ID="VfConstants">
-            <Property ID="NumResultsMax" Value="7" />
+            <Property ID="NumResultsMax" Value="3" />
           </Group>
           <Group ID="VfWirings">
             <Group ID="Image">
@@ -121,10 +121,24 @@
     </Group>
     <Group ID="ImgProcessingOutputs">
       <Group ID="Output[0]">
-        <Property ID="ChannelID" Value="ModelNumber" />
+        <Property ID="ChannelID" Value="PositionX" />
         <Group ID="VpOutputWire">
           <Property ID="SourceVfName" Value="matching" />
           <Property ID="VfOutputParameter" Value="PositionX" />
+        </Group>
+      </Group>
+      <Group ID="Output[1]">
+        <Property ID="ChannelID" Value="PositionY" />
+        <Group ID="VpOutputWire">
+          <Property ID="SourceVfName" Value="matching" />
+          <Property ID="VfOutputParameter" Value="PositionY" />
+        </Group>
+      </Group>
+      <Group ID="Output[2]">
+        <Property ID="ChannelID" Value="ModelNum" />
+        <Group ID="VpOutputWire">
+          <Property ID="SourceVfName" Value="matching" />
+          <Property ID="VfOutputParameter" Value="ModelNumber" />
         </Group>
       </Group>
     </Group>

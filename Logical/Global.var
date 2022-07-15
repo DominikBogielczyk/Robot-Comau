@@ -1,8 +1,11 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	ImgProcessActive : BOOL;
+	PixelCntArray : ARRAY[0..13] OF UDINT;
+	SquareArray : ARRAY[0..13] OF BOOL;
+	CameraReady : BOOL;
+	ResetAcq : BOOL;
+	FlashColot : USINT;
+	FlashColotr : USINT;
+	FlashColor : USINT;
+	FlashSegment : USINT;
 END_VAR

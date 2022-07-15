@@ -1,4 +1,26 @@
-
 VAR_CONFIG
-
+	ImgProcessActive  AT %IX."VSS112Q21.031P-000".ImageProcessingActive;
+	::Podstawki:ImageAcq AT %QX."VSS112Q21.031P-000".ImageAcquisition;
+	::PixelCntArray[0] AT %ID."VSS112Q21.031P-000".FoundedPixelsNum01;
+	::PixelCntArray[1]  AT %ID."VSS112Q21.031P-000".FoundedPixelsNum02;
+	::PixelCntArray[2]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum03;
+	::PixelCntArray[3]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum04;
+	::PixelCntArray[4]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum05;
+	::PixelCntArray[5]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum06;
+	::PixelCntArray[6]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum07;
+	::PixelCntArray[7]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum08;
+	::PixelCntArray[8]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum09;
+	::PixelCntArray[9]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum10;
+	::PixelCntArray[10]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum11;
+	::PixelCntArray[11]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum12;
+	::PixelCntArray[12]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum13;
+	::PixelCntArray[13]   AT %ID."VSS112Q21.031P-000".FoundedPixelsNum14;
+	::Podstawki:Focus AT %QW."VSS112Q21.031P-000".SetFocus;
+	::Podstawki:ExposureTime AT %QD."VSS112Q21.031P-000".ExposureTime01;
+	::Podstawki:Enable AT %QX."VSS112Q21.031P-000".EnableVF1;
+	::Podstawki:NumSearch AT %QB."VSS112Q21.031P-000".NumSearch;
+	CameraReady  AT %IX."VSS112Q21.031P-000".ImageAcquisitionReady;
+	ResetAcq AT %QX."VSS112Q21.031P-000".ResetAcquisition;
+	FlashColor AT %QB."VSS112Q21.031P-000".FlashColor01;
+	FlashSegment  AT %QB."VSS112Q21.031P-000".FlashSegment01;
 END_VAR
