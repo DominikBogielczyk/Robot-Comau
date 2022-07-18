@@ -13,5 +13,6 @@
         <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton8" top="320" left="20" zIndex="7" pageId="UsersPage" text="UŻYTKOWNICY" />
       </Widgets>
     </Widget>
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton9" top="560" left="80" zIndex="1" pageId="pageId1" text="TEST" />
   </Widgets>
 </Content>
