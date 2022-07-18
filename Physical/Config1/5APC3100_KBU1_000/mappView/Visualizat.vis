@@ -21,10 +21,6 @@
   <Dialogs>
     <Dialog refId="LoginDialog" />
   </Dialogs>
-    <BindingsSet refId="MainContent_binding" />
-  </BindingsSets>
-  <EventBindingsSets />
-  <Dialogs />
   <Contents>
     <Content refId="MainContent" />
     <Content refId="LeftContent" />

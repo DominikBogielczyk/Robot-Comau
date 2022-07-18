@@ -13,22 +13,7 @@
         <Variable Name="SquareArray" EnableArrayElements="True" />
         <Variable Name="ElementsArray" EnableArrayElements="True" />
       </GlobalVariables>
-      <Task Name="Elements_d">
-        <Variable Name="BtnSquare0" />
-        <Variable Name="BtnSquare1" />
-        <Variable Name="BtnSquare10" />
-        <Variable Name="BtnSquare11" />
-        <Variable Name="BtnSquare12" />
-        <Variable Name="BtnSquare13" />
-        <Variable Name="BtnSquare2" />
-        <Variable Name="BtnSquare3" />
-        <Variable Name="BtnSquare4" />
-        <Variable Name="BtnSquare5" />
-        <Variable Name="BtnSquare6" />
-        <Variable Name="BtnSquare7" />
-        <Variable Name="BtnSquare8" />
-        <Variable Name="BtnSquare9" />
-      </Task>
+      <Task Name="Elements_d" />
     </Module>
   </DefaultView>
 </OpcUaSource>
