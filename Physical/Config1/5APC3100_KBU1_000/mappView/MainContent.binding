@@ -113,5 +113,9 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[0]" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare0" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Elements_d:Camera_0.diTrigger" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="BtnTrigger" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>

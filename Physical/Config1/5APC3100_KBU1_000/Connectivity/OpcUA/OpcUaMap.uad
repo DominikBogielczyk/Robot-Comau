@@ -13,7 +13,13 @@
         <Variable Name="SquareArray" EnableArrayElements="True" />
         <Variable Name="ElementsArray" EnableArrayElements="True" />
       </GlobalVariables>
-      <Task Name="Elements_d" />
+      <Task Name="Elements_d">
+        <Variable Name="Camera_0">
+          <Variable Name="diTrigger" />
+          <Variable Name="ImageAcq" />
+          <Variable Name="Enable" />
+        </Variable>
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>
