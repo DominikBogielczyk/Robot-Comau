@@ -12,9 +12,22 @@
     <Page refId="UsersPage" />
   </Pages>
   <Navigations />
-  <BindingsSets />
+  <BindingsSets>
+<<<<<<< HEAD
+    <BindingsSet refId="TopContent_binding" />
+  </BindingsSets>
+  <EventBindingsSets>
+    <EventBindingsSet refId="TopContent_eventbinding" />
+  </EventBindingsSets>
+  <Dialogs>
+    <Dialog refId="LoginDialog" />
+  </Dialogs>
+=======
+    <BindingsSet refId="MainContent_binding" />
+  </BindingsSets>
   <EventBindingsSets />
   <Dialogs />
+>>>>>>> 650cda90090d9cb9adef599202844e0c8b72eb66
   <Contents>
     <Content refId="MainContent" />
     <Content refId="LeftContent" />
@@ -26,6 +39,7 @@
     <Content refId="PackMLContent" />
     <Content refId="ReceptureContent" />
     <Content refId="UsersContent" />
+    <Content refId="LoginContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

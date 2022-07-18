@@ -2,11 +2,11 @@
 <?AutomationStudio FileVersion="4.9"?>
 <BR.AS.HardwareTopology>
   <TimeStamps>
-    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="07/14/2022 13:34:28" />
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="07/18/2022 14:13:28" />
   </TimeStamps>
   <Modules>
-    <Module Name="5APC3100_KBU1_000" Type="5APC3100.KBU1-000" X="229.1" Y="131" />
-    <Module Name="5AC901.IPLK-00" Type="5AC901.IPLK-00" X="234.900009" Y="154" />
+    <Module Name="5APC3100_KBU1_000" Type="5APC3100.KBU1-000" X="229" Y="131" />
+    <Module Name="5AC901.IPLK-00" Type="5AC901.IPLK-00" X="234.8" Y="154" />
     <Module Name="8EI8X8MWT10.0100-1" Type="8EI8X8MWT10.0100-1" X="483" Y="94" />
     <Module Name="VSS112Q21.031P-000" Type="VSS112Q21.031P-000" X="409" Y="-94" />
     <Module Name="X20BB80" Type="X20BB80" X="150" Y="-32" />
@@ -19,10 +19,10 @@
     <Module Name="X20PS9400" Type="X20PS9400" X="175" Y="-32" />
     <Module Name="X20TB12" Type="X20TB12" X="175" Y="-5" />
     <Module Name="X20BC0083" Type="X20BC0083" X="150" Y="-32" />
-    <Module Name="8EI8X8MWT10.0500-1" Type="8EI8X8MWT10.0500-1" X="578.800049" Y="94" />
+    <Module Name="8EI8X8MWT10.0500-1" Type="8EI8X8MWT10.0500-1" X="578" Y="94" />
   </Modules>
   <Links>
-    <Link From="X20BC0083" To="5AC901.IPLK-00" FromPort="PLK1" ToPort="IF1" IsRoutedByUser="False">
+    <Link From="5AC901.IPLK-00" To="X20BC0083" FromPort="IF1" ToPort="PLK1" IsRoutedByUser="False">
       <Point X="164" Y="43" />
       <Point X="155.75" Y="43" />
       <Point X="155.75" Y="68" />
@@ -33,17 +33,7 @@
       <Point X="275.900024" Y="162" />
       <Point X="275.900024" Y="162" />
     </Link>
-    <Link From="VSS112Q21.031P-000" To="8EI8X8MWT10.0100-1" FromPort="PLK2" ToPort="PLK2" IsRoutedByUser="False">
-      <Point X="472" Y="24" />
-      <Point X="472" Y="24" />
-      <Point X="472" Y="29" />
-      <Point X="472" Y="35" />
-      <Point X="499.1" Y="35" />
-      <Point X="499.1" Y="93.5" />
-      <Point X="499.1" Y="104.5" />
-      <Point X="499.1" Y="104.5" />
-    </Link>
-    <Link From="8EI8X8MWT10.0500-1" To="8EI8X8MWT10.0100-1" FromPort="PLK1" ToPort="PLK1" IsRoutedByUser="False">
+    <Link From="8EI8X8MWT10.0100-1" To="8EI8X8MWT10.0500-1" FromPort="PLK1" ToPort="PLK1" IsRoutedByUser="False">
       <Point X="586.5" Y="104.5" />
       <Point X="586.5" Y="104.5" />
       <Point X="578.5" Y="104.5" />
@@ -54,6 +44,16 @@
       <Point X="482.7" Y="104.5" />
       <Point X="490.7" Y="104.5" />
       <Point X="490.7" Y="104.5" />
+    </Link>
+    <Link From="8EI8X8MWT10.0100-1" To="VSS112Q21.031P-000" FromPort="PLK2" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="472" Y="24" />
+      <Point X="472" Y="24" />
+      <Point X="472" Y="29" />
+      <Point X="472" Y="35" />
+      <Point X="499.1" Y="35" />
+      <Point X="499.1" Y="93.5" />
+      <Point X="499.1" Y="104.5" />
+      <Point X="499.1" Y="104.5" />
     </Link>
     <Link From="8EI8X8MWT10.0500-1" To="X20BC0083" FromPort="PLK2" ToPort="PLK2" IsRoutedByUser="False">
       <Point X="594.9" Y="104.5" />
