@@ -12,7 +12,9 @@
     <Page refId="UsersPage" />
   </Pages>
   <Navigations />
-  <BindingsSets />
+  <BindingsSets>
+    <BindingsSet refId="MainContent_binding" />
+  </BindingsSets>
   <EventBindingsSets />
   <Dialogs />
   <Contents>
