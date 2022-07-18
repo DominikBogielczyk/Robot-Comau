@@ -1,18 +1,4 @@
 VAR
 	i : USINT;
 	Camera_0 : CameraStruct;
-	BtnSquare13 : BOOL;
-	BtnSquare12 : BOOL;
-	BtnSquare11 : BOOL;
-	BtnSquare10 : BOOL;
-	BtnSquare9 : BOOL;
-	BtnSquare8 : BOOL;
-	BtnSquare7 : BOOL;
-	BtnSquare6 : BOOL;
-	BtnSquare5 : BOOL;
-	BtnSquare4 : BOOL;
-	BtnSquare3 : BOOL;
-	BtnSquare2 : BOOL;
-	BtnSquare1 : BOOL;
-	BtnSquare0 : BOOL;
 END_VAR

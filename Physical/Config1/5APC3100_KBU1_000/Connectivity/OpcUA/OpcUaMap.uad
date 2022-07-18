@@ -9,6 +9,10 @@
   </Aliases>
   <DefaultView>
     <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="SquareArray" EnableArrayElements="True" />
+        <Variable Name="ElementsArray" EnableArrayElements="True" />
+      </GlobalVariables>
       <Task Name="Elements_d">
         <Variable Name="BtnSquare0" />
         <Variable Name="BtnSquare1" />
