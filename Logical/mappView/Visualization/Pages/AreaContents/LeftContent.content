@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="LeftContent" height="650" width="250" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="140" left="40" height="380" zIndex="0">
+    <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="20" left="40" width="180" height="600" zIndex="0">
       <Widgets>
         <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="20" left="20" zIndex="0" pageId="MainPage" text="MAIN" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton2" top="60" left="20" zIndex="1" pageId="AlarmPage" text="ALARM" />
@@ -10,9 +10,8 @@
         <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton5" top="200" left="20" zIndex="4" pageId="PackMLPage" text="PackML" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton6" top="240" left="20" zIndex="5" pageId="RecepturePage" text="RECEPTURY" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton7" top="280" left="20" zIndex="6" pageId="AuditPage" text="AUDYT" />
-        <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton8" top="320" left="20" zIndex="7" pageId="UsersPage" text="UŻYTKOWNICY" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton8" top="540" left="40" zIndex="7" pageId="UsersPage" text="UŻYTKOWNICY" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton9" top="560" left="80" zIndex="1" pageId="pageId1" text="TEST" />
   </Widgets>
 </Content>

@@ -9,9 +9,13 @@
   </Element>
   <Element ID="admin" Type="User">
     <Property ID="UserID" Value="2" />
-    <Property ID="Password" Value="Phsf4NtxyTciSjOHqGpIa5ifUdG7BWcoesynvKbJwRho4Wj1YCY=" />
+    <Property ID="Password" Value="w/xOYb7hjON5ZGGXqtKZrGh0u25mKc1ZllcmKRt/7D0asaf+a4E=" />
     <Group ID="Roles">
       <Property ID="Role[1]" Value="Administrators" />
     </Group>
+  </Element>
+  <Element ID="operator1" Type="User">
+    <Property ID="UserID" Value="3" />
+    <Property ID="Password" Value="e2dXr+lG2gTqXVziHWext6B39wrZJO/4G3TrgmVViFobamk1LQw=" />
   </Element>
 </Configuration>
