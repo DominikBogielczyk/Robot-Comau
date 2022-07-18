@@ -22,13 +22,16 @@ PROGRAM _CYCLIC
 			ElementsArray[Camera_0.ModelNumArray[i]-1] := 0;
 		ELSIF Camera_0.PixelCntSquareArray[i] < 200 THEN
 			//SCREW
+			//index nietestowy := 1
 			ElementsArray[Camera_0.ModelNumArray[i]-1] := 1;	
 		ELSIF Camera_0.PixelCntSquareArray[i] < 500 THEN
 			//WASHER BOLT
-			ElementsArray[Camera_0.ModelNumArray[i]-1] := 2;	
+			//index nietestowy := 2
+			ElementsArray[Camera_0.ModelNumArray[i]-1] := 1;	
 		ELSIF Camera_0.PixelCntSquareArray[i] < 2000 THEN
 			//WRENCH
-			ElementsArray[Camera_0.ModelNumArray[i]-1] := 4;
+			//index nietestowy := 4
+			ElementsArray[Camera_0.ModelNumArray[i]-1] := 1;
 		ELSE
 			ElementsArray[Camera_0.ModelNumArray[i]-1] := 0;		
 		END_IF;

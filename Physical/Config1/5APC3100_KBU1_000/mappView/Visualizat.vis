@@ -14,6 +14,7 @@
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="TopContent_binding" />
+    <BindingsSet refId="MainContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="TopContent_eventbinding" />
