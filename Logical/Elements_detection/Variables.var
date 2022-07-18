@@ -1,0 +1,4 @@
+VAR
+	i : USINT;
+	Camera_0 : CameraStruct;
+END_VAR

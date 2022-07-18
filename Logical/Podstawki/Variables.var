@@ -1,9 +1,0 @@
-VAR
-	ExposureTime : UDINT := 30000;
-	Focus : UINT := 30000;
-	NumSearch : USINT;
-	Enable : BOOL;
-	diTrigger : BOOL;
-	ImageAcq : BOOL;
-	i : USINT;
-END_VAR
