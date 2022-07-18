@@ -13,6 +13,14 @@
   </Pages>
   <Navigations />
   <BindingsSets>
+    <BindingsSet refId="TopContent_binding" />
+  </BindingsSets>
+  <EventBindingsSets>
+    <EventBindingsSet refId="TopContent_eventbinding" />
+  </EventBindingsSets>
+  <Dialogs>
+    <Dialog refId="LoginDialog" />
+  </Dialogs>
     <BindingsSet refId="MainContent_binding" />
   </BindingsSets>
   <EventBindingsSets />
@@ -28,6 +36,7 @@
     <Content refId="PackMLContent" />
     <Content refId="ReceptureContent" />
     <Content refId="UsersContent" />
+    <Content refId="LoginContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />
