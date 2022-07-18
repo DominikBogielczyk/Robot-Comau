@@ -57,5 +57,61 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ElementsArray[13]" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgButtonElement13" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[13]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare13" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[12]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare12" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[11]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare11" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[10]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[9]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[8]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[7]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[6]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[5]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[4]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SquareArray[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TgBtnSquare0" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>
