@@ -17,5 +17,8 @@
   <Element ID="operator1" Type="User">
     <Property ID="UserID" Value="3" />
     <Property ID="Password" Value="e2dXr+lG2gTqXVziHWext6B39wrZJO/4G3TrgmVViFobamk1LQw=" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Operator" />
+    </Group>
   </Element>
 </Configuration>
