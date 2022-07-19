@@ -1,5 +1,6 @@
 VAR
 	i : USINT;
 	PixelRange_0 : PixelCounterLimits;
+	DetectedHolders : USINT;
 	Camera_0 : CameraStruct;
 END_VAR

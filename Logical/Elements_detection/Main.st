@@ -11,6 +11,9 @@ PROGRAM _INIT
 	PixelRange_0.WrenchLimit := 2000;
 	PixelRange_0.HolderLimit := 10000;
 	
+	///////////////////////////////
+	DetectedHolders := 6;
+	//////////////////////////////
 	 
 END_PROGRAM
 
@@ -40,6 +43,8 @@ PROGRAM _CYCLIC
 		ELSE
 			ElementsArray[Camera_0.ModelNumArray[i]-1] := 0;		
 		END_IF;
+		
+		
 		
 		
 	END_FOR;
