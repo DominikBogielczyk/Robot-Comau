@@ -32,5 +32,408 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="EventBinding_Element1">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[1]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare1">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare1">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare1">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare1">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+		<EventBinding id="EventBinding_Element2">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[2]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare2">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare2">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare2">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare2">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element3">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[3]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare3">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare3">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare3">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare3">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element4">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[4]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare4">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare4">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare4">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare4">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element5">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[5]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare5">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare5">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare5">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare5">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element6">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[6]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare6">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare6">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare6">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare6">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element7">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[7]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare7">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare7">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare7">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare7">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element8">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[8]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare8">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare8">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare8">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare8">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element9">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[9]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare9">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare9">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare9">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare9">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element10">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[10]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare10">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare10">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare10">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare10">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element11">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[11]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare11">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare11">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare11">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare11">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element12">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[12]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare12">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare12">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare12">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare12">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_Element13">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[13]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare13">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare13">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare13">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare13">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>
