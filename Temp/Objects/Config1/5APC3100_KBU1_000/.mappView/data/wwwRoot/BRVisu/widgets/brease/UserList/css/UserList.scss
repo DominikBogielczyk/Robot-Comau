@@ -1,0 +1,25 @@
+
+
+.breaseUserListGenericDialog {
+    .generic-dialog.breaseGroupBox {
+        div.generic-dialog {
+            margin: 0px;
+        }
+        
+        div.breaseLabel {
+            flex: 1;
+        }
+
+        div.breaseImage {
+            width: 30px;
+            height: 30px;
+        }
+
+        div.breaseFlexLayoutPanel {
+            > .container {
+                align-items: center;
+                padding: 10px 10px 0px 10px;
+            }        
+        }
+    }
+}

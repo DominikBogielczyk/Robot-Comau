@@ -1,0 +1,22 @@
+@import '../../../../css/libs/mixins.scss';
+
+.visionCockpitSmartPanelParameterForm {
+    overflow: hidden;
+    @include box-sizing(border-box);
+
+    .scrollContainer {
+
+        .drawContainer {
+            @include displayFlexBox(true);
+
+            .ParamRowContainer {
+                position: relative;
+                @include displayFlexBox(true);
+                @include flex-direction(column);
+                @include align-items(flex-start);
+                @include flex-wrap(nowrap);
+                text-align: center;
+            }
+        }
+    }
+}

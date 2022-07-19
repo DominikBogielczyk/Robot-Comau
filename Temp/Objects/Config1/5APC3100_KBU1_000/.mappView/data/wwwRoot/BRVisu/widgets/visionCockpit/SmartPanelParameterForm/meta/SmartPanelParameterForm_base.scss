@@ -1,0 +1,65 @@
+@import "mixins.scss";
+@mixin widgets_visionCockpit_SmartPanelParameterForm_base {
+	@include elemWidth(250);
+	@include elemHeight(150);
+.ParamRowContainer > .smartPanelParameterNumericInput {
+	@include elemHeight(30);
+}
+.ParamRowContainer > .smartPanelParameterTextInput {
+	@include elemHeight(30);
+}
+.ParamRowContainer > .smartPanelParameterDropDownBox {
+	@include elemHeight(30);
+}
+.ParamRowContainer > .smartPanelParameterFormTextOutput {
+	@include elemHeight(30);
+}
+.ParamRowContainer > .smartPanelParameterLabel {
+	@include elemHeight(30);
+}
+.ParamRowContainer > .smartPanelParameterNumericInput {
+	@include elemWidth(120);
+}
+.ParamRowContainer > .smartPanelParameterTextInput {
+	@include elemWidth(120);
+}
+.ParamRowContainer > .smartPanelParameterFormTextOutput {
+	@include elemWidth(120);
+}
+.ParamRowContainer > .smartPanelParameterDropDownBox {
+	@include elemWidth(120);
+}
+.ParamRowContainer > .smartPanelParameterLabel {
+	@include elemWidth(110);
+}
+	border-style: solid;
+	border-width: 2px;
+	@include border-radius(0px);
+&:not(.disabled) {
+	background-color: #DBDBDB;
+}
+&.disabled {
+	background-color: #F1F1F1;
+}
+&:not(.disabled) {
+	background-image: none;
+}
+&.disabled {
+	background-image: none;
+}
+	@include backGroundImage('../');
+&:not(.disabled) {
+	border-color: #5B7C70;
+}
+&.disabled {
+	border-color: #C8C8C8;
+}
+	opacity: 1;
+> .scrollContainer {
+	padding: 0px;
+}
+	margin: 0px;
+	@include box-shadow(none);
+
+}
+

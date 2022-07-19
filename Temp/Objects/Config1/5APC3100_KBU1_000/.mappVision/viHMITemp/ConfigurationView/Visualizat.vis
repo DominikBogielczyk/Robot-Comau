@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<vdef:Visualization id="mappVision" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
+  <StartPage pageRefId="mVi2StartPage" />
+  <Pages>
+    <Page refId="mVi2MainPage" />
+    <Page refId="mVi2StartPage" />
+    <!--mappVision-->
+    <Page refId="mVi2_gCamera" />
+  </Pages>
+  <Navigations>
+    <!--<Navigation refId="NavigationContent" />-->
+  </Navigations>
+  <BindingsSets>
+    <BindingsSet refId="mVi2Navigation" />
+    <BindingsSet refId="mVi2GlobalConfigBindings" />
+    <!--mappVision-->
+    <BindingsSet refId="mVi2Bindings" />
+    <BindingsSet refId="mVi2Bindings_gCamera" />
+  </BindingsSets>
+  <EventBindingsSets>
+    <EventBindingsSet refId="mVi2Selection_gCamera" />
+  </EventBindingsSets>
+  <Dialogs>
+    <Dialog refId="mViSaveAsDialog" />
+  </Dialogs>
+  <Contents>
+    <Content refId="mVi2MainContent" />
+    <Content refId="mVi2Navigation" />
+    <Content refId="mVi2_gCamera" />
+  </Contents>
+  <SnippetsSets>
+    <!--<SnippetsSet refId="mCoSnippets" />-->
+  </SnippetsSets>
+  <ExpressionsSets>
+    <!--<ExpressionsSet refId="mCoExpressions_Trace" />-->
+    <!--mappMotion-->
+  </ExpressionsSets>
+  <VariablesSets>
+    <VariablesSet refId="mVi2GlobalSessionVar" />
+    <!--mappVision-->
+    <VariablesSet refId="mVi2SessionVar" />
+  </VariablesSets>
+  <StartTheme themeRefId="mappVisionThemeFlat" />
+  <Themes>
+    <Theme refId="mappVisionThemeFlat" />
+  </Themes>
+  <Configurations>
+    <Configuration key="zoom" value="true" />
+  </Configurations>
+</vdef:Visualization>

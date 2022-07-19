@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisionFunction Name="vf-blob" HALCONPrefix="BR_blob" Version="5.1.0-rc.2"
+	Compatibility="SmartSensor SmartCamera"
+	xmlns="http://br-automation.com/2021/Vision/template-config_1.3.0.xsd">
+    
+    <Images>
+        <!--TBD Ein Kontainer für Eingangsbilder oder mehrere einzelbilder?
+			Result: Mehrere Kontainer für Eingang, potentiell Mehrere für Ausgänge	  
+		Raw ist not a RestrictedHALCONType -->
+        <Image Name="Image" NumberElements="1" Position="1" Access="rw" />
+        <!--<OutputImage Name="OutputImage" Type="Raw"  Position="1" Access="rw" />-->
+        
+        <!-- Should every function provide an output or only functions that are allowed to modify the image data ? 
+			Result: Nein, nur für potentiell änderliche Bilder-->
+    </Images>
+    
+    <Capabilities>
+        <Capability Function="Models"/>
+		<Capability Function="ModelFilter"/>
+        <Capability Function="ToolList">
+            <ToolListReference Name="TL1">
+                <Tool type="rectangle" operation="add" default="true" size="1.00"/>
+                <Tool type="ellipse" operation="add" size="1.00"/>
+                <Tool type="ring" operation="add" size="1.00"/>
+                <Tool type="freehand" operation="add" size="1.00"/>
+                <Tool type="rectangle" operation="remove" size="1.00"/>
+                <Tool type="ellipse" operation="remove" size="1.00"/>
+                <Tool type="ring" operation="remove" size="1.00"/>
+                <Tool type="eraser" operation="remove" size="1.00"/>
+            </ToolListReference>
+            <ToolListReference Name="TL2">
+                <Tool type="crosshair" operation="add" default="true" position="0.5"/>
+            </ToolListReference>
+        </Capability>
+        <Capability Function="ExecutionRoi">
+            <Capability Name="ToolListReference" Value="TL1" />
+            <Capability Name="ToolInstances" Value="multi" />
+            <Capability Name="OrientationTool" Value="false" />
+        </Capability>
+    </Capabilities>
+    
+    <!-- 
+		 this VF has no parameters. 
+		 it has a lot of model params though.
+   -->
+    <ModelParameters>
+        <ModelParameter Name="MorphologyType" Group="ModelParams" Position="1"
+			Type="string" Widget="Default" Access="r" MinCount="1" MaxCount="1">
+            <String>none</String>
+            <String>closing</String>
+            <String>opening</String>
+        </ModelParameter>
+        <ModelParameter Name="CircleMaskRadius" Group="ModelParams" Position="2"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1">
+            <ValueInterval Min="1.5" Max="10.5" />
+        </ModelParameter>
+        <ModelParameter Name="ThresholdMin" Group="ModelParams" Position="3"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1">
+            <ValueInterval Min="0.0" Max="255.0" />
+        </ModelParameter>
+        <ModelParameter Name="ThresholdMax" Group="ModelParams" Position="4"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1">
+            <ValueInterval Min="0.0" Max="255.0" />
+        </ModelParameter>
+        <ModelParameter Name="AreaMin" Group="ModelParams" Position="5"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <ValueInterval Min="0.0" Max="171798691.76" />
+        </ModelParameter>
+        <ModelParameter Name="AreaMax" Group="ModelParams" Position="6"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <ValueInterval Min="0.0" Max="171798691.76" />
+        </ModelParameter>
+        <ModelParameter Name="RectangularityMin" Group="ModelParams" Position="7"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1">
+            <ValueInterval Min="0.0" Max="1.0" />
+        </ModelParameter>
+        <ModelParameter Name="RectangularityMax" Group="ModelParams" Position="8"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1">
+            <ValueInterval Min="0.0" Max="1.0" />
+        </ModelParameter>
+        <ModelParameter Name="CircularityMin" Group="ModelParams" Position="9"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1">
+            <ValueInterval Min="0.0" Max="1.0" />
+        </ModelParameter>
+        <ModelParameter Name="CircularityMax" Group="ModelParams" Position="10"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1">
+            <ValueInterval Min="0.0" Max="1.0" />
+        </ModelParameter>
+        <!--
+			WARNING: the following two parameters have positive infinity
+			as maximum value!
+		-->
+        <ModelParameter Name="AnisometryMin" Group="ModelParams" Position="11"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1">
+            <ValueInterval Min="1.0" Max="INF" />
+        </ModelParameter>
+        <ModelParameter Name="AnisometryMax" Group="ModelParams" Position="12"
+			Type="double" Widget="Default" Access="r" MinCount="1" MaxCount="1">
+            <ValueInterval Min="1.0" Max="INF" />
+        </ModelParameter>
+        <ModelType Name="blob model" Teachable="true" Marker="optional" ModelRoi="prohibited">
+            <Capabilities>
+                <Capability Name="ToolListReference" Value="TL2" Type="Marker"/>
+                <Capability Name="ToolInstances" Value="single" />
+                <Capability Name="IconicsPaintMode" Value="region" />
+            </Capabilities>
+            <ModelParameterReference Name="ThresholdMin" />
+            <ModelParameterReference Name="ThresholdMax" />
+            <ModelParameterReference Name="AreaMin" />
+            <ModelParameterReference Name="AreaMax" />
+            <ModelParameterReference Name="MorphologyType" />
+            <ModelParameterReference Name="CircleMaskRadius" />
+            <ModelParameterReference Name="CircularityMin" />
+            <ModelParameterReference Name="CircularityMax" />
+            <ModelParameterReference Name="RectangularityMin" />
+            <ModelParameterReference Name="RectangularityMax" />
+            <ModelParameterReference Name="AnisometryMin" />
+            <ModelParameterReference Name="AnisometryMax" />
+        </ModelType>
+    </ModelParameters>
+    <Variables>
+        <!-- 
+			 normal cyclic inputs 
+		-->
+        <Variable Name="Enable" Group="Vars" Position="1"
+			Native="uint8_t" PLK="BOOL" Widget="Default" Role="Input">
+            <Display Key="0" Value="false" />
+            <Display Key="1" Value="true" />
+            <Value>0</Value>
+            <Value>1</Value>
+        </Variable>
+        <Variable Name="NumSearchMax" Group="Vars" Position="2"
+			Native="uint8_t" PLK="USINT" Widget="Default" Role="Input">
+            <ValueRange Min="0" Max="255" />
+        </Variable>
+        <Variable Name="RegionFeatures" Group="Vars" Position="4"
+			Native="uint8_t" PLK="BOOL" Widget="Default" Role="Input">
+            <Display Key="0" Value="false" />
+            <Display Key="1" Value="true" />
+            <Value>0</Value>
+            <Value>1</Value>
+        </Variable>
+        <Variable Name="EnhancedBlobInformation" Group="Vars" Position="5"
+			PLK="BOOL" Native="uint8_t" Widget="Default" Role="Input">
+            <Display Key="0" Value="false" />
+            <Display Key="1" Value="true" />
+            <Value>0</Value>
+            <Value>1</Value>
+        </Variable>
+        <Variable Name="OffsetROIX" Group="Vars" Position="6"
+			PLK="DINT" Native="double" Widget="Default" Role="Input" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="OffsetROIY" Group="Vars" Position="7"
+			PLK="DINT" Native="double" Widget="Default" Role="Input" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="OffsetROIOrientation" Group="Vars" Position="8"
+			PLK="INT" Native="double" Widget="Default" Role="Input" UnitNS="http://www.opcfoundation.org/UA/units/un/cefact" UnitID="17476">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-17999" Max="18000" />
+        </Variable>
+        <Variable Name="OffsetROIRotCenterX" Group="Vars" Position="9" 
+			PLK="DINT" Native="double" Widget="Default" Role="Input" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="OffsetROIRotCenterY" Group="Vars" Position="10"
+			PLK="DINT" Native="double" Widget="Default" Role="Input" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <!-- 
+			 volatile cyclic inputs 
+		-->
+        <Variable Name="TestExecute" Group="Vars" Position="11"
+			Native="uint8_t" PLK="BOOL" Widget="Default" Role="Volatile">
+            <Display Key="0" Value="false" />
+            <Display Key="1" Value="true" />
+            <Value>0</Value>
+            <Value>1</Value>
+        </Variable>
+        <Variable Name="Alignment" Group="Vars" Position="3"
+			Native="uint8_t" PLK="USINT" Widget="Default" Role="Volatile">
+            <!-- 0 = 'None', 1 = 'SetReference', 2 = 'GenerateAlignmentData' -->
+            <Display Key="0" Value="None" />
+            <Display Key="1" Value="Set Reference" />
+            <Display Key="2" Value="Generate Alignment Data" />
+            <Value>0</Value>
+            <Value>1</Value>
+            <Value>2</Value>
+        </Variable>
+        
+        <!--
+			 output variables (special and not special)
+		-->
+        <Variable Name="NumResults" Group="Vars" Position="15"
+			PLK="USINT" Native="uint8_t" Widget="Default" Role="Output">
+            <ValueRange Min="0" Max="255" />
+        </Variable>
+        <Variable Name="Clipped" Group="Vars" Position="99" NumberElements="NumResultsMax"
+			PLK="BOOL" Native="uint8_t" Size="NumResultsMax * 1" Widget="Default" Role="Output">
+            <Display Key="0" Value="false" />
+            <Display Key="1" Value="true" />
+            <Value>0</Value>
+            <Value>1</Value>
+        </Variable>
+        <Variable Name="Area" Group="Vars" Position="910" NumberElements="NumResultsMax"
+			PLK="UDINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="4294967295" />
+        </Variable>
+        <Variable Name="PositionX" Group="Vars" Position="17" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="NumResultsMax*4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="PositionY" Group="Vars" Position="18" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="NumResultsMax*4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="Orientation" Group="Vars" Position="19" NumberElements="NumResultsMax"
+			PLK="INT" Native="double" Size="NumResultsMax*2" Widget="Default" Role="Output"  UnitNS="http://www.opcfoundation.org/UA/units/un/cefact" UnitID="17476">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-17999" Max="18000" />
+        </Variable>
+        <Variable Name="FunctionProcessingTime" Group="Vars" Position="16"
+			PLK="UINT" Native="uint16_t" Widget="Default" Role="Output"
+			UnitNS="http://www.opcfoundation.org/UA/units/un/cefact" UnitID="4403766">
+            <ValueRange Min="0" Max="65535" />
+        </Variable>
+        <Variable Name="MeanGrayValue" Group="Vars" Position="98" NumberElements="NumResultsMax"
+			PLK="USINT" Native="double" Size="NumResultsMax * 1" Widget="Default" Role="Output">
+            <ValueRange Min="0" Max="255" />
+        </Variable>
+        <Variable Name="Length" Group="Vars" Position="912" NumberElements="NumResultsMax"
+			PLK="UDINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="2622400" />
+        </Variable>
+        <Variable Name="Width" Group="Vars" Position="913" NumberElements="NumResultsMax"
+			PLK="UDINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output"  UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="2622400" />
+        </Variable>
+        <Variable Name="ModelNumber" Group="Vars" Position="914" NumberElements="NumResultsMax"
+			PLK="USINT" Native="uint8_t" Size="NumResultsMax * 1" Widget="Default" Role="Output">
+            <ValueRange Min="0" Max="255" />
+        </Variable>
+        <Variable Name="RotCenterX" Group="Vars" Position="915" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output"  UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="RotCenterY" Group="Vars" Position="916" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output"  UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="Xmin" Group="Vars" Position="917" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="2622400" />
+        </Variable>
+        <Variable Name="Xmax" Group="Vars" Position="918" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="2622400" />
+        </Variable>
+        <Variable Name="Ymin" Group="Vars" Position="919" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="2622400" />
+        </Variable>
+        <Variable Name="Ymax" Group="Vars" Position="920" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="2622400" />
+        </Variable>
+        <Variable Name="Circularity" Group="Vars" Position="921" NumberElements="NumResultsMax"
+			PLK="USINT" Native="double" Size="NumResultsMax * 1" Widget="Default" Role="Output" UnitNS="http://www.opcfoundation.org/UA/units/un/cefact" UnitID="20529">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="100" />
+        </Variable>
+        <Variable Name="Rectangularity" Group="Vars" Position="922" NumberElements="NumResultsMax"
+			PLK="USINT" Native="double" Size="NumResultsMax * 1" Widget="Default" Role="Output" UnitNS="http://www.opcfoundation.org/UA/units/un/cefact" UnitID="20529">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="100" />
+        </Variable>
+        <Variable Name="Anisometry" Group="Vars" Position="923" NumberElements="NumResultsMax"
+			PLK="UINT" Native="double" Size="NumResultsMax * 2" Widget="Default" Role="Output">
+            <LinearTransform Multiplicand="1" Divisor="10" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="57927" />
+        </Variable>
+        <Variable Name="InnerCirclePositionX" Group="Vars" Position="924" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="2622400" />
+        </Variable>
+        <Variable Name="InnerCirclePositionY" Group="Vars" Position="925" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="2622400" />
+        </Variable>
+        <Variable Name="InnerCircleRadius" Group="Vars" Position="926" NumberElements="NumResultsMax"
+			PLK="UDINT" Native="double" Size="NumResultsMax * 4" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="2622400" />
+        </Variable>
+    </Variables>
+    <Constants>
+        <Constant Name="NumResultsMax" PLK="USINT" Native="uint8_t" Widget="Default" 
+			Group="Constants" Position="0" Offset="0">
+            <ValueRange Min="1" Max="255" />
+            <InitialDefault>20</InitialDefault>
+        </Constant>
+    </Constants>
+    <!--
+		 as we have no parameters, there is no "Params" group!
+	-->
+    <Groups>
+        <Group id="ModelParams" Name="Model Parameters" />
+        <Group id="Vars" Name="Process Variables of the Vision Function" />
+        <Group id="Constants" Name="Vision Constants" />
+    </Groups>
+    <Distribution>
+        <Shared>
+            <XMLConfig Name="template-config.xml" />
+            <ProcedureLibrary Name="BR_blob.hdpl" Encrypted="true" />
+            <SharedLibrary Name="../vf-lib/BR_helper_procedures.hdpl" Encrypted="true" />
+        </Shared>
+        <Instance>
+            <Constants Name="constants" FileSize="1" Type="vision constants" Presence="required constant" />
+            <Params Name="params" FileSize="0" Type="vision parameters" Presence="unused" />
+            <Models Name="models" Type="internal models" Presence="missing-ok updatable" />
+            <Widget Name="widget" Type="teaching models" Presence="missing-ok updatable" />
+            <ROI Name="roi.hobj" Type="region of interest" Presence="missing-ok updatable" />
+            <Objects Name="sui.json" Type="object store" Presence="missing-ok updatable" />
+        </Instance>
+    </Distribution>
+</VisionFunction>

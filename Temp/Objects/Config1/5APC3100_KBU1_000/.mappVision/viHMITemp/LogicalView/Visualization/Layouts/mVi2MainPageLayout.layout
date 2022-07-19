@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ldef:Layout id="mVi2MainPageLayout" height="1080" width="1920" xmlns:ldef="http://www.br-automation.com/iat2015/layoutDefinition/v2">
+	<Areas>
+		<Area id="mVi2AreaNavigation" height="50" width="1920" left="0" top="0" zIndex="0"/>
+		<Area id="mVi2AreaMain" height="1030" width="1920" left="0" top="50" zIndex="1"/>
+	</Areas>
+</ldef:Layout>

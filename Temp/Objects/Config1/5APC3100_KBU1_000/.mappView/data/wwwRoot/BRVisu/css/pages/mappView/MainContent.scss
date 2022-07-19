@@ -1,0 +1,1463 @@
+﻿@import "mixins.scss";
+#MainContent_TgBtnSquare13 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare13 {
+	@include elemTop(300);
+}
+#MainContent_TgBtnSquare13 {
+	@include elemLeft(40);
+}
+#MainContent_TgBtnSquare13 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare13 {
+		z-index: 0;
+}
+#MainContent_TgBtnSquare13 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare13 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare13 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare13 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare13 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare13 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare12 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare12 {
+	@include elemTop(300);
+}
+#MainContent_TgBtnSquare12 {
+	@include elemLeft(180);
+}
+#MainContent_TgBtnSquare12 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare12 {
+		z-index: 1;
+}
+#MainContent_TgBtnSquare12 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare12 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare12 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare12 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare12 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare12 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare11 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare11 {
+	@include elemTop(300);
+}
+#MainContent_TgBtnSquare11 {
+	@include elemLeft(320);
+}
+#MainContent_TgBtnSquare11 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare11 {
+		z-index: 2;
+}
+#MainContent_TgBtnSquare11 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare11 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare11 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare11 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare11 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare11 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare10 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare10 {
+	@include elemTop(300);
+}
+#MainContent_TgBtnSquare10 {
+	@include elemLeft(460);
+}
+#MainContent_TgBtnSquare10 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare10 {
+		z-index: 3;
+}
+#MainContent_TgBtnSquare10 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare10 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare10 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare10 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare10 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare10 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare9 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare9 {
+	@include elemTop(300);
+}
+#MainContent_TgBtnSquare9 {
+	@include elemLeft(600);
+}
+#MainContent_TgBtnSquare9 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare9 {
+		z-index: 4;
+}
+#MainContent_TgBtnSquare9 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare9 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare9 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare9 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare9 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare9 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare8 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare8 {
+	@include elemTop(300);
+}
+#MainContent_TgBtnSquare8 {
+	@include elemLeft(740);
+}
+#MainContent_TgBtnSquare8 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare8 {
+		z-index: 5;
+}
+#MainContent_TgBtnSquare8 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare8 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare8 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare8 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare8 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare8 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare7 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare7 {
+	@include elemTop(300);
+}
+#MainContent_TgBtnSquare7 {
+	@include elemLeft(880);
+}
+#MainContent_TgBtnSquare7 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare7 {
+		z-index: 6;
+}
+#MainContent_TgBtnSquare7 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare7 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare7 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare7 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare7 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare7 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare6 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare6 {
+	@include elemTop(440);
+}
+#MainContent_TgBtnSquare6 {
+	@include elemLeft(40);
+}
+#MainContent_TgBtnSquare6 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare6 {
+		z-index: 7;
+}
+#MainContent_TgBtnSquare6 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare6 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare6 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare6 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare6 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare6 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare5 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare5 {
+	@include elemTop(440);
+}
+#MainContent_TgBtnSquare5 {
+	@include elemLeft(180);
+}
+#MainContent_TgBtnSquare5 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare5 {
+		z-index: 8;
+}
+#MainContent_TgBtnSquare5 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare5 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare5 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare5 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare5 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare5 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare4 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare4 {
+	@include elemTop(440);
+}
+#MainContent_TgBtnSquare4 {
+	@include elemLeft(320);
+}
+#MainContent_TgBtnSquare4 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare4 {
+		z-index: 9;
+}
+#MainContent_TgBtnSquare4 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare4 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare4 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare4 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare4 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare4 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare3 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare3 {
+	@include elemTop(440);
+}
+#MainContent_TgBtnSquare3 {
+	@include elemLeft(460);
+}
+#MainContent_TgBtnSquare3 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare3 {
+		z-index: 10;
+}
+#MainContent_TgBtnSquare3 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare3 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare3 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare3 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare3 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare3 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare2 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare2 {
+	@include elemTop(440);
+}
+#MainContent_TgBtnSquare2 {
+	@include elemLeft(600);
+}
+#MainContent_TgBtnSquare2 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare2 {
+		z-index: 11;
+}
+#MainContent_TgBtnSquare2 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare2 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare2 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare2 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare2 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare2 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare1 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare1 {
+	@include elemTop(440);
+}
+#MainContent_TgBtnSquare1 {
+	@include elemLeft(740);
+}
+#MainContent_TgBtnSquare1 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare1 {
+		z-index: 12;
+}
+#MainContent_TgBtnSquare1 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare1 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare1 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare1 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare1 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare1 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare0 {
+	@include elemAutoWidth(100);
+}
+#MainContent_TgBtnSquare0 {
+	@include elemTop(440);
+}
+#MainContent_TgBtnSquare0 {
+	@include elemLeft(880);
+}
+#MainContent_TgBtnSquare0 {
+	@include elemAutoHeight(100);
+}
+#MainContent_TgBtnSquare0 {
+		z-index: 13;
+}
+#MainContent_TgBtnSquare0 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgBtnSquare0 {
+	span{
+		font-size: 40px;
+	}
+}
+#MainContent_TgBtnSquare0 {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#MainContent_TgBtnSquare0 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgBtnSquare0 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#MainContent_TgBtnSquare0 {
+	&.disabled.checked{
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+#MainContent_TgButtonElement0 {
+	@include elemTop(460);
+}
+#MainContent_TgButtonElement0 {
+	@include elemLeft(900);
+}
+#MainContent_TgButtonElement0 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement0 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement0 {
+		z-index: 14;
+}
+#MainContent_TgButtonElement0 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement0 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement0 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement0 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement0 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement0 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement0 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement0 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement0 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement1 {
+	@include elemTop(460);
+}
+#MainContent_TgButtonElement1 {
+	@include elemLeft(760);
+}
+#MainContent_TgButtonElement1 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement1 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement1 {
+		z-index: 15;
+}
+#MainContent_TgButtonElement1 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement1 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement1 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement1 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement1 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement1 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement1 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement1 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement1 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement2 {
+	@include elemTop(460);
+}
+#MainContent_TgButtonElement2 {
+	@include elemLeft(620);
+}
+#MainContent_TgButtonElement2 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement2 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement2 {
+		z-index: 16;
+}
+#MainContent_TgButtonElement2 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement2 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement2 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement2 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement2 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement2 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement2 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement2 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement2 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement3 {
+	@include elemTop(460);
+}
+#MainContent_TgButtonElement3 {
+	@include elemLeft(480);
+}
+#MainContent_TgButtonElement3 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement3 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement3 {
+		z-index: 17;
+}
+#MainContent_TgButtonElement3 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement3 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement3 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement3 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement3 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement3 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement3 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement3 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement3 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement4 {
+	@include elemTop(460);
+}
+#MainContent_TgButtonElement4 {
+	@include elemLeft(340);
+}
+#MainContent_TgButtonElement4 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement4 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement4 {
+		z-index: 18;
+}
+#MainContent_TgButtonElement4 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement4 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement4 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement4 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement4 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement4 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement4 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement4 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement4 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement5 {
+	@include elemTop(460);
+}
+#MainContent_TgButtonElement5 {
+	@include elemLeft(200);
+}
+#MainContent_TgButtonElement5 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement5 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement5 {
+		z-index: 19;
+}
+#MainContent_TgButtonElement5 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement5 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement5 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement5 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement5 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement5 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement5 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement5 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement5 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement6 {
+	@include elemTop(460);
+}
+#MainContent_TgButtonElement6 {
+	@include elemLeft(60);
+}
+#MainContent_TgButtonElement6 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement6 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement6 {
+		z-index: 20;
+}
+#MainContent_TgButtonElement6 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement6 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement6 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement6 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement6 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement6 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement6 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement6 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement6 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement7 {
+	@include elemTop(320);
+}
+#MainContent_TgButtonElement7 {
+	@include elemLeft(900);
+}
+#MainContent_TgButtonElement7 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement7 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement7 {
+		z-index: 21;
+}
+#MainContent_TgButtonElement7 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement7 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement7 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement7 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement7 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement7 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement7 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement7 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement7 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement8 {
+	@include elemTop(320);
+}
+#MainContent_TgButtonElement8 {
+	@include elemLeft(760);
+}
+#MainContent_TgButtonElement8 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement8 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement8 {
+		z-index: 22;
+}
+#MainContent_TgButtonElement8 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement8 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement8 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement8 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement8 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement8 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement8 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement8 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement8 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement9 {
+	@include elemTop(320);
+}
+#MainContent_TgButtonElement9 {
+	@include elemLeft(620);
+}
+#MainContent_TgButtonElement9 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement9 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement9 {
+		z-index: 23;
+}
+#MainContent_TgButtonElement9 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement9 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement9 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement9 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement9 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement9 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement9 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement9 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement9 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement10 {
+	@include elemTop(320);
+}
+#MainContent_TgButtonElement10 {
+	@include elemLeft(480);
+}
+#MainContent_TgButtonElement10 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement10 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement10 {
+		z-index: 24;
+}
+#MainContent_TgButtonElement10 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement10 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement10 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement10 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement10 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement10 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement10 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement10 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement10 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement11 {
+	@include elemTop(320);
+}
+#MainContent_TgButtonElement11 {
+	@include elemLeft(340);
+}
+#MainContent_TgButtonElement11 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement11 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement11 {
+		z-index: 25;
+}
+#MainContent_TgButtonElement11 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement11 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement11 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement11 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement11 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement11 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement11 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement11 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement11 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement13 {
+	@include elemTop(320);
+}
+#MainContent_TgButtonElement13 {
+	@include elemLeft(60);
+}
+#MainContent_TgButtonElement13 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement13 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement13 {
+		z-index: 27;
+}
+#MainContent_TgButtonElement13 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement13 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement13 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement13 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement13 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement13 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement13 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement13 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement13 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement12 {
+	@include elemTop(320);
+}
+#MainContent_TgButtonElement12 {
+	@include elemLeft(200);
+}
+#MainContent_TgButtonElement12 {
+	@include elemAutoWidth(60);
+}
+#MainContent_TgButtonElement12 {
+	@include elemAutoHeight(60);
+}
+#MainContent_TgButtonElement12 {
+		z-index: 29;
+}
+#MainContent_TgButtonElement12 {
+	&.disabled:not(.checked){
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement12 {
+	&.disabled:not(.active):not(.checked){
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement12 {
+	&.disabled:not(.checked) span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement12 {
+	&.disabled:not(.checked).active span{
+		color: rgba(255, 255, 255, 0);
+	}
+}
+#MainContent_TgButtonElement12 {
+	@include text-alignment(center);
+}
+#MainContent_TgButtonElement12 {
+	&.checked:not(.active):not(.disabled){
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement12 {
+	&.checked:not(.disabled):not(.active) span{
+		color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement12 {
+	&.checked:not(.active):not(.disabled){
+		border-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_TgButtonElement12 {
+	&.disabled.checked{
+		background-color: rgba(255, 192, 128, 1);
+	}
+}
+#MainContent_MomentaryPushButton1 {
+	@include elemTop(40);
+}
+#MainContent_MomentaryPushButton1 {
+	@include elemLeft(40);
+}
+#MainContent_MomentaryPushButton1 {
+	@include elemAutoWidth(200);
+}
+#MainContent_MomentaryPushButton1 {
+	@include elemAutoHeight(100);
+}
+#MainContent_MomentaryPushButton1 {
+		z-index: 30;
+}
+#MainContent_MomentaryPushButton1 {
+	&:not(.disabled):not(.active):not(.checked){
+		background-color: rgba(255, 128, 0, 1);
+	}
+}

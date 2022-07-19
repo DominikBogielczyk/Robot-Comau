@@ -1,0 +1,130 @@
+﻿@import "mixins.scss";
+#mViSaveAs_textInApplicationName {
+	@include elemTop(40);
+}
+#mViSaveAs_textInApplicationName {
+	@include elemLeft(92);
+}
+#mViSaveAs_textInApplicationName {
+	@include elemAutoWidth(620);
+}
+#mViSaveAs_textInApplicationName {
+	@include elemAutoHeight(40);
+}
+#mViSaveAs_textInApplicationName {
+		z-index: 1;
+}
+#mViSaveAs_Label6 {
+	@include elemTop(40);
+}
+#mViSaveAs_Label6 {
+	@include elemLeft(28);
+}
+#mViSaveAs_Label6 {
+	@include elemAutoWidth(64);
+}
+#mViSaveAs_Label6 {
+	@include elemAutoHeight(40);
+}
+#mViSaveAs_Label6 {
+		z-index: 2;
+}
+#mViSaveAs_Label6 {
+		font-size: 16px;
+}
+#mViSaveAs_Label6 {
+	@include font-weight-bold(true);
+}
+#mViSaveAs_Label6 {
+	span{
+		padding: 0px;
+	}
+}
+#mViSaveAs_buttonSaveApplication {
+	@include elemTop(160);
+}
+#mViSaveAs_buttonSaveApplication {
+	@include elemLeft(535);
+}
+#mViSaveAs_buttonSaveApplication {
+	@include elemAutoWidth(176);
+}
+#mViSaveAs_buttonSaveApplication {
+	@include elemAutoHeight(55);
+}
+#mViSaveAs_buttonSaveApplication {
+		z-index: 3;
+}
+#mViSaveAs_buttonCancel {
+	@include elemTop(160);
+}
+#mViSaveAs_buttonCancel {
+	@include elemLeft(30);
+}
+#mViSaveAs_buttonCancel {
+	@include elemAutoWidth(176);
+}
+#mViSaveAs_buttonCancel {
+	@include elemAutoHeight(55);
+}
+#mViSaveAs_buttonCancel {
+		z-index: 4;
+}
+#mViSaveAs_Rectangle2 {
+	@include elemTop(-32);
+}
+#mViSaveAs_Rectangle2 {
+	@include elemLeft(-64);
+}
+#mViSaveAs_Rectangle2 {
+	@include elemWidth(892);
+}
+#mViSaveAs_Rectangle2 {
+	@include elemHeight(303);
+}
+#mViSaveAs_Rectangle2 {
+		z-index: 0;
+}
+#mViSaveAs_Rectangle2 {
+		border-width: 3px;
+}
+#mViSaveAs_Rectangle2 {
+	@include border-radius(15px);
+}
+#mViSaveAs_Rectangle2 {
+		border-color: rgba(192, 192, 192, 0.5);
+}
+#mViSaveAs_Rectangle2 {
+		background-color: rgba(240, 240, 240, 1);
+}
+#mViSaveAs_Rectangle2 {
+		opacity: 0.8;
+}
+#mViSaveAs_textOutSaveAsError {
+	@include elemTop(80);
+}
+#mViSaveAs_textOutSaveAsError {
+	@include elemLeft(92);
+}
+#mViSaveAs_textOutSaveAsError {
+	@include elemAutoWidth(372);
+}
+#mViSaveAs_textOutSaveAsError {
+	@include elemAutoHeight(20);
+}
+#mViSaveAs_textOutSaveAsError {
+		z-index: 5;
+}
+#mViSaveAs_textOutSaveAsError {
+	& span{
+		color: rgba(255, 0, 0, 1);
+	}
+}
+#mViSaveAs_textOutSaveAsError {
+	@include font-weight-bold(false);
+}
+#mViSaveAs_textOutSaveAsError {
+	span{
+		padding: 0px 0px 0px 0px;
+	}
+}

@@ -1,0 +1,112 @@
+﻿@import "mixins.scss";
+#TopContent_Image1 {
+	@include elemTop(0);
+}
+#TopContent_Image1 {
+	@include elemLeft(40);
+}
+#TopContent_Image1 {
+	@include elemAutoWidth(200);
+}
+#TopContent_Image1 {
+	@include elemAutoHeight(180);
+}
+#TopContent_Image1 {
+		z-index: 0;
+}
+#TopContent_btnLogin {
+	@include elemTop(15);
+}
+#TopContent_btnLogin {
+	@include elemLeft(300);
+}
+#TopContent_btnLogin {
+	@include elemAutoWidth(180);
+}
+#TopContent_btnLogin {
+	@include elemAutoHeight(120);
+}
+#TopContent_btnLogin {
+		z-index: 1;
+}
+#TopContent_btnLogin {
+	&:not(.disabled):not(.active):not(.checked){
+		background-color: rgba(255, 128, 0, 1);
+	}
+}
+#TopContent_btnLogin {
+	span{
+		font-size: 20px;
+	}
+}
+#TopContent_btnLogin {
+	span{
+	@include font-weight-bold(true);
+	}
+}
+#TopContent_lblLoggedIn {
+	@include elemAutoHeight(30);
+}
+#TopContent_lblLoggedIn {
+	@include elemTop(60);
+}
+#TopContent_lblLoggedIn {
+	@include elemLeft(500);
+}
+#TopContent_lblLoggedIn {
+	@include elemAutoWidth(220);
+}
+#TopContent_lblLoggedIn {
+		z-index: 2;
+}
+#TopContent_lblLoggedIn {
+		font-size: 18px;
+}
+#TopContent_TextOutput1 {
+	@include elemAutoHeight(30);
+}
+#TopContent_TextOutput1 {
+	@include elemTop(60);
+}
+#TopContent_TextOutput1 {
+	@include elemLeft(700);
+}
+#TopContent_TextOutput1 {
+	@include elemAutoWidth(260);
+}
+#TopContent_TextOutput1 {
+		z-index: 3;
+}
+#TopContent_TextOutput1 {
+		font-size: 18px;
+}
+#TopContent_btnLogout {
+	@include elemTop(15);
+}
+#TopContent_btnLogout {
+	@include elemLeft(1080);
+}
+#TopContent_btnLogout {
+	@include elemAutoWidth(180);
+}
+#TopContent_btnLogout {
+	@include elemAutoHeight(120);
+}
+#TopContent_btnLogout {
+		z-index: 4;
+}
+#TopContent_btnLogout {
+	&:not(.disabled):not(.active):not(.checked){
+		background-color: rgba(255, 128, 0, 1);
+	}
+}
+#TopContent_btnLogout {
+	span{
+		font-size: 20px;
+	}
+}
+#TopContent_btnLogout {
+	span{
+	@include font-weight-bold(true);
+	}
+}

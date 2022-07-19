@@ -1,0 +1,7 @@
+@import "mixins.scss";
+@mixin widgets_visionCockpit_SmartPanel_base {
+	@include elemWidth(640);
+	@include elemHeight(480);
+
+}
+

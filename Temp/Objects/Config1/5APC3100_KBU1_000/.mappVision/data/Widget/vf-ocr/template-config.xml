@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisionFunction Name="vf-ocr" HALCONPrefix="BR_ocr"  Version="5.1.0-rc.1"
+	Compatibility="SmartCamera SmartSensor"
+	xmlns="http://br-automation.com/2021/Vision/template-config_1.3.0.xsd">
+
+    <Images>
+        <!--TBD Ein Kontainer für Eingangsbilder oder mehrere einzelbilder?
+			Result: Mehrere Kontainer für Eingang, potentiell Mehrere für Ausgänge	  
+		Raw ist not a RestrictedHALCONType -->
+        <Image Name="Image" NumberElements="1" Position="1" Access="rw" />
+        <!--<OutputImage Name="OutputImage" Type="Raw"  Position="1" Access="rw" />-->
+        
+        <!-- Should every function provide an output or only functions that are allowed to modify the image data ? 
+			Result: Nein, nur für potentiell änderliche Bilder-->
+    </Images>
+    
+    <Capabilities>
+        <Capability Function="ToolList">		
+            <ToolListReference Name="TL1">
+                <Tool type="rectangle" operation="add" default="true" size="1.00"/>
+                <Tool type="ellipse" operation="add" size="1.00"/>
+                <Tool type="ring" operation="add" size="1.00"/>
+                <Tool type="freehand" operation="add" size="1.00"/>
+                <Tool type="rectangle" operation="remove" size="1.00"/>
+                <Tool type="ellipse" operation="remove" size="1.00"/>
+                <Tool type="ring" operation="remove" size="1.00"/>
+                <Tool type="eraser" operation="remove" size="1.00"/>
+                
+            </ToolListReference>
+        </Capability>
+        
+        <Capability Function="ExecutionRoi">
+            <Capability Name="ToolListReference" Value="TL1" />
+            <Capability Name="ToolInstances" Value="multi" />
+            <Capability Name="OrientationTool" Value="true" />
+        </Capability>
+        <Capability Function="SetWriteAccessToAllAcyclicParams">
+            <Conditions>
+                <Condition Variable="ParameterMode" Operand="equals" Value="1" />
+            </Conditions>
+            <Action>
+                <Parameters>
+                    <Parameter Name="*" Access="rw" />
+                </Parameters>
+            </Action>
+        </Capability>
+    </Capabilities>
+    
+    <Parameters>
+        <!-- 17 bytes parameters.
+			 Temporary value, final two parameters will grow in size ultimatively
+		-->
+        <Parameter Name="MinContrast" Group="Parms" Position="1" Offset="0"
+			Native="double" PLK="USINT" Widget="Default" Access="rw" Hidden="false">
+            <ValueRange Min="1" Max="255" />
+            <!-- Default: 15 -->
+        </Parameter>
+        <Parameter Name="Polarity" Group="Parms" Position="2" Offset="1"
+			Native="string" PLK="USINT" Widget="Default" Access="rw" Hidden="false">
+            <Lookup Key="0" Value="dark_on_light" />
+            <Lookup Key="1" Value="light_on_dark" />
+            <Lookup Key="2" Value="both" />
+            <ValueRange Min="0" Max="2" />
+            <!-- Default: 0 -->
+        </Parameter>
+        <Parameter Name="MinCharHeight" Group="Parms" Position="3" Offset="2"
+			Native="uint8_t" PLK="USINT" Widget="Default" Access="rw" Hidden="false" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <ValueRange Min="0" Max="255" />
+            <!-- Default: 0 - bedeutet 'auto' -->
+        </Parameter>
+        <Parameter Name="MaxCharHeight" Group="Parms" Position="4" Offset="3"
+			Native="uint8_t" PLK="USINT" Widget="Default" Access="rw" Hidden="false" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <ValueRange Min="0" Max="255" />
+            <!-- Default: 0 - bedeutet 'auto' -->
+        </Parameter>
+        <Parameter Name="MinCharWidth" Group="Parms" Position="5" Offset="4"
+			Native="uint8_t" PLK="USINT" Widget="Default" Access="rw" Hidden="false" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <ValueRange Min="0" Max="255" />
+            <!-- Default: 0 - bedeutet 'auto' -->
+        </Parameter>
+        <Parameter Name="MaxCharWidth" Group="Parms" Position="6" Offset="5"
+			Native="uint8_t" PLK="USINT" Widget="Default" Access="rw" Hidden="false" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <ValueRange Min="0" Max="255" />
+            <!-- Default: 0 - bedeutet 'auto' -->
+        </Parameter>
+        <Parameter Name="DotPrint" Group="Parms" Position="7" Offset="6"
+			Native="string" PLK="USINT" Widget="Default" Access="rw" Hidden="false">
+            <Lookup Key="0" Value="false" />
+            <Lookup Key="1" Value="true" />
+            <ValueRange Min="0" Max="1" />
+            <!-- Default: 0 -->
+        </Parameter>
+        <Parameter Name="OcrClassifier" Group="Parms" Position="8" Offset="7"
+			Native="string" PLK="USINT" Widget="Default" Access="rw" Hidden="false">
+            <Lookup Key="0" Value="Universal_NoRej.occ" />
+            <Lookup Key="1" Value="Universal_Rej.occ" />
+            <Lookup Key="2" Value="Universal_0-9_NoRej.occ" />
+            <Lookup Key="3" Value="Universal_0-9_Rej.occ" />
+            <Lookup Key="4" Value="Universal_0-9+_NoRej.occ" />
+            <Lookup Key="5" Value="Universal_0-9+_Rej.occ" />
+            <Lookup Key="6" Value="Universal_0-9A-Z_NoRej.occ" />
+            <Lookup Key="7" Value="Universal_0-9A-Z_Rej.occ" />
+            <Lookup Key="8" Value="Universal_0-9A-Z+_NoRej.occ" />
+            <Lookup Key="9" Value="Universal_0-9A-Z+_Rej.occ" />
+            <Lookup Key="10" Value="Universal_A-Z+_NoRej.occ" />
+            <Lookup Key="11" Value="Universal_A-Z+_Rej.occ" />
+            <Lookup Key="12" Value="DotPrint_0-9_NoRej.omc" />
+            <Lookup Key="13" Value="DotPrint_0-9_Rej.omc" />
+            <Lookup Key="14" Value="DotPrint_0-9+_NoRej.omc" />
+            <Lookup Key="15" Value="DotPrint_0-9+_Rej.omc" />
+            <Lookup Key="16" Value="DotPrint_0-9A-Z_NoRej.omc" />
+            <Lookup Key="17" Value="DotPrint_0-9A-Z_Rej.omc" />
+            <Lookup Key="18" Value="DotPrint_A-Z+_NoRej.omc" />
+            <Lookup Key="19" Value="DotPrint_A-Z+_Rej.omc" />
+            <Lookup Key="20" Value="DotPrint_NoRej.omc" />
+            <Lookup Key="21" Value="DotPrint_Rej.omc" />
+            <Lookup Key="22" Value="Industrial_0-9_NoRej.omc" />
+            <Lookup Key="23" Value="Industrial_0-9_Rej.omc" />
+            <Lookup Key="24" Value="Industrial_0-9+_NoRej.omc" />
+            <Lookup Key="25" Value="Industrial_0-9+_Rej.omc" />
+            <Lookup Key="26" Value="Industrial_0-9A-Z_NoRej.omc" />
+            <Lookup Key="27" Value="Industrial_0-9A-Z_Rej.omc" />
+            <Lookup Key="28" Value="Industrial_A-Z+_NoRej.omc" />
+            <Lookup Key="29" Value="Industrial_Rej.omc" />
+            <Lookup Key="30" Value="Industrial_NoRej.omc" />
+            <Lookup Key="31" Value="Document_Rej.omc" />
+            <Lookup Key="32" Value="Document_NoRej.omc" />
+            <Lookup Key="33" Value="Document_A-Z+_Rej.omc" />
+            <Lookup Key="34" Value="Document_A-Z+_NoRej.omc" />
+            <Lookup Key="35" Value="Document_0-9_Rej.omc" />
+            <Lookup Key="36" Value="Document_0-9_NoRej.omc" />
+            <Lookup Key="37" Value="Document_0-9A-Z_Rej.omc" />
+            <Lookup Key="38" Value="Document_0-9A-Z_NoRej.omc" />
+            <Lookup Key="39" Value="OCRA_Rej.omc" />
+            <Lookup Key="40" Value="OCRA_NoRej.omc" />
+            <Lookup Key="41" Value="OCRA_A-Z+_Rej.omc" />
+            <Lookup Key="42" Value="OCRA_A-Z+_NoRej.omc" />
+            <Lookup Key="43" Value="OCRA_0-9_Rej.omc" />
+            <Lookup Key="44" Value="OCRA_0-9_NoRej.omc" />
+            <Lookup Key="45" Value="OCRA_0-9A-Z_Rej.omc" />
+            <Lookup Key="46" Value="OCRA_0-9A-Z_NoRej.omc" />
+            <Lookup Key="47" Value="OCRB_Rej.omc" />
+            <Lookup Key="48" Value="OCRB_NoRej.omc" />
+            <Lookup Key="49" Value="OCRB_A-Z+_Rej.omc" />
+            <Lookup Key="50" Value="OCRB_A-Z+_NoRej.omc" />
+            <Lookup Key="51" Value="OCRB_0-9_Rej.omc" />
+            <Lookup Key="52" Value="OCRB_0-9_NoRej.omc" />
+            <Lookup Key="53" Value="OCRB_0-9A-Z_Rej.omc" />
+            <Lookup Key="54" Value="OCRB_0-9A-Z_NoRej.omc" />
+            <Lookup Key="55" Value="OCRB_passport_Rej.omc" />
+            <Lookup Key="56" Value="OCRB_passport_NoRej.omc" />
+            <Lookup Key="57" Value="Pharma_Rej.omc" />
+            <Lookup Key="58" Value="Pharma_NoRej.omc" />
+            <Lookup Key="59" Value="Pharma_0-9_Rej.omc" />
+            <Lookup Key="60" Value="Pharma_0-9_NoRej.omc" />
+            <Lookup Key="61" Value="Pharma_0-9+_Rej.omc" />
+            <Lookup Key="62" Value="Pharma_0-9+_NoRej.omc" />
+            <Lookup Key="63" Value="Pharma_0-9A-Z_Rej.omc" />
+            <Lookup Key="64" Value="Pharma_0-9A-Z_NoRej.omc" />
+            <Lookup Key="65" Value="SEMI_Rej.omc" />
+            <Lookup Key="66" Value="SEMI_NoRej.omc" />
+            <Lookup Key="67" Value="Industrial_A-Z+_Rej.omc" />
+            <ValueRange Min="0" Max="67" />
+            <!-- Default: 1 -->
+        </Parameter>
+        <Parameter Name="SeparateTouchingChars" Group="Parms" Position="9" Offset="8"
+			Native="string" PLK="USINT" Widget="Default" Access="rw" Hidden="false">
+            <Lookup Key="0" Value="false" />
+            <Lookup Key="1" Value="standard" />
+            <Lookup Key="2" Value="enhanced" />
+            <ValueRange Min="0" Max="2" />
+            <!-- Default: 1 - bedeutet 'standard' -->
+        </Parameter>
+        <Parameter Name="MinStrokeWidth" Group="Parms" Position="10" Offset="9"
+			Native="uint8_t" PLK="USINT" Widget="Default" Access="rw" Hidden="false" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <ValueRange Min="0" Max="255" />
+            <!-- Default: 0 - bedeutet 'auto' -->
+        </Parameter>
+        <Parameter Name="MaxStrokeWidth" Group="Parms" Position="11" Offset="10"
+			Native="uint8_t" PLK="USINT" Widget="Default" Access="rw" Hidden="false" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <ValueRange Min="0" Max="255" />
+            <!-- Default: 0 - bedeutet 'auto' -->
+        </Parameter>
+        <Parameter Name="DotPrintMinCharGap" Group="Parms" Position="12" Offset="11"
+			Native="uint8_t" PLK="USINT" Widget="Default" Access="rw" Hidden="false" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <ValueRange Min="0" Max="255" />
+            <!-- Default: 0 - bedeutet 'auto' -->
+        </Parameter>
+        <Parameter Name="DotPrintMaxDotGap" Group="Parms" Position="13" Offset="12"
+			Native="uint8_t" PLK="USINT" Widget="Default" Access="rw" Hidden="false" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <ValueRange Min="0" Max="255" />
+            <!-- Default: 0 - bedeutet 'auto' -->
+        </Parameter>
+        <Parameter Name="SearchAngle" Group="Parms" Position="14" Offset="13"
+			Native="double" PLK="UINT" Widget="Default" Access="rw" Hidden="false" UnitNS="http://www.opcfoundation.org/UA/units/un/cefact" UnitID="17476">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="35999" />
+            <!-- Default: 0 (?) --> 
+        </Parameter>
+        <Parameter Name="TextLineSeparators" Group="Parms" Position="15" Offset="15"
+			Native="string" PLK="OCTET[17]" Widget="Default" Access="rw" Hidden="false">
+            <ValueRange Min="0" Max="16" />
+            <!-- Default: 17 * \0 -->
+        </Parameter>
+        <Parameter Name="TextLineStructure" Group="Parms" Position="16" Offset="32"
+			Native="string" PLK="OCTET[256]" Widget="Default" Access="rw" Hidden="false">
+            <ValueRange Min="0" Max="255" />
+            <!-- Default: 256 * \0 -->
+        </Parameter>
+    </Parameters>
+    
+    <Variables>
+        <!-- Inputs: 25 bytes: 2 bytes volatile at the beginning, rest normal inputs -->
+        <Variable Name="ParameterMode" Group="Vars" Position="3"
+			Native="uint8_t" PLK="USINT" Widget="Default" Role="Volatile">
+            <Display Key="0" Value="default" />
+            
+            <Display Key="1" Value="user defined" />
+            
+            <!-- 0: Maximum recognition -->
+            <!-- 1: user mode -->
+            <Value>0</Value>
+            <Value>1</Value>
+        </Variable>
+        <Variable Name="TestExecute" Group="Vars" Position="11"
+			PLK="BOOL" Native="uint8_t" Widget="Default" Role="Volatile">
+            <Display Key="0" Value="false" />
+            <Display Key="1" Value="true" />
+            <Value>0</Value>
+            <Value>1</Value>
+        </Variable>
+        <Variable Name="Enable" Group="Vars" Position="1"
+			Native="uint8_t" PLK="BOOL" Widget="Default" Role="Input">
+            <Display Key="0" Value="false" />
+            <Display Key="1" Value="true" />
+            <Value>0</Value>
+            <Value>1</Value>
+        </Variable>
+        <Variable Name="Timeout" Group="Vars" Position="4"
+			Native="uint16_t" PLK="UINT" Widget="Default" Role="Input">
+            <ValueRange Min="0" Max="65535" />
+        </Variable>
+        <Variable Name="OffsetROIX" Group="Vars" Position="6"
+			PLK="DINT" Native="double" Widget="Default" Role="Input" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="OffsetROIY" Group="Vars" Position="7"
+			PLK="DINT" Native="double" Widget="Default" Role="Input" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="OffsetROIOrientation" Group="Vars" Position="8"
+			PLK="INT" Native="double" Widget="Default" Role="Input" UnitNS="http://www.opcfoundation.org/UA/units/un/cefact" UnitID="17476">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-17999" Max="18000" />
+        </Variable>
+        <Variable Name="OffsetROIRotCenterX" Group="Vars" Position="9"
+			PLK="DINT" Native="double" Widget="Default" Role="Input" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="OffsetROIRotCenterY" Group="Vars" Position="10"
+			PLK="DINT" Native="double" Widget="Default" Role="Input" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="NumSearchMax" Group="Vars" Position="2"
+			PLK="USINT" Native="uint8_t" Widget="Default" Role="Input">
+            <ValueRange Min="0" Max="255" />
+        </Variable>
+        <Variable Name="Grading" Group="Vars" Position="5"
+			PLK="BOOL" Native="uint8_t" Widget="Default" Role="Input">
+            <Display Key="0" Value="false" />
+            <Display Key="1" Value="true" />
+            <Value>0</Value>
+            <Value>1</Value>
+        </Variable>
+        
+        <Variable Name="NumResults" Group="Vars" Position="15" 
+			PLK="USINT" Native="uint8_t" Widget="Default" Role="Output">
+            <ValueRange Min="0" Max="255" />
+        </Variable>
+        <Variable Name="OCRData" Group="Vars" Position="95" NumberElements="NumResultsMax"
+			PLK="OCTET[MaxStringSize + 1]" Native="string" Size="(MaxStringSize+1) * NumResultsMax" Widget="Default" Role="Output">
+            <!-- ValueRange for strings = string length? -->
+            <ValueRange Min="0" Max="MaxStringSize" />
+        </Variable>
+        <Variable Name="GradingValue" Group="Vars" Position="96" NumberElements="NumResultsMax"
+			PLK="USINT" Native="double" Size="1 * NumResultsMax" Widget="Default" Role="Output">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="0" Max="100" />
+        </Variable>
+        <Variable Name="FunctionProcessingTime" Group="Vars" Position="16" 
+			PLK="UINT" Native="uint16_t" Widget="Default" Role="Output" 
+			UnitNS="http://www.opcfoundation.org/UA/units/un/cefact" UnitID="4403766">
+            <ValueRange Min="0" Max="65535" />
+        </Variable>
+        <Variable Name="PositionX" Group="Vars" Position="17" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="4 * NumResultsMax" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="PositionY" Group="Vars" Position="18" NumberElements="NumResultsMax"
+			PLK="DINT" Native="double" Size="4 * NumResultsMax" Widget="Default" Role="Output" UnitNS="http://www.br-automation.com/units" UnitID="5261656">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-2622400" Max="2622400" />
+        </Variable>
+        <Variable Name="Orientation" Group="Vars" Position="19" NumberElements="NumResultsMax"
+			PLK="INT" Native="double" Size="2 * NumResultsMax" Widget="Default" Role="Output" UnitNS="http://www.opcfoundation.org/UA/units/un/cefact" UnitID="17476">
+            <LinearTransform Multiplicand="1" Divisor="100" InitialAddend="0" FinalAddend="0" />
+            <ValueRange Min="-17999" Max="18000" />
+        </Variable>
+    </Variables>
+    <Constants>
+        <Constant Name="NumResultsMax" PLK="USINT" Native="uint8_t" Widget="Default" 
+			Group="Constants" Position="1" Offset="0">
+            <ValueRange Min="1" Max="255" />
+            <InitialDefault>10</InitialDefault>
+        </Constant>
+        <Constant Name="MaxStringSize" Group="Constants" Position="2" 
+			Offset="1" PLK="USINT" Native="uint8_t" Widget="Default">
+            <ValueRange Min="2" Max="255" />
+            <InitialDefault>50</InitialDefault>
+        </Constant>
+    </Constants>
+    <Groups>
+        <Group id="Parms" Name="Vision Parameters" />
+        <Group id="Vars" Name="Process Variables of the Vision Function" />
+        <Group id="Constants" Name="Vision Constants" />
+    </Groups>
+    <Distribution>
+        <Shared>
+            <XMLConfig Name="template-config.xml" />
+            <ProcedureLibrary Name="BR_ocr.hdpl" Encrypted="true" />
+            <SharedLibrary Name="../vf-lib/BR_helper_procedures.hdpl" Encrypted="true" />
+        </Shared>
+        <Instance>
+            <Constants Name="constants" FileSize="2" Type="vision constants" Presence="required constant" />
+            <Params Name="params" FileSize="288" Type="vision parameters" Presence="required constant-size updatable" />
+            <Models Name="models" Type="internal models" Presence="unused" />
+            <Widget Name="widget" Type="teaching models" Presence="unused" />
+            <ROI Name="roi.hobj" Type="region of interest" Presence="missing-ok updatable" />
+            <Objects Name="sui.json" Type="object store" Presence="missing-ok updatable" />
+        </Instance>
+    </Distribution>
+</VisionFunction>

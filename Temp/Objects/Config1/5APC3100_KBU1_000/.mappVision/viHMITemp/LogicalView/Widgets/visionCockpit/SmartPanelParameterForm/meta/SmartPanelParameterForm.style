@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StyleInformation name="widgets.visionCockpit.SmartPanelParameterForm" xmlns="http://www.br-automation.com/iat2014/widgetStyles"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <StyleProperties>
+
+    <StyleProperty name="height" category="Layout" type="AutoSize" not_styleable="true" default="150">
+      <StyleElement attribute="@include elemHeight($value)"></StyleElement>
+      <Description>
+        outer height of the widget
+      </Description>
+    </StyleProperty>
+    
+    <StyleProperty name="width" category="Layout" type="AutoSize" not_styleable="true" default="250">
+      <StyleElement attribute="@include elemWidth($value)"></StyleElement>
+      <Description>
+        outer width of the widget
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="itemHeight" category="Layout.Size" type="Size" not_styleable="true" default="30">
+      <StyleElement selector=".ParamRowContainer &gt; .smartPanelParameterNumericInput" attribute="@include elemHeight($value)"></StyleElement>
+      <StyleElement selector=".ParamRowContainer &gt; .smartPanelParameterTextInput" attribute="@include elemHeight($value)"></StyleElement>
+      <StyleElement selector=".ParamRowContainer &gt; .smartPanelParameterDropDownBox" attribute="@include elemHeight($value)"></StyleElement>
+      <StyleElement selector=".ParamRowContainer &gt; .smartPanelParameterFormTextOutput" attribute="@include elemHeight($value)"></StyleElement> 
+      <StyleElement selector=".ParamRowContainer &gt; .smartPanelParameterLabel" attribute="@include elemHeight($value)"></StyleElement>
+      <Description>height of all Labels and Input Fields for one line</Description>
+    </StyleProperty>
+
+    <StyleProperty name="inputWidth" category="Layout.Size" type="Size" not_styleable="true" default="120">
+      <StyleElement selector=".ParamRowContainer &gt; .smartPanelParameterNumericInput" attribute="@include elemWidth($value)"></StyleElement>
+      <StyleElement selector=".ParamRowContainer &gt; .smartPanelParameterTextInput" attribute="@include elemWidth($value)"></StyleElement>
+      <StyleElement selector=".ParamRowContainer &gt; .smartPanelParameterFormTextOutput" attribute="@include elemWidth($value)"></StyleElement>
+      <StyleElement selector=".ParamRowContainer &gt; .smartPanelParameterDropDownBox" attribute="@include elemWidth($value)"></StyleElement>
+      <Description>width of all Inputs Fields</Description>
+    </StyleProperty>
+
+    <StyleProperty name="labelWidth" category="Layout.Size" type="Size" not_styleable="true" default="110">
+      <StyleElement selector=".ParamRowContainer &gt; .smartPanelParameterLabel" attribute="@include elemWidth($value)"></StyleElement>
+      <Description>width of all Labels</Description>
+    </StyleProperty> 
+    
+    <StyleProperty name="borderStyle" category="Appearance" type="BorderStyle" default="solid" >
+      <StyleElement attribute="border-style"></StyleElement>
+      <Description>
+        Style of the Border of the widget
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="borderWidth" category="Appearance" type="PixelValCollection" default="2px">
+      <StyleElement attribute="border-width"></StyleElement>
+      <Description>
+        width of the Border of the widget
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="cornerRadius" category="Appearance" type="PixelValCollection" default="0px">
+      <StyleElement attribute="@include border-radius($value)"></StyleElement>
+      <Description>
+        corner Radius of the widget
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backColor" category="Appearance" type="Color" default="#DBDBDB">
+      <StyleElement selector="&amp;:not(.disabled)" attribute="background-color"></StyleElement>
+      <Description>
+          background Color of the widget
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="disabledBackColor" category="Appearance" type="Color" default="#F1F1F1">
+      <StyleElement selector="&amp;.disabled" attribute="background-color"></StyleElement>
+      <Description>
+        background Color when the widget is disabled
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backGroundGradient" category="Appearance" type="Gradient" default="none">
+      <StyleElement selector="&amp;:not(.disabled)" attribute="background-image"></StyleElement>
+      <Description>
+        Background as a gradient for further information see CSS Gradients
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="disabledBackGroundGradient" category="Appearance" type="Gradient" default="none">
+      <StyleElement selector="&amp;.disabled" attribute="background-image"></StyleElement>
+      <Description>
+        Background as a gradient for further information see CSS Gradients
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backGround" category="Appearance" type="ImagePath" default="">
+      <StyleElement attribute="@include backGroundImage('../$value')"></StyleElement>
+      <Description>
+        Background as image
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="borderColor" category="Appearance" type="ColorCollection" default="#5B7C70" >
+      <StyleElement selector="&amp;:not(.disabled)" attribute="border-color"></StyleElement>
+      <Description>
+        Border color of the Widget
+      </Description>
+    </StyleProperty>
+    
+    <StyleProperty name="disabledBorderColor" category="Appearance" type="ColorCollection" default="#C8C8C8" >
+      <StyleElement selector="&amp;.disabled" attribute="border-color"></StyleElement>
+      <Description>
+        Border color when the Widget is disabled
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="opacity" category="Appearance" type="Opacity" default="1">
+      <StyleElement attribute="opacity"></StyleElement>
+      <Description>
+        Opacity of the widget
+      </Description>
+    </StyleProperty>
+    
+    <StyleProperty name="padding" category="Layout.Padding" type="Padding" default="0px">
+      <StyleElement selector="&gt; .scrollContainer" attribute="padding"></StyleElement>
+      <Description>
+        Padding of the Widget usage
+      </Description>
+    </StyleProperty>
+    
+    <StyleProperty name="margin" category="Layout.Margin" type="Margin" default="0px">
+      <StyleElement attribute="margin"></StyleElement>
+      <Description>
+        Margin of the Widget usage
+      </Description>
+    </StyleProperty>
+    
+    <StyleProperty name="shadow" category="Appearance" type="Shadow" default="none">
+      <StyleElement attribute="@include box-shadow($value)"></StyleElement>
+      <Description>
+        Shadow of the Widget usage
+      </Description>
+    </StyleProperty>
+    
+  </StyleProperties>
+</StyleInformation>

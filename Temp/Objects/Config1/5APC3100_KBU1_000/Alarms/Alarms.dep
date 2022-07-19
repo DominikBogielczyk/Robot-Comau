@@ -1,0 +1,6 @@
+$(AS_PROJECT_PATH)/Physical/Config1/5APC3100_KBU1_000/mappServices/Config.mpalarmxcore
+$(AS_PROJECT_PATH)/Logical/Libraries/MpBase/MpBase.typ
+$(AS_PROJECT_PATH)/Logical/Alarms/Variables.var
+$(AS_PROJECT_PATH)/Logical/Libraries/MpAlarmX/MpAlarmXError.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/MpAlarmX/MpAlarmX.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/MpAlarmX/MpAlarmX.fun

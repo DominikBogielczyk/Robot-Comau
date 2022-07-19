@@ -1,0 +1,4 @@
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Elements_detection/Variables.var
+$(AS_PROJECT_PATH)/Physical/Config1/5APC3100_KBU1_000/Cpu.sw
+$(AS_PROJECT_PATH)/Logical/Elements_detection/Types.typ

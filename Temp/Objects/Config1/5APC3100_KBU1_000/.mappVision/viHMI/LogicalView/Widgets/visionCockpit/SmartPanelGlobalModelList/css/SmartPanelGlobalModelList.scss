@@ -1,0 +1,146 @@
+@import '../../../../css/libs/mixins.scss';
+
+$default-border-color: #C8C8C8;
+$default-bg-color: #FFF;
+
+$text-color: #646464; 
+
+    .scrollContainer {
+    
+        .drawContainer {
+            @include displayFlexBox(true);
+
+            .ParamRowContainer {
+                position: relative;
+                @include displayFlexBox(true);
+                @include flex-direction(column);
+                @include align-items(flex-start);
+                @include flex-wrap(nowrap);
+                text-align: center;
+            }
+        }
+    }
+.visionCockpitSmartPanelGlobalModelList {
+    background: $default-bg-color;
+    height: 25px;   
+    width: 428px; 
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    color: $text-color;
+    white-space: nowrap;
+    @include box-sizing(border-box);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    vertical-align: middle;
+   
+
+    @include displayFlexBox(true);
+    @include flex-direction(column);
+    @include align-items(normal);
+    @include flex-wrap(nowrap);
+
+      
+    tr
+    {
+        background-color: white;
+        font-style:normal;
+        font-size: 14px;
+        word-wrap:break-word;
+    }
+
+    //tr:hover
+    //{
+    //    background-color: lightblue;
+    //}
+
+    .selectedRow
+    {
+        background-color:orange;
+        font-weight: bold;
+    }
+
+    .td_param_head {    
+        width:90px; 
+        height:25px;
+        max-width:90px;
+        min-width:20px; 
+        max-height:25px;
+        background-color:darkgray;
+    }
+
+    .td_id_head {    
+        width:50px;  
+        height:25px;
+        max-width:40px;
+        min-width:20px; 
+        max-height:60px; 
+        min-height:25px;
+        text-align:center;
+        background-color:darkgray; 
+    }
+
+    .td_param {    
+        width:89px;  
+        height:25px;
+        max-width:89px;
+        min-width:20px; 
+        max-height:60px; 
+        min-height:25px;
+    }
+
+    .td_id {    
+        width:40px; 
+        height:25px;
+        max-width:40px;
+        min-width:20px; 
+        max-height:40px; 
+        min-height:25px; 
+        text-align:center;
+    }
+
+    .td_id:hover {
+        background-color: lightblue;
+    }
+
+    .td_param:hover {
+          background-color: lightblue;
+    }
+
+    &.ellipsis > span {
+        @include text-overflow(ellipsis); 
+        @include flex(0 1 auto);
+    }
+        
+    &.multiLine > span {
+        white-space: pre;
+    }
+
+    // AG: display inline-block is neccessary because IScroll can not scroll to the top of content
+    //      when content is centered
+    &.multiLine.scrollable { 
+        display: inline-block;
+    }
+    &.breakWord.scrollable {
+        @include align-items(start);
+    }
+    &.wordWrap.scrollable {
+        display: inline-block;
+    }
+    // AG: breakWord class definition must be above wordWrap class, 
+    // because word wrap should override white-space property of breakWord, if both are active
+    &.breakWord > span {
+        white-space: pre-line;
+        word-wrap: break-word;
+        @include flex(0 1 auto);
+    }
+
+    &.wordWrap > span {
+        white-space: pre-wrap;
+        @include flex(0 1 auto);
+    }
+
+
+
+}

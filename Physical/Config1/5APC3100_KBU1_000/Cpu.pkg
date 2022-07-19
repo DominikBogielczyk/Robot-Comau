@@ -18,7 +18,6 @@
     <Object Type="Package">mappVision</Object>
     <Object Type="Package">mappCockpit</Object>
     <Object Type="Package">VC</Object>
-    <Object Type="File">Cpu1.sw</Object>
   </Objects>
   <Configuration ModuleId="5APC3100.KBU1-000">
     <AutomationRuntime Version="B4.92" />

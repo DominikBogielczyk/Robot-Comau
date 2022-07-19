@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="mViSaveAs" height="244" width="742" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.TextInput" id="textInApplicationName" top="40" left="92" width="620" height="40" zIndex="1" style="sTextInputStyle" />
+    <Widget xsi:type="widgets.brease.Label" id="Label6" top="40" left="28" width="64" height="40" zIndex="2" text="Name:" fontSize="16px" bold="true" padding="0px" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.Button" id="buttonSaveApplication" top="160" left="535" width="176" height="55" zIndex="3" image="Media/mappVision/icons/save/Save.svg" enable="false" style="sButton" />
+    <Widget xsi:type="widgets.brease.Button" id="buttonCancel" top="160" left="30" width="176" height="55" zIndex="4" image="Media/mappVision/icons/loggerSeverity/Close.svg" style="sButton" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle2" top="-32" left="-64" width="892" height="303" zIndex="0" borderWidth="3px" cornerRadius="15px" lineColor="rgba(192, 192, 192, 0.5)" backColor="rgba(240, 240, 240, 1)" opacity="0.8" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="textOutSaveAsError" top="80" left="92" width="372" height="20" zIndex="5" breakWord="true" multiLine="true" value="*This is not a valid Vision Application name" textColor="rgba(255, 0, 0, 1)" bold="false" padding="0px 0px 0px 0px" style="viHMIDefault" visible="false" />
+  </Widgets>
+</Content>

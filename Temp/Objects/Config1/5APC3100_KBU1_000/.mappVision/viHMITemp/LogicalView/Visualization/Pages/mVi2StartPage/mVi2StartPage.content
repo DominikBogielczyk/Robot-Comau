@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="mVi2StartPage" height="1030" width="1920" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Login" id="LoginWidget" top="470" left="810" zIndex="2" autFailMessage="Authentication failed" buttonStyle="sButton" labelStyle="sLabel" messageStyle="viHMIDefault" passwordInputStyle="sPassword" userInputStyle="sTextInputStyle" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="281" left="641" width="707" height="55" zIndex="3" text="Welcome to integrated machine vision! " fontSize="35px" bold="true" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="619" left="747" width="435" height="43" zIndex="4" text="Connecting the camera can interrupt the application" fontSize="18px" bold="false" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageEinlogen" top="-164" left="-256" width="4424" height="1296" zIndex="0" image="Media/mappVision/icons/designElements/backGround.png" opacity="0.08" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="361" left="725" width="468" height="309" zIndex="1" borderWidth="3px" cornerRadius="15px" lineColor="rgba(192, 192, 192, 0.5)" backColor="rgba(240, 240, 240, 1)" opacity="0.8" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="5" x1="725" x2="1193" y1="455" y2="455" lineColor="rgba(192, 192, 192, 0.5)" lineWidth="3px" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.Line" id="Line2" zIndex="6" x1="725" x2="1191" y1="616" y2="616" lineColor="rgba(192, 192, 192, 0.5)" lineWidth="3px" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="371" left="794" width="399" height="83" zIndex="7" breakWord="true" multiLine="true" text="Please log in and select the desired Automation Component with the dropdown in the header" fontSize="18px" bold="false" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="384" left="745" width="85" height="47" zIndex="8" image="Media/mappVision/icons/loggerSeverity/user.svg" imageColor="rgba(128, 128, 128, 1)" style="viHMIDefault" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="startPage" top="240" left="148" zIndex="9" text="ToggleSwitch2" value="true" visible="false" />
+  </Widgets>
+</Content>

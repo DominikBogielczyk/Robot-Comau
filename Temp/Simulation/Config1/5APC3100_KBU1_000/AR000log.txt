@@ -1,0 +1,18 @@
+Tue Jul 19 10:55:10 2022
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Tue Jul 19 10:55:10 2022
+No ARsim registration found!
+
+Tue Jul 19 10:55:10 2022
+InstanceName: 00002b1152b1bc6f
+
+Tue Jul 19 10:55:10 2022
+WorkingDirectory: C:\Users\Szkolenie\Documents\GitHub\Robot-Comau\Temp\Simulation\Config1\5APC3100_KBU1_000\
+
+Tue Jul 19 10:55:10 2022
+COMMAND_COLDSTART
+
+Tue Jul 19 10:55:12 2022
+Version: B4.92
+

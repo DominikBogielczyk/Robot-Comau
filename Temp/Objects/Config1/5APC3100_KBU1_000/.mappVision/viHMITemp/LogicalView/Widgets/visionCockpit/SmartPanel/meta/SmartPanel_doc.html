@@ -1,0 +1,1498 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>widgets.visionCockpit.SmartPanel Documentation</title>
+    <link href="../../../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>.true {color:#00aa00;font-weight:bold;}.false {color:#aaa;font-weight:normal;}</style>
+  </head>
+  <body>
+<div class="panel-heading"><h3>widgets.visionCockpit.SmartPanel</h3></div>
+<div class="panel panel-default">
+ <div class="panel-heading"><h3>Widget Description</h3></div>
+<table class="table table-bordered parameter_tab">
+<tbody>
+<tr>
+<td class="parameter_tab"><strong>short: </strong>Vision main widget. The widgetd connects to the backend</td>
+</tr>
+<tr>
+<td class="parameter_tab"><strong>de: </strong>(INTERNAL USE ONLY) Vision Hauptwidget. Dieses Widget verbindet sich mit dem Backend</td>
+</tr>
+<tr>
+<td class="parameter_tab"><strong>en: </strong>(INTERNAL USE ONLY) The widgetd connects to the backend</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panel panel-default">
+ <div class="panel-heading"><h3>Properties</h3></div>
+<table class="table table-bordered parameter_tab">
+<thead>
+<tr>
+<th class="parameter_tab">name</th>
+<th class="parameter_tab">description</th>
+<th class="parameter_tab">category</th>
+<th class="parameter_tab">type</th>
+<th class="parameter_tab">defaultValue</th>
+<th class="parameter_tab">bindable</th>
+<th class="parameter_tab">readOnly</th>
+<th class="parameter_tab">required</th>
+<th class="parameter_tab">localizable</th>
+<th class="parameter_tab">editableBinding</th>
+<th class="parameter_tab">projectable</th>
+<th class="parameter_tab">cssProp (<small>has no setter and getter in JS</small>)</th>
+<th class="parameter_tab">groupRefId</th>
+<th class="parameter_tab">groupOrder</th>
+<th class="parameter_tab">nodeRefId (<small>for linking node and value</small>)</th>
+<th class="parameter_tab">deprecated</th>
+<th class="parameter_tab">typeRefId (<small>for StyleReference</small>)</th>
+<th class="parameter_tab">subtype (<small>for MpComIdentReference</small>)</th>
+</tr>
+ </thead>
+<tbody>
+<tr>
+<td class="parameter_tab">activatedLinesensor</td>
+<td class="parameter_tab">activatedLinesensor indicates that the the line sensor aktiv oder aktiv ist</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">dataProviderModelTypes</td>
+<td class="parameter_tab">String for the dropDownBow with the information about the moel types</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">editModelsTabVisible</td>
+<td class="parameter_tab">Flag to indicate if edit models tab is visible</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">enable</td>
+<td class="parameter_tab">Initial option to enable widget.
+</td>
+<td class="parameter_tab">Behavior</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">executionRoiVisible</td>
+<td class="parameter_tab">Flag to indicate if execution roi is visible</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">extendedParametersRefId</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the extended parameters</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">imageAcquisitionVariablesRefId</td>
+<td class="parameter_tab">ID for the parameter form with the PVs for image acquisition</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">isSelectedImageAcquisition</td>
+<td class="parameter_tab">Flag to indicate if image acquisition is selected</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">lightAndFocusRefId</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the parameters of light and focus</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">lineSensorNormalImageModeButtonRefId</td>
+<td class="parameter_tab">Name of the button for the normal image mode</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">loggerArrayDescription</td>
+<td class="parameter_tab">One-dimensional Array containing data of type string for the description from the logger</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">StringArray1D</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">loggerArrayId</td>
+<td class="parameter_tab">One-dimensional Array containing data of type string for the id from the logger</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">StringArray1D</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">loggerArraySeverity</td>
+<td class="parameter_tab">One-dimensional Array containing data of type Number for the severity</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">NumberArray1D</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">loggerArrayTime</td>
+<td class="parameter_tab">One-dimensional Array containing data of type string for the time from the logger</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">StringArray1D</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">loggerCounterOfErrors</td>
+<td class="parameter_tab">Logger counter of errors</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">0</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">loggerCounterOfInformations</td>
+<td class="parameter_tab">Logger counter of informations</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">0</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">loggerCounterOfSuccesses</td>
+<td class="parameter_tab">Logger counter of successes</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">0</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">loggerCounterOfWarnings</td>
+<td class="parameter_tab">Logger counter of warnings</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">0</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">loggerImagePathSuccess</td>
+<td class="parameter_tab">Path to image file of logger info success</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">Media/mappVision/icons/loggerSeverity/gray/icon_success.svg</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">numResults</td>
+<td class="parameter_tab">For num results</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">1</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">permissionOperate</td>
+<td class="parameter_tab">restricts operability to users, which have given roles
+</td>
+<td class="parameter_tab">Accessibility</td>
+<td class="parameter_tab">RoleCollection</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">permissionView</td>
+<td class="parameter_tab">restricts visibility to users, which have given roles
+</td>
+<td class="parameter_tab">Accessibility</td>
+<td class="parameter_tab">RoleCollection</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">refIdButtonDelete</td>
+<td class="parameter_tab">Name of Submit-Delete</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">refIdButtonHideAllResults</td>
+<td class="parameter_tab">Name of HideAllResults-Button</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">refIdButtonShowAllResults</td>
+<td class="parameter_tab">Name of ShowAllResults-Button</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">refIdButtonTeach</td>
+<td class="parameter_tab">Name of Teach-Button</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">refIdGroupBoxGenericVisionFuntion</td>
+<td class="parameter_tab">Name of the groupBox for the generic Vision Funtion</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">refIdGroupBoxImageAcquisition</td>
+<td class="parameter_tab">Name of the groupBox for the image acquisition</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">refIdGroupBoxVisionParameters</td>
+<td class="parameter_tab">Name of the groupBox for the vision parameters</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">refIdNumericInputFilter</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the extended parameters</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">refIdProcessVariablesFilter</td>
+<td class="parameter_tab">Name of the Textoutput for the Filter</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">selectedImage</td>
+<td class="parameter_tab">Name of currently selected Image</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">selectedModelType</td>
+<td class="parameter_tab">Name of currently selected model type</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">selectedVisionFunction</td>
+<td class="parameter_tab">Name of currently selected vision function</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">showOnlyOneTabForAVisionFuntionTab</td>
+<td class="parameter_tab">Flag to indicate if only one tab for a vision funtion is visible</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">statusReady</td>
+<td class="parameter_tab">status ready indicates that the widget is in state to accept a further command</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">style</td>
+<td class="parameter_tab">reference to a style for this widget type
+</td>
+<td class="parameter_tab">Appearance</td>
+<td class="parameter_tab">StyleReference</td>
+<td class="parameter_tab">default</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">tabIndex</td>
+<td class="parameter_tab">sets if a widget should have autofocus enabled (0), the order of the focus (>0),
+or if autofocus should be disabled (-1)
+</td>
+<td class="parameter_tab">Behavior</td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">-1</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">tooltip</td>
+<td class="parameter_tab">reference to a tooltip for a widget
+</td>
+<td class="parameter_tab">Appearance</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visible</td>
+<td class="parameter_tab">change visibility
+</td>
+<td class="parameter_tab">Behavior</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionAplicationNavigation</td>
+<td class="parameter_tab">String for the vision aplication navigation</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionComponentReference</td>
+<td class="parameter_tab">Reference to the visionComponent</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionFunctionConstantsRefId</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the constants of the Vision Function</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionFunctionGlobalModel</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the parameters of the GlobalModel</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionFunctionGlobalModelListRefId</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the variables of the Vision Function</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionFunctionModelListRefId</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the variables of the Vision Function</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionFunctionModelParameterRefId</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the model parameter of the model</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionFunctionName</td>
+<td class="parameter_tab">Name of currently selected vision function (as defined in config.xml)</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionFunctionSubPath</td>
+<td class="parameter_tab">sub directory in visionFunctionsRootPath for vision function (this is not necessarily equal to visionFunctionName)</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionFunctionVariablesRefId</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the variables of the Vision Function</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionFunctionsRootPath</td>
+<td class="parameter_tab">Base path for all vision functions, offline mode only</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionImageAcquisitionSettingsRefId</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the image acquisition settings</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionLineSensorSettingsRefId</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the image acquisition settings</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visionNormalImageParametersRefId</td>
+<td class="parameter_tab">Name of Widget on same Content that handles the normal image parameters</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">zIndex</td>
+<td class="parameter_tab">The zIndex property specifies the z-order of a widget and its childs.<br/>
+        When widgets overlap, z-order determines which one covers the other. A widget with a larger zIndex generally covers a widget with a lower one.<br/>
+        The zIndex must be unique within a content.<br/></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">UInteger</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">left</td>
+<td class="parameter_tab">absolute position measured from left boundary of parent container</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">top</td>
+<td class="parameter_tab">absolute position measured from top boundary of parent container</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">height</td>
+<td class="parameter_tab">outer height of widget</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">AutoSize</td>
+<td class="parameter_tab">480</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">width</td>
+<td class="parameter_tab">outer width of widget</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">AutoSize</td>
+<td class="parameter_tab">640</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panel panel-default">
+ <div class="panel-heading"><h3>Events</h3></div>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th class="parameter_tab">name</th>
+<th class="parameter_tab">description</th>
+<th class="parameter_tab">arguments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="parameter_tab">Click</td>
+<td class="parameter_tab">Fired when element is clicked on.
+</td>
+<td class="parameter_tab"><ul>
+<li>origin: String
+<p>id of widget that triggered this event
+
+
+
+</p>
+</li>
+<li>horizontalPos: String
+<p>horizontal position of click in pixel i.e '10px'
+
+
+
+</p>
+</li>
+<li>verticalPos: String
+<p>vertical position of click in pixel i.e '10px'
+
+
+
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="parameter_tab">DisabledClick</td>
+<td class="parameter_tab">Fired when disabled element is clicked on.
+</td>
+<td class="parameter_tab"><ul>
+<li>origin: String
+<p>id of widget that triggered this event
+
+</p>
+</li>
+<li>hasPermission: Boolean
+<p>defines if the state is caused due to missing roles of the current user
+
+</p>
+</li>
+<li>horizontalPos: String
+<p>horizontal position of click in pixel i.e '10px'
+
+</p>
+</li>
+<li>verticalPos: String
+<p>vertical position of click in pixel i.e '10px'
+
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="parameter_tab">EnableChanged</td>
+<td class="parameter_tab">Fired when operability of the widget changes.
+</td>
+<td class="parameter_tab"><ul>
+<li>value: Boolean
+<p>operability
+
+
+
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="parameter_tab">FocusIn</td>
+<td class="parameter_tab">Fired when the widgets gets focus
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">FocusOut</td>
+<td class="parameter_tab">Fired when the widgets lost focus
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">VisibleChanged</td>
+<td class="parameter_tab">Fired when the visibility of the widget changes.
+</td>
+<td class="parameter_tab"><ul>
+<li>value: Boolean
+<p>visibility
+
+
+
+</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panel panel-default">
+ <div class="panel-heading"><h3>Actions</h3></div>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th class="parameter_tab">name</th>
+<th class="parameter_tab">description</th>
+<th class="parameter_tab">arguments</th>
+<th class="parameter_tab">result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="parameter_tab">AddExecutionTool</td>
+<td class="parameter_tab">Add Execution Tool
+</td>
+<td class="parameter_tab"><ul>
+<li>roiTool: Object
+</li>
+<li>roiFunction: Object
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">DeleteSelectedTools</td>
+<td class="parameter_tab">Deleted selected ROIs
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">Focus</td>
+<td class="parameter_tab">Sets focus on the widget element, if it can be focused and keyboardOperation=true
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">HideAllResultClouds</td>
+<td class="parameter_tab">hide all result clouds
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">LoadImage</td>
+<td class="parameter_tab">Load image
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">OnButtonResultFilterPrevious</td>
+<td class="parameter_tab">on Button Result Filter Previous
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">RemoveRoi</td>
+<td class="parameter_tab">
+</td>
+<td class="parameter_tab"><ul>
+<li>index: UInteger
+<p>Allows to delete a roi inside of this widget. The roi is identified by it's index. Index starts at zero.
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SaveConfigurationToFile</td>
+<td class="parameter_tab">Download the current parameter configuration as a file
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetEnable</td>
+<td class="parameter_tab">Sets the state of property «enable»
+</td>
+<td class="parameter_tab"><ul>
+<li>value: Boolean
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetStyle</td>
+<td class="parameter_tab">
+</td>
+<td class="parameter_tab"><ul>
+<li>value: StyleReference
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetVisible</td>
+<td class="parameter_tab">Sets the state of property «visible»
+</td>
+<td class="parameter_tab"><ul>
+<li>value: Boolean
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">ShowAllResultClouds</td>
+<td class="parameter_tab">show all result clouds
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">ShowTooltip</td>
+<td class="parameter_tab">
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
