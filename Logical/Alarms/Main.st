@@ -6,12 +6,12 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
+	MpAlarmXCore_0();
 	 
 END_PROGRAM
 
 PROGRAM _EXIT
-	(* Insert code here *)
+	MpAlarmXCore_0.Enable := FALSE;
 	 
 END_PROGRAM
 

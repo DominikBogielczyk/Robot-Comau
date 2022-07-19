@@ -12,7 +12,7 @@ PROGRAM _INIT
 	PixelRange_0.HolderLimit := 10000;
 	
 	///////////////////////////////
-	DetectedHolders := 6;
+	DetectedHolders := 8;
 	//////////////////////////////
 	 
 END_PROGRAM
