@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EventBindingSet id="MainContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
-<<<<<<< HEAD
     <EventBinding id="EventBinding_2">
       <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[0]" event="ValueChanged" />
       <EventHandler condition="newValue = 4">
@@ -28,7 +27,4 @@
     </EventBinding>
   </Bindings>
 </EventBindingSet>
-=======
-	</Bindings>
-</EventBindingSet>
->>>>>>> 170b96b7d5efecc906c05aaf1b089e6001049bc7
+

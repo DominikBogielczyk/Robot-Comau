@@ -11,7 +11,7 @@
         </Action>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="EventBinding_2">
+    <EventBinding id="EventBinding_20">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="AlarmContent" widgetRefId="btnAckAll" event="Click" />
       <EventHandler>
         <Action>
