@@ -1,0 +1,8 @@
+
+VAR
+MpAlarmXCore_0 : MpAlarmXCore;
+END_VAR
+
+VAR CONSTANT
+
+END_VAR

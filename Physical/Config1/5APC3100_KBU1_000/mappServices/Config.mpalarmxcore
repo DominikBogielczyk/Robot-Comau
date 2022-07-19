@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gAlarmXCore_0" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="HoldersHigh" />
+        <Property ID="Message" Value="Wykryto za dużo podstawek!" />
+        <Property ID="Code" Value="101" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Elements_d:DetectedHolders" />
+            <Selector ID="HighLimitEnable" Value="Static">
+              <Property ID="Limit" Value="7" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="HoldersLow" />
+        <Property ID="Message" Value="Wykryto za mało podstawek!" />
+        <Property ID="Code" Value="102" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Elements_d:DetectedHolders" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="7" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>
