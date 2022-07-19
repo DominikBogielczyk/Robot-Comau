@@ -116,11 +116,7 @@
 
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Elements_d:Camera_0.diTrigger" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="BtnPushPicture" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Elements_d:Camera_0.diTrigger" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="BtnTriggerPicutre" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="MomentaryPushButton1" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

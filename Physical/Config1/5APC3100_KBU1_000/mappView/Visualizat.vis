@@ -18,12 +18,12 @@
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="TopContent_eventbinding" />
+    <EventBindingsSet refId="MainContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />
   </Dialogs>
   <Contents>
-    <Content refId="MainContent" />
     <Content refId="LeftContent" />
     <Content refId="TopContent" />
     <Content refId="AutoContent" />
@@ -34,6 +34,7 @@
     <Content refId="ReceptureContent" />
     <Content refId="UsersContent" />
     <Content refId="LoginContent" />
+    <Content refId="MainContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

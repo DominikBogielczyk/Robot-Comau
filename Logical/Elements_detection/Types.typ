@@ -1,5 +1,10 @@
 
 TYPE
+	PixelCounterLimits : 	STRUCT 
+		WrenchLimit : UDINT;
+		WasherBoltLimit : UDINT;
+		ScrewLimit : UDINT;
+	END_STRUCT;
 	CameraStruct : 	STRUCT 
 		ExposureTime : UDINT := 30000;
 		Focus : UINT := 30000;
