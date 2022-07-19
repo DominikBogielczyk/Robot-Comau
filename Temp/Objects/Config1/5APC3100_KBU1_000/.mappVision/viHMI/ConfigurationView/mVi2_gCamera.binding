@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BindingsSet id="mVi2Bindings_gCamera" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<Bindings>
-		<Binding mode="oneWayToSource">
-			<Source xsi:type="session" refId="svStartPage" attribute="value" />
-			<Target xsi:type="brease" contentRefId="mVi2_gCamera" widgetRefId="startPage" attribute="value" />
-		</Binding>
-	</Bindings>
-</BindingsSet>

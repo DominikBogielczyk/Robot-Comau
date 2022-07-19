@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ddef:Dialog xmlns:ddef="http://www.br-automation.com/iat2015/dialogDefinition/v2" id="mViSaveAsDialog" layoutRefId="mViSmallDialog" textAlign="left" cornerRadius="10px" bold="true" showCloseButton="false" headerHeight="55px" styleRefId="viHMIDefault">
-  <Assignments>
-    <Assignment type="Content" baseContentRefId="mViSaveAs" areaRefId="areaDialogSmall" />
-  </Assignments>
-</ddef:Dialog>
