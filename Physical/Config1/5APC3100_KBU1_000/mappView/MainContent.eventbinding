@@ -1,22 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EventBindingSet id="MainContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
-    <EventBinding id="MainContent.Button1.Click">
-      <Source xsi:type="widgets.brease.Button.Event" contentRefId="MainContent" widgetRefId="Button1" event="Click" />
-      <EventHandler>
+    <EventBinding id="EventBinding_2">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ElementsArray[0]" event="ValueChanged" />
+      <EventHandler condition="newValue = 4">
         <Action>
-          <Target xsi:type="opcUa.NodeAction" refId="::Elements_d:Camera_0.diTrigger">
-            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare0">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
           </Target>
         </Action>
       </EventHandler>
-    </EventBinding>
-    <EventBinding id="EventBinding_2">
-      <Source xsi:type="widgets.brease.Button.Event" contentRefId="MainContent" widgetRefId="Button1" event="OnDrop" />
-      <EventHandler>
+      <EventHandler condition="newValue = 1">
         <Action>
-          <Target xsi:type="opcUa.NodeAction" refId="::Elements_d:Camera_0.diTrigger">
-            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare0">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Bolt.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare0">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/BoltWasher.png" />
           </Target>
         </Action>
       </EventHandler>

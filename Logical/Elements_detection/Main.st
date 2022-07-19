@@ -32,11 +32,11 @@ PROGRAM _CYCLIC
 		ELSIF Camera_0.PixelCntSquareArray[i] < PixelRange_0.WasherBoltLimit THEN
 			//WASHER BOLT
 			//index nietestowy := 2
-			ElementsArray[Camera_0.ModelNumArray[i]-1] := 1;	
+			ElementsArray[Camera_0.ModelNumArray[i]-1] := 2;	
 		ELSIF Camera_0.PixelCntSquareArray[i] < PixelRange_0.WrenchLimit THEN
 			//WRENCH
 			//index nietestowy := 4
-			ElementsArray[Camera_0.ModelNumArray[i]-1] := 1;
+			ElementsArray[Camera_0.ModelNumArray[i]-1] := 4;
 		ELSE
 			ElementsArray[Camera_0.ModelNumArray[i]-1] := 0;		
 		END_IF;
