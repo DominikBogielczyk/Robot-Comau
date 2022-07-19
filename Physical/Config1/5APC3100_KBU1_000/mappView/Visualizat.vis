@@ -20,7 +20,6 @@
     <EventBindingsSet refId="TopContent_eventbinding" />
 
     <EventBindingsSet refId="MainContent_eventbinding" />
-
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />
