@@ -15,12 +15,13 @@
   <BindingsSets>
     <BindingsSet refId="TopContent_binding" />
     <BindingsSet refId="MainContent_binding" />
+    <BindingsSet refId="AlarmContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="TopContent_eventbinding" />
-
     <EventBindingsSet refId="MainContent_eventbinding" />
     <EventBindingsSet refId="UsersContent_eventbinding" />
+    <EventBindingsSet refId="AlarmContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />

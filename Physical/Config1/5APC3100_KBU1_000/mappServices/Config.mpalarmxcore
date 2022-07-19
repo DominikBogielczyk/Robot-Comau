@@ -22,7 +22,7 @@
         <Property ID="Code" Value="102" />
         <Selector ID="Behavior" Value="LevelMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Elements_d:DetectedHolders" />
+            <Property ID="MonitoredPV" Value="::Elements_d:DetectedSquares" />
             <Selector ID="LowLimitEnable" Value="Static">
               <Property ID="Limit" Value="7" />
             </Selector>
