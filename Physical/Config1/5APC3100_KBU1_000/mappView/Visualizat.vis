@@ -19,6 +19,7 @@
   <EventBindingsSets>
     <EventBindingsSet refId="TopContent_eventbinding" />
     <EventBindingsSet refId="MainContent_eventbinding" />
+    <EventBindingsSet refId="UsersContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />

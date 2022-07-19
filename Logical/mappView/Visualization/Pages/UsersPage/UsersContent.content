@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="UsersContent" height="650" width="1030" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="280" left="320" zIndex="0" text="USERS" />
+    <Widget xsi:type="widgets.brease.UserList" id="UserList" top="100" left="100" width="480" height="400" zIndex="0" itemsPerPage="7" permissionOperate="['Administrators']" permissionView="['Administrators', 'Everyone', 'Operator']">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem1" zIndex="0" text="UserName" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem2" width="280" zIndex="1" columnType="Roles" text="Role" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="btnAddUser" top="100" left="680" width="140" height="120" zIndex="1" image="Media/SymbolLib/User/AddUser.svg" imageAlign="top" text="Add User" cornerRadius="15px" />
+    <Widget xsi:type="widgets.brease.Button" id="btnDeleteUser" top="240" left="680" width="140" height="120" zIndex="2" image="Media/SymbolLib/User/DeleteUser.svg" imageAlign="top" text="Delete User" cornerRadius="15px" />
+    <Widget xsi:type="widgets.brease.Button" id="btnEditUser" top="380" left="680" width="140" height="120" zIndex="3" image="Media/SymbolLib/Edit/Edit.svg" imageAlign="top" text="Edit User" cornerRadius="15px" />
   </Widgets>
 </Content>
