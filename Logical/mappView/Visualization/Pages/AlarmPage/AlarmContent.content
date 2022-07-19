@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="AlarmContent" height="650" width="1030" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.AlarmList" id="AlarmList1" top="40" left="40" width="960" zIndex="0" itemsPerPage="4">
-      <Widgets>
-        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem1" zIndex="0" columnType="timestamp" text="Czas" />
-        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem2" width="500" zIndex="1" text="Info" />
-        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem3" zIndex="2" columnType="code" text="Kod" />
-      </Widgets>
-    </Widget>
-    <Widget xsi:type="widgets.brease.Button" id="btnAck" top="400" left="260" zIndex="1" text="Ack" />
-    <Widget xsi:type="widgets.brease.Button" id="btnAckAll" top="400" left="420" zIndex="2" text="Ack All" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="260" left="240" zIndex="0" text="ALARM" />
   </Widgets>
 </Content>
