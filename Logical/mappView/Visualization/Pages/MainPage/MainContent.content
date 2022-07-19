@@ -30,5 +30,6 @@
     <Widget xsi:type="widgets.brease.ToggleButton" id="TgButtonElement12" top="320" left="200" width="60" height="60" zIndex="26" disabledBackColor="rgba(255, 255, 255, 0)" disabledBorderColor="rgba(255, 255, 255, 0)" disabledTextColor="rgba(255, 255, 255, 0)" textAlign="center" checkedBackColor="rgba(255, 192, 128, 1)" checkedTextColor="rgba(255, 192, 128, 1)" checkedBorderColor="rgba(255, 192, 128, 1)" disabledCheckedBackColor="rgba(255, 192, 128, 1)" enable="false" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="TgButtonElement13" top="320" left="60" width="60" height="60" zIndex="27" disabledBackColor="rgba(255, 255, 255, 0)" disabledBorderColor="rgba(255, 255, 255, 0)" disabledTextColor="rgba(255, 255, 255, 0)" textAlign="center" checkedBackColor="rgba(255, 192, 128, 1)" checkedTextColor="rgba(255, 192, 128, 1)" checkedBorderColor="rgba(255, 192, 128, 1)" disabledCheckedBackColor="rgba(255, 192, 128, 1)" enable="false" />
     <Widget xsi:type="widgets.brease.Button" id="BtnTrigger" top="40" left="40" width="140" height="60" zIndex="28" text="Zdjęcie" backColor="rgba(255, 255, 128, 1)" fontSize="25px" bold="true" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="100" left="425" width="160" height="160" zIndex="29" image="Media/SymbolLib/robot.png" />
   </Widgets>
 </Content>

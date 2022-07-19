@@ -9,7 +9,6 @@
     <Object Type="Package">Diagnostic</Object>
     <Object Type="Package">DisplayAndTouch</Object>
     <Object Type="Package">Edit</Object>
-    <Object Type="Package">File</Object>
     <Object Type="Package">Localize</Object>
     <Object Type="Package">Media</Object>
     <Object Type="Package">Needle</Object>
