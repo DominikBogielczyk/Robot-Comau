@@ -4,6 +4,7 @@ TYPE
 		WrenchLimit : UDINT;
 		WasherBoltLimit : UDINT;
 		ScrewLimit : UDINT;
+		HolderLimit : UDINT;
 	END_STRUCT;
 	CameraStruct : 	STRUCT 
 		ExposureTime : UDINT := 30000;
