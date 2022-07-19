@@ -9,6 +9,7 @@ PROGRAM _INIT
 	PixelRange_0.ScrewLimit := 200;
 	PixelRange_0.WasherBoltLimit := 500;
 	PixelRange_0.WrenchLimit := 2000;
+	PixelRange_0.HolderLimit := 10000;
 	
 	 
 END_PROGRAM
@@ -19,7 +20,7 @@ PROGRAM _CYCLIC
 	
 	FOR i := 0 TO 13 DO
 		//SQUARES DETECTION 
-		SquareArray[Camera_0.ModelNumArray[i]-1] := Camera_0.PixelCntSquareArray[i] < 10000;
+		SquareArray[Camera_0.ModelNumArray[i]-1] := Camera_0.PixelCntSquareArray[i] < PixelRange_0.HolderLimit;
 		
 		IF Camera_0.PixelCntSquareArray[i] < 50 THEN
 			//NOTHING
