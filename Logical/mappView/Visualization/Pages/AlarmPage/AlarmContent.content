@@ -4,8 +4,9 @@
     <Widget xsi:type="widgets.brease.AlarmList" id="AlarmList1" top="20" left="40" width="960" height="260" zIndex="0">
       <Widgets>
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem1" zIndex="0" columnType="timestamp" text="Czas" />
-        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem2" width="600" zIndex="1" text="Info" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem2" width="400" zIndex="1" text="Info" />
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem3" zIndex="2" columnType="code" text="Kod" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem4" width="100" zIndex="3" columnType="state" text="Stan" />
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.Button" id="btnAck" top="300" left="620" width="180" height="40" zIndex="1" text="Zatwierdź" backColor="rgba(255, 140, 0, 1)" fontSize="16px" bold="true" />

@@ -8,5 +8,6 @@
     <Object Type="Package">mappView</Object>
     <Object Type="Program" Language="IEC">Elements_detection</Object>
     <Object Type="Program" Language="IEC">Alarms</Object>
+    <Object Type="Program" Language="IEC">PackML</Object>
   </Objects>
 </Package>

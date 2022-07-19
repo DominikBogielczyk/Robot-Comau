@@ -20,5 +20,6 @@
     <Object Type="Library" Language="Binary" Description="Core library for mapp components">MpBase</Object>
     <Object Type="Library" Language="binary" Description="User Role System">ArUser</Object>
     <Object Type="Library" Language="Binary" Description="User management based on user role system">MpUserX</Object>
+    <Object Type="Library" Language="Binary" Description="OMAC PackML">MpPackML</Object>
   </Objects>
 </Package>

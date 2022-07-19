@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="File">Config.mpalarmxcore</Object>
     <Object Type="File">Config_1.mpuserx</Object>
+    <Object Type="File">Config_2.mppackmlcore</Object>
   </Objects>
 </Package>
