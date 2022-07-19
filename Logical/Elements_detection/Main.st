@@ -12,7 +12,7 @@ PROGRAM _INIT
 	PixelRange_0.HolderLimit := 10000;
 	
 	///////////////////////////////
-	DetectedHolders := 8;
+	DetectedSquares := 7;
 	//////////////////////////////
 	 
 END_PROGRAM
@@ -21,9 +21,14 @@ PROGRAM _CYCLIC
 	//IMAGE ACQUISITION
 	Camera_0.ImageAcq := Camera_0.diTrigger AND Camera_0.Ready;
 	
+	DetectedSquares := 0;
+	
 	FOR i := 0 TO 13 DO
 		//SQUARES DETECTION 
 		SquareArray[Camera_0.ModelNumArray[i]-1] := Camera_0.PixelCntSquareArray[i] < PixelRange_0.HolderLimit;
+		IF Camera_0.PixelCntSquareArray[i] < PixelRange_0.HolderLimit THEN
+			DetectedSquares := DetectedSquares + 1;
+		END_IF
 		
 		IF Camera_0.PixelCntSquareArray[i] < 50 THEN
 			//NOTHING
