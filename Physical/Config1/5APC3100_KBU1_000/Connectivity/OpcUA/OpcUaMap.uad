@@ -9,16 +9,52 @@
   </Aliases>
   <DefaultView>
     <Module Name="&lt;Default&gt;">
-      <GlobalVariables Name="Global Variables">
-        <Variable Name="SquareArray" EnableArrayElements="True" />
-        <Variable Name="ElementsArray" EnableArrayElements="True" />
-      </GlobalVariables>
-      <Task Name="Elements_d">
-        <Variable Name="Camera_0">
-          <Variable Name="diTrigger" />
-          <Variable Name="ImageAcq" />
-          <Variable Name="Enable" />
+      <Task Name="Comau">
+        <Variable Name="MpRoboArm6Axis_0">
+          <Variable Name="X" />
+          <Variable Name="Y" />
+          <Variable Name="Z" />
+          <Variable Name="A" />
+          <Variable Name="B" />
+          <Variable Name="C" />
+          <Variable Name="Home" />
+          <Variable Name="Info">
+            <Variable Name="JointAxisPosition" EnableArrayElements="True" />
+          </Variable>
+          <Variable Name="Power" />
+          <Variable Name="MoveProgram" />
+          <Variable Name="MoveDirect" />
+          <Variable Name="Jog" />
+          <Variable Name="ErrorReset" />
+          <Variable Name="Error" />
         </Variable>
+        <Variable Name="manual" />
+        <Variable Name="RoboParameters">
+          <Variable Name="Jog">
+            <Variable Name="Velocity" />
+          </Variable>
+        </Variable>
+        <Variable Name="VelocityQ" />
+        <Variable Name="VelocityQ1" />
+        <Variable Name="VelocityQ2" />
+        <Variable Name="A1" />
+        <Variable Name="B1" />
+        <Variable Name="C1" />
+        <Variable Name="VelocityQ3" />
+        <Variable Name="VelocityQ4" />
+        <Variable Name="VelocityQ5" />
+        <Variable Name="VelocityQ6" />
+        <Variable Name="X1" />
+        <Variable Name="Y1" />
+        <Variable Name="Z1" />
+        <Variable Name="TCPvalue" />
+        <Variable Name="cartezianVSjog" />
+      </Task>
+      <Task Name="Clock">
+        <Variable Name="TON_0">
+          <Variable Name="Q" />
+        </Variable>
+        <Variable Name="STEP" />
       </Task>
     </Module>
   </DefaultView>

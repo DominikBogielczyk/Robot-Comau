@@ -1,0 +1,71 @@
+(*--- Obsluga odczytu danych z serwera OPC UA ---*)
+(*   Laczenie z serwerem*)
+VAR
+	UA_Connect_0 : UA_Connect; (*Struktura do laczenia z serwerem*)
+	ExecuteConnect_0 : BOOL; (*Wykonanie proby polaczenia z serwerem*)
+	SessionConnectInfo_0 : UASessionConnectInfo; (*Informacje o sesji (protokol, dane logowanie, zabezpiczenia)*)
+	ConnectionHdl : DWORD := 0;
+	ErrorID : DWORD; (*ID bledu (pobierane z wszystkich blokow)*)
+END_VAR
+(*   Pobieranie indeksu przestrzeni nazw*)
+VAR
+	UA_GetNamespaceIndex_0 : UA_GetNamespaceIndex;
+	ExecuteGetnamespaceindex_0 : BOOL;
+	NamespaceIndex : UINT := 0;
+END_VAR
+(*   Uchyt do danego noda*)
+VAR
+	UA_NodeGetHandleList_0 : UA_NodeGetHandleList;
+	ExecuteNodeGetHandleList_0 : BOOL;
+	NodeIDs_0 : ARRAY[0..MAX_INDEX_NODELIST] OF UANodeID; (*Dane o zmiennych, ktore pobieramy z serwera*)
+	NodeHdls : ARRAY[0..MAX_INDEX_NODELIST] OF DWORD;
+END_VAR
+(*   Odczyt danych*)
+VAR
+	UA_ReadList_0 : UA_ReadList;
+	ExecuteReadList_0 : BOOL;
+	NodeAddInfo_0 : ARRAY[0..MAX_INDEX_NODELIST] OF UANodeAdditionalInfo;
+	Variables_Rd0 : ARRAY[0..MAX_INDEX_NODELIST] OF STRING[255]; (*Dane o zmiennych, do ktorych zapisujemy dane z serwera*)
+END_VAR
+(*   Zapis danych (nie jest uzywany)*)
+VAR
+	UA_WriteList_0 : UA_WriteList;
+	ExecuteWriteList_0 : BOOL;
+	Variables_Wr0 : ARRAY[0..MAX_INDEX_NODELIST] OF STRING[255];
+END_VAR
+(*   Zwolnienie uchytu danego noda*)
+VAR
+	UA_NodeReleaseHandleList_0 : UA_NodeReleaseHandleList;
+	ExecuteNodeReleaseHandleList_0 : BOOL;
+END_VAR
+(*   Rozlaczenie z serwerem*)
+VAR
+	UA_Disconnect_0 : UA_Disconnect;
+	ExecuteDisconnect_0 : BOOL;
+END_VAR
+(*--- Maszyna stanow ---*)
+VAR
+	ActState : USINT; (*Aktualny stan*)
+END_VAR
+VAR CONSTANT
+	STATE_IDLE : USINT := 0; (*Stan wywolania proby polaczenia*)
+	STATE_CONNECT : USINT := 1; (*Polaczenie z serwerem*)
+	STATE_GET_NAMESPACE : USINT := 2; (*Pobranie przestrzeni nazw*)
+	STATE_GET_HANDLE : USINT := 3; (*Przygotowanie uchytu*)
+	STATE_READY_TO_READ : USINT := 10; (*Gotowosc do odczytu*)
+	STATE_READ : USINT := 11; (*Realizacja odczytu danych*)
+	STATE_RELEASE_HANDLE : USINT := 20; (*Zwolnienie uchytu*)
+	STATE_DISCONNECT : USINT := 21; (*Rozlaczenie polaczenia z serwerem*)
+	STATE_ERROR : USINT := 100; (*Stan obslugi bledow*)
+	STATE_BACK_FROM_ERROR : USINT := 101; (*Stan powrotu ze stanu bledu*)
+END_VAR
+(*--- Struktura Safety ---*)
+VAR
+	SafetyLocal : Safety_type; (*Struktura przechowujaca informacje o stanie modulow Safety*)
+END_VAR
+(*--- Temporary ---*)
+VAR
+	Escape : BOOL; (*Zmienna tymczasowa wykorzystywana do debugowania programu*)
+	LeaveIdel : BOOL; (*Zmienna tymczasowa wykorzystywana do debugowania programu*)
+	MoveRead : BOOL; (*Zmienna tymczasowa wykorzystywana do debugowania programu*)
+END_VAR

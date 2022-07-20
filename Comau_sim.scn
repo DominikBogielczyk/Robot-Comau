@@ -1,0 +1,454 @@
+﻿<?xml version="1.0"?>
+<Object objecttypeid="1" name="Scene" visible="1" mask="" binding="" jointoparent="0">
+	<ParID parid="80" val="TRUE"/>
+	<ParID parid="81" val="60"/>
+	<ParID parid="82" val="1"/>
+	<ParID parid="90" val="0"/>
+	<ParID parid="100" val="0"/>
+	<ParID parid="101" val="-766.551"/>
+	<ParID parid="102" val="1327.71"/>
+	<ParID parid="103" val="0"/>
+	<ParID parid="104" val="0.5"/>
+	<ParID parid="105" val="-0.866025"/>
+	<ParID parid="106" val="0"/>
+	<ParID parid="107" val="0.866025"/>
+	<ParID parid="108" val="0.5"/>
+	<ParID parid="110" val="0.5"/>
+	<ParID parid="120" val="1,1,1"/>
+	<ParID parid="140" val="0.75,0.75,0.75"/>
+	<ParID parid="145" val=""/>
+	<ParID parid="146" val="0"/>
+	<Object objecttypeid="2" name="Light 1" visible="1" mask="" binding="" jointoparent="0">
+		<ParID parid="100" val="1500"/>
+		<ParID parid="101" val="-3000"/>
+		<ParID parid="102" val="-3000"/>
+		<ParID parid="130" val="1"/>
+		<ParID parid="140" val="1,1,1"/>
+		<ParID parid="150" val="FALSE"/>
+	</Object>
+	<Object objecttypeid="2" name="Light 2" visible="1" mask="" binding="" jointoparent="0">
+		<ParID parid="100" val="0"/>
+		<ParID parid="101" val="0"/>
+		<ParID parid="102" val="6000"/>
+		<ParID parid="130" val="1"/>
+		<ParID parid="140" val="1,1,1"/>
+		<ParID parid="150" val="FALSE"/>
+	</Object>
+	<Object objecttypeid="630" name="Plytka_rzad1" visible="1" mask="" binding="" jointoparent="0">
+		<ParID parid="100" val="140"/>
+		<ParID parid="101" val="0"/>
+		<ParID parid="102" val="0"/>
+		<ParID parid="103" val="0"/>
+		<ParID parid="104" val="0"/>
+		<ParID parid="105" val="0"/>
+		<ParID parid="106" val="1"/>
+		<ParID parid="107" val="1"/>
+		<ParID parid="108" val="1"/>
+		<ParID parid="120" val="2: Blue Matte"/>
+		<ParID parid="122" val="FALSE"/>
+		<ParID parid="123" val="0"/>
+		<ParID parid="140" val="100"/>
+		<ParID parid="141" val="100"/>
+		<ParID parid="142" val="25"/>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="0"/>
+			<ParID parid="101" val="-100"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="3: Grey Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="0"/>
+			<ParID parid="101" val="200"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="9: Violet Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="0"/>
+			<ParID parid="101" val="100"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="3: Grey Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="-0"/>
+			<ParID parid="101" val="-200"/>
+			<ParID parid="102" val="-0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="9: Violet Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="-0"/>
+			<ParID parid="101" val="-300"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="3: Grey Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="-0"/>
+			<ParID parid="101" val="300"/>
+			<ParID parid="102" val="-0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="3: Grey Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+	</Object>
+	<Object objecttypeid="630" name="Plytka_rzad2" visible="1" mask="" binding="" jointoparent="0">
+		<ParID parid="100" val="240"/>
+		<ParID parid="101" val="-0"/>
+		<ParID parid="102" val="0"/>
+		<ParID parid="103" val="0"/>
+		<ParID parid="104" val="0"/>
+		<ParID parid="105" val="0"/>
+		<ParID parid="106" val="1"/>
+		<ParID parid="107" val="1"/>
+		<ParID parid="108" val="1"/>
+		<ParID parid="120" val="2: Blue Matte"/>
+		<ParID parid="122" val="FALSE"/>
+		<ParID parid="123" val="0"/>
+		<ParID parid="140" val="100"/>
+		<ParID parid="141" val="100"/>
+		<ParID parid="142" val="25"/>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="0"/>
+			<ParID parid="101" val="-100"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="3: Grey Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="0"/>
+			<ParID parid="101" val="200"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="9: Violet Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="0"/>
+			<ParID parid="101" val="100"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="3: Grey Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="-0"/>
+			<ParID parid="101" val="-200"/>
+			<ParID parid="102" val="-0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="9: Violet Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="-0"/>
+			<ParID parid="101" val="-300"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="3: Grey Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+		<Object objecttypeid="630" name="Plytka" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="-0"/>
+			<ParID parid="101" val="300"/>
+			<ParID parid="102" val="-0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="120" val="3: Grey Matte"/>
+			<ParID parid="122" val="FALSE"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="140" val="100"/>
+			<ParID parid="141" val="100"/>
+			<ParID parid="142" val="25"/>
+		</Object>
+	</Object>
+	<Object objecttypeid="140" name="Grid" visible="1" mask="" binding="" jointoparent="0">
+		<ParID parid="100" val="0"/>
+		<ParID parid="101" val="-0"/>
+		<ParID parid="102" val="0"/>
+		<ParID parid="103" val="0"/>
+		<ParID parid="104" val="0"/>
+		<ParID parid="105" val="0"/>
+		<ParID parid="106" val="1"/>
+		<ParID parid="107" val="1"/>
+		<ParID parid="108" val="1"/>
+		<ParID parid="110" val="100"/>
+		<ParID parid="120" val="10"/>
+		<ParID parid="130" val="0.3,0.3,0.3"/>
+		<Object objecttypeid="230" name="Dimension line" visible="1" mask="" binding="" jointoparent="2">
+			<ParID parid="100" val="499.829"/>
+			<ParID parid="101" val="-500.225"/>
+			<ParID parid="102" val="-1.13687e-12"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="110" val="25"/>
+			<ParID parid="120" val="20"/>
+			<ParID parid="121" val="1"/>
+			<ParID parid="122" val="TRUE"/>
+			<ParID parid="130" val="0"/>
+			<ParID parid="131" val="1"/>
+			<ParID parid="132" val="0"/>
+			<ParID parid="135" val="0"/>
+		</Object>
+		<Object objecttypeid="230" name="Dimension line" visible="1" mask="" binding="" jointoparent="2">
+			<ParID parid="100" val="-170.318"/>
+			<ParID parid="101" val="-500.117"/>
+			<ParID parid="102" val="1.81732"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="110" val="25"/>
+			<ParID parid="120" val="20"/>
+			<ParID parid="121" val="1"/>
+			<ParID parid="122" val="TRUE"/>
+			<ParID parid="130" val="0"/>
+			<ParID parid="131" val="1"/>
+			<ParID parid="132" val="0"/>
+			<ParID parid="135" val="0"/>
+		</Object>
+		<Object objecttypeid="230" name="Dimension line" visible="1" mask="" binding="" jointoparent="1">
+			<ParID parid="100" val="88.8133"/>
+			<ParID parid="101" val="-400.25"/>
+			<ParID parid="102" val="3.41061e-13"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="110" val="25"/>
+			<ParID parid="120" val="20"/>
+			<ParID parid="121" val="1"/>
+			<ParID parid="122" val="TRUE"/>
+			<ParID parid="130" val="0"/>
+			<ParID parid="131" val="1"/>
+			<ParID parid="132" val="0"/>
+			<ParID parid="135" val="0"/>
+		</Object>
+		<Object objecttypeid="230" name="Dimension line" visible="1" mask="" binding="" jointoparent="1">
+			<ParID parid="100" val="499.752"/>
+			<ParID parid="101" val="-399.79"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="110" val="25"/>
+			<ParID parid="120" val="20"/>
+			<ParID parid="121" val="1"/>
+			<ParID parid="122" val="TRUE"/>
+			<ParID parid="130" val="0"/>
+			<ParID parid="131" val="1"/>
+			<ParID parid="132" val="0"/>
+			<ParID parid="135" val="0"/>
+		</Object>
+		<Object objecttypeid="363" name="Comau Racer 3" visible="1" mask="" binding="#110*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[0]#111*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[1]#112*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[2]#113*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[3]#114*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[4]#115*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[5]" jointoparent="0">
+			<ParID parid="100" val="-260"/>
+			<ParID parid="101" val="0"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="110" val="-43.1524"/>
+			<ParID parid="111" val="65.8571"/>
+			<ParID parid="112" val="-96.11"/>
+			<ParID parid="113" val="135.406"/>
+			<ParID parid="114" val="76.9479"/>
+			<ParID parid="115" val="192.553"/>
+			<ParID parid="120" val="400"/>
+			<ParID parid="121" val="300"/>
+			<ParID parid="122" val="200"/>
+			<ParID parid="123" val="0"/>
+			<ParID parid="124" val="90"/>
+			<ParID parid="125" val="0"/>
+			<ParID parid="130" val="18: Silver"/>
+			<ParID parid="150" val="FALSE"/>
+			<Object objecttypeid="180" name="Cone" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1"/>
+				<ParID parid="107" val="1"/>
+				<ParID parid="108" val="1"/>
+				<ParID parid="120" val="3: Grey Matte"/>
+				<ParID parid="121" val="32"/>
+				<ParID parid="122" val="FALSE"/>
+				<ParID parid="123" val="FALSE"/>
+				<ParID parid="140" val="50"/>
+				<ParID parid="141" val="50"/>
+				<ParID parid="142" val="26"/>
+			</Object>
+		</Object>
+	</Object>
+</Object>
+<Materials>
+	<Material ID="0" Name="Undefined" Ambient="0.100000 0.100000 0.100000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="32.000000"/>
+	<Material ID="1" Name="Red Matte" Ambient="0.700000 0.050000 0.050000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="2" Name="Blue Matte" Ambient="0.100000 0.100000 0.800000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="3" Name="Grey Matte" Ambient="0.400000 0.400000 0.400000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="4" Name="Yellow Matte" Ambient="0.800000 0.800000 0.000000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="5" Name="Green Matte" Ambient="0.100000 0.800000 0.100000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="6" Name="Orange Matte" Ambient="0.800000 0.400000 0.000000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="7" Name="White Matte" Ambient="0.900000 0.900000 0.900000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="8" Name="Black Matte" Ambient="0.100000 0.100000 0.100000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="9" Name="Violet Matte" Ambient="0.700000 0.000000 0.700000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="10" Name="Metal Shine" Ambient="0.200000 0.200000 0.200000 1.000000" Specular="0.800000 0.800000 1.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="25.000000"/>
+	<Material ID="11" Name="Red Metal Shine" Ambient="0.600000 0.000000 0.000000 1.000000" Specular="1.000000 0.700000 0.700000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="10.000000"/>
+	<Material ID="12" Name="Yellow Metal Shine" Ambient="0.500000 0.500000 0.000000 1.000000" Specular="0.600000 0.600000 0.850000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="25.000000"/>
+	<Material ID="13" Name="Black Metal Shine" Ambient="0.200000 0.200000 0.200000 1.000000" Specular="0.500000 0.500000 0.500000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="12.500000"/>
+	<Material ID="14" Name="Cyan Matte" Ambient="0.000000 0.500000 0.500000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="15" Name="Magenta Matte" Ambient="0.500000 0.000000 0.500000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="16" Name="Light Grey Matte" Ambient="0.700000 0.700000 0.700000 1.000000" Specular="0.000000 0.000000 0.000000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+	<Material ID="17" Name="Cerulean Blue Shine" Ambient="0.000000 0.540000 0.750000 1.000000" Specular="0.600000 0.600000 0.850000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="25.000000"/>
+	<Material ID="18" Name="Silver" Ambient="0.550000 0.600000 0.650000 1.000000" Specular="0.500000 0.550000 0.600000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="64.000000"/>
+</Materials>
+<Views/>
+<Connection>
+	<PVI>
+		<NameTask>
+			vis
+		</NameTask>
+		<NameTime>
+		</NameTime>
+		<NameVariable>
+			vis
+		</NameVariable>
+		<ExtraSettings>
+		</ExtraSettings>
+		<ConectionParameters>
+		</ConectionParameters>
+		<RF>
+		</RF>
+		<DAIP>
+			127.0.0.1
+		</DAIP>
+		<Size>
+			0
+		</Size>
+		<TimerModeOn>
+			0
+		</TimerModeOn>
+	</PVI>
+</Connection>
