@@ -33,27 +33,15 @@
       <Group ID="Input[9]">
         <Property ID="ChannelID" Value="OffsetCenterY" />
       </Group>
-      <Group ID="Input[10]">
-        <Property ID="ChannelID" Value="Timeout" />
-      </Group>
-      <Group ID="Input[11]">
-        <Property ID="ChannelID" Value="MinScore" />
-      </Group>
-      <Group ID="Input[12]">
-        <Property ID="ChannelID" Value="MaxOverlap" />
-      </Group>
     </Group>
     <Group ID="VisionFunctionSet">
       <Group ID="VisionProgramSettings">
         <Property ID="CompilerOption" Value="0" />
       </Group>
       <Group ID="VfInstance[1]">
-        <Property ID="VfName" Value="matching" />
+        <Property ID="VfName" Value="Blob1" />
         <Property ID="VfExecutionNr" Value="1" />
-        <Selector ID="VfType" Value="vf-matching">
-          <Group ID="VfConstants">
-            <Property ID="NumResultsMax" Value="7" />
-          </Group>
+        <Selector ID="VfType" Value="vf-blob">
           <Group ID="VfWirings">
             <Group ID="Image">
               <Selector ID="SourceType" Value="ImageAcquisition">
@@ -70,24 +58,19 @@
                 <Property ID="IoParameter" Value="NumSearch" />
               </Selector>
             </Group>
-            <Group ID="Timeout">
-              <Selector ID="SourceType" Value="Input">
-                <Property ID="IoParameter" Value="Timeout" />
-              </Selector>
-            </Group>
             <Group ID="Alignment">
               <Selector ID="SourceType" Value="Input">
                 <Property ID="IoParameter" Value="Align" />
               </Selector>
             </Group>
-            <Group ID="MinScore">
+            <Group ID="RegionFeatures">
               <Selector ID="SourceType" Value="Input">
-                <Property ID="IoParameter" Value="MinScore" />
+                <Property ID="IoParameter" Value="Region" />
               </Selector>
             </Group>
-            <Group ID="MaxOverlap">
+            <Group ID="EnhancedBlobInformation">
               <Selector ID="SourceType" Value="Input">
-                <Property ID="IoParameter" Value="MaxOverlap" />
+                <Property ID="IoParameter" Value="Enh" />
               </Selector>
             </Group>
             <Group ID="OffsetROIX">
@@ -123,7 +106,7 @@
       <Group ID="Output[0]">
         <Property ID="ChannelID" Value="ModelNumber" />
         <Group ID="VpOutputWire">
-          <Property ID="SourceVfName" Value="matching" />
+          <Property ID="SourceVfName" Value="Blob1" />
           <Property ID="VfOutputParameter" Value="PositionX" />
         </Group>
       </Group>

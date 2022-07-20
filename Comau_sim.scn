@@ -5,8 +5,8 @@
 	<ParID parid="82" val="1"/>
 	<ParID parid="90" val="0"/>
 	<ParID parid="100" val="0"/>
-	<ParID parid="101" val="-526.551"/>
-	<ParID parid="102" val="912.013"/>
+	<ParID parid="101" val="-766.551"/>
+	<ParID parid="102" val="1327.71"/>
 	<ParID parid="103" val="0"/>
 	<ParID parid="104" val="0.5"/>
 	<ParID parid="105" val="-0.866025"/>
@@ -361,22 +361,22 @@
 			<ParID parid="132" val="0"/>
 			<ParID parid="135" val="0"/>
 		</Object>
-		<Object objecttypeid="363" name="Comau Racer 3" visible="1" mask="" binding="#120*::Program:MpRoboArm6Axis_0.X#121*::Program:MpRoboArm6Axis_0.Y#122*::Program:MpRoboArm6Axis_0.Z#123*::Program:MpRoboArm6Axis_0.A#124*::Program:MpRoboArm6Axis_0.B#125*::Program:MpRoboArm6Axis_0.C" jointoparent="0">
+		<Object objecttypeid="363" name="Comau Racer 3" visible="1" mask="" binding="#110*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[0]#111*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[1]#112*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[2]#113*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[3]#114*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[4]#115*::Comau:MpRoboArm6Axis_0.Info.JointAxisPosition[5]" jointoparent="0">
 			<ParID parid="100" val="-260"/>
 			<ParID parid="101" val="0"/>
 			<ParID parid="102" val="0"/>
 			<ParID parid="103" val="0"/>
 			<ParID parid="104" val="0"/>
 			<ParID parid="105" val="0"/>
-			<ParID parid="110" val="0"/>
-			<ParID parid="111" val="5.18083e-07"/>
-			<ParID parid="112" val="-90"/>
-			<ParID parid="113" val="0"/>
-			<ParID parid="114" val="0"/>
-			<ParID parid="115" val="0"/>
-			<ParID parid="120" val="435.94"/>
-			<ParID parid="121" val="0"/>
-			<ParID parid="122" val="685"/>
+			<ParID parid="110" val="-43.1524"/>
+			<ParID parid="111" val="65.8571"/>
+			<ParID parid="112" val="-96.11"/>
+			<ParID parid="113" val="135.406"/>
+			<ParID parid="114" val="76.9479"/>
+			<ParID parid="115" val="192.553"/>
+			<ParID parid="120" val="400"/>
+			<ParID parid="121" val="300"/>
+			<ParID parid="122" val="200"/>
 			<ParID parid="123" val="0"/>
 			<ParID parid="124" val="90"/>
 			<ParID parid="125" val="0"/>

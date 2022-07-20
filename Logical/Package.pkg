@@ -5,6 +5,12 @@
     <Object Type="File" Description="Global data types">Global.typ</Object>
     <Object Type="File" Description="Global variables">Global.var</Object>
     <Object Type="Package" Description="Global libraries">Libraries</Object>
-    <Object Type="Program" Language="IEC">Program</Object>
+    <Object Type="Program" Language="IEC">Comau</Object>
+    <Object Type="File">Robotic.st</Object>
+    <Object Type="File">manulaTCP.st</Object>
+    <Object Type="Package">mappView</Object>
+    <Object Type="Program" Language="IEC">Clock</Object>
+    <Object Type="Program" Language="IEC">PackML</Object>
+    <Object Type="Package">Sources</Object>
   </Objects>
 </Package>

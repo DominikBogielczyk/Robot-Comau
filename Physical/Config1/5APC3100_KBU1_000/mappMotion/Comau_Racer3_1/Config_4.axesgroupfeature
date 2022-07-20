@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="Feature_Programs_Racer3_1" Type="axesgroupfeature">
+    <Selector ID="Type" Value="Program">
+      <Selector ID="ModalDataBehaviour" Value="UseAxesGroupSettings" />
+      <Group ID="InitialSettings">
+        <Selector ID="InterpolationTypes" Value="LinearRapid" />
+        <Selector ID="PositionCoordinates" Value="Absolute" />
+        <Selector ID="CircleCoordinates" Value="Relative" />
+        <Selector ID="JACS_ACSProgramming" Value="JACS" />
+        <Selector ID="ContourConnection" Value="Inactive" />
+        <Selector ID="ProgrammingUnits" Value="UseAxesGroupSettings" />
+        <Group ID="Feedrates">
+          <Selector ID="FeedPath" Value="Standard" />
+          <Selector ID="FeedCharacteristic" Value="StandardCharacteristic" />
+          <Selector ID="FeedType" Value="Feedrate" />
+          <Selector ID="FeedReduction" Value="Inactive" />
+          <Property ID="FeedrateValue" Value="0.0" />
+          <Property ID="InverseFeedrateValue" Value="0.0" />
+          <Property ID="FeedratePerRevValue" Value="0.0" />
+        </Group>
+      </Group>
+      <Selector ID="DefaultLanguage" Value="BRGCode" />
+      <Selector ID="Location" Value="Default">
+        <Property ID="FileDevice" Value="CNC_PrgDir" />
+      </Selector>
+    </Selector>
+  </Element>
+  <Element ID="Feature_FeedForward_Racer3_1" Type="axesgroupfeature">
+    <Selector ID="Type" Value="FeedForward">
+      <Selector ID="Mode" Value="ComputeAndTransmit" />
+      <Property ID="RiseTime" Value="0.25" />
+      <Selector ID="Filter" Value="NotUsed" />
+    </Selector>
+  </Element>
+  <Element ID="Feature_Jogging_Racer3_1" Type="axesgroupfeature">
+    <Selector ID="Type" Value="Jogging" />
+  </Element>
+  <Element ID="Feature_SharedBrakesSignals_Racer3_1" Type="axesgroupfeature">
+    <Selector ID="Type" Value="SharedBrakesSignals">
+      <Group ID="BrakeComposite[1]">
+        <Group ID="Axes">
+          <Property ID="AxisRef[1]" Value="gAxisQ1_Racer3_1" />
+          <Property ID="AxisRef[2]" Value="gAxisQ2_Racer3_1" />
+          <Property ID="AxisRef[3]" Value="gAxisQ3_Racer3_1" />
+        </Group>
+        <Selector ID="ErrorBehavior" Value="CloseAfterStop" />
+        <Selector ID="Output" Value="Axis">
+          <Property ID="AxisRef" Value="gAxisQ1_Racer3_1" />
+        </Selector>
+        <Selector ID="Feedback" Value="TimeBased" />
+      </Group>
+      <Group ID="BrakeComposite[2]">
+        <Group ID="Axes">
+          <Property ID="AxisRef[1]" Value="gAxisQ4_Racer3_1" />
+          <Property ID="AxisRef[2]" Value="gAxisQ5_Racer3_1" />
+          <Property ID="AxisRef[3]" Value="gAxisQ6_Racer3_1" />
+        </Group>
+        <Selector ID="ErrorBehavior" Value="CloseAfterStop" />
+        <Selector ID="Output" Value="Axis">
+          <Property ID="AxisRef" Value="gAxisQ4_Racer3_1" />
+        </Selector>
+        <Selector ID="Feedback" Value="TimeBased" />
+      </Group>
+    </Selector>
+  </Element>
+</Configuration>
