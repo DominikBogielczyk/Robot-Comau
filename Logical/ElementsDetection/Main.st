@@ -20,6 +20,7 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	//IMAGE ACQUISITION
 	Camera_0.ImageAcq := Camera_0.diTrigger AND Camera_0.Ready;
+
 	
 	DetectedSquares := 0;
 	

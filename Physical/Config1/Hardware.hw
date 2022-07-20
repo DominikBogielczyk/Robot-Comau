@@ -4,9 +4,13 @@
   <Module Name="5AC901.IPLK-00" Type="5AC901.IPLK-00" Version="1.8.0.1">
     <Connection Connector="SL" TargetModule="5APC3100_KBU1_000" TargetConnector="SL2" />
     <Connector Name="IF1">
+      <Parameter ID="MtuSize" Value="1500" />
+      <Parameter ID="CycleTime" Value="400" />
       <Group ID="Channel1" />
       <Parameter ID="ChannelID1" Value="McAcpBroadcast" />
       <Parameter ID="ChannelType1" Value="OCTET[200]" />
+      <Parameter ID="InternetAddress" Value="192.168.200.240" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
     </Connector>
   </Module>
   <Module Name="5APC3100_KBU1_000" Type="5APC3100.KBU1-000" Version="2.2.1.0">

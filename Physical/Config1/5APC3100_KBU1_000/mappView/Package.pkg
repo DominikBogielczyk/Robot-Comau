@@ -9,5 +9,9 @@
     <Object Type="File">MainContent.binding</Object>
     <Object Type="File">ManualContent.binding</Object>
     <Object Type="File">ManualContent.eventbinding</Object>
+    <Object Type="File">MainContent.eventbinding</Object>
+    <Object Type="File">AlarmContent.binding</Object>
+    <Object Type="File">UsersContent.eventbinding</Object>
+    <Object Type="File">AlarmContent.eventbinding</Object>
   </Objects>
 </Package>

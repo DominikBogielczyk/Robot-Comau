@@ -12,5 +12,7 @@
     <Object Type="Program" Language="IEC">Clock</Object>
     <Object Type="Program" Language="IEC">PackML</Object>
     <Object Type="Package">Sources</Object>
+    <Object Type="Program" Language="IEC">Alarms</Object>
+    <Object Type="Program" Language="IEC">ElementsDetection</Object>
   </Objects>
 </Package>

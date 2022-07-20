@@ -56,6 +56,15 @@
         </Variable>
         <Variable Name="STEP" />
       </Task>
+      <Task Name="PackML" />
+      <Task Name="Alarms">
+        <Variable Name="MpAlarmXCore_0" />
+      </Task>
+      <Task Name="ElementsDe">
+        <Variable Name="Camera_0" />
+        <Variable Name="DetectedSquares" />
+        <Variable Name="PixelRange_0" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

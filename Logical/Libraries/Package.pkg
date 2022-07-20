@@ -26,5 +26,8 @@
     <Object Type="Library" Language="binary" Description="This library contains standard function blocks and functions for IEC 61131-3.">standard</Object>
     <Object Type="Library" Language="Binary" Description="OMAC PackML">MpPackML</Object>
     <Object Type="Library" Language="Binary" Description="The AsOpcUac library supports communication with OPC-UA servers">AsOpcUac</Object>
+    <Object Type="Library" Language="Binary" Description="Advanced alarm management">MpAlarmX</Object>
+    <Object Type="Library" Language="Binary" Description="Communication library for mappView widgets">MpServer</Object>
+    <Object Type="Library" Language="Binary" Description="User management based on user role system">MpUserX</Object>
   </Objects>
 </Package>
