@@ -426,7 +426,7 @@
             <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
           </Target>
         </Action>
-      </EventHandler>
+			</EventHandler>
       <EventHandler condition="newValue = 0">
         <Action>
           <Target xsi:type="widgets.brease.Image.Action" contentRefId="MainContent" widgetRefId="ImgSquare13">
