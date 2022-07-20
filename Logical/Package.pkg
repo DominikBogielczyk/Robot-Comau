@@ -13,6 +13,6 @@
     <Object Type="Program" Language="IEC">PackML</Object>
     <Object Type="Package">Sources</Object>
     <Object Type="Program" Language="IEC">Alarms</Object>
-    <Object Type="Program" Language="IEC">ElementsDetection</Object>
+    <Object Type="Program" Language="IEC">Elements_detection</Object>
   </Objects>
 </Package>

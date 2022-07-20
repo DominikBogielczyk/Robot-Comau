@@ -60,10 +60,23 @@
       <Task Name="Alarms">
         <Variable Name="MpAlarmXCore_0" />
       </Task>
-      <Task Name="ElementsDe">
-        <Variable Name="Camera_0" />
+      <Task Name="OpcCtrl" />
+      <Task Name="RobotMove" />
+      <Task Name="Elements_d">
+        <Variable Name="Camera_0">
+          <Variable Name="ExposureTime" />
+          <Variable Name="Focus" />
+          <Variable Name="NumSearch" />
+          <Variable Name="Enable" />
+          <Variable Name="diTrigger" />
+          <Variable Name="ImageAcq" />
+          <Variable Name="PixelCntSquareArray" />
+          <Variable Name="Ready" />
+          <Variable Name="FlashColor" />
+          <Variable Name="ModelNumArray" />
+          <Variable Name="FlashSegment" />
+        </Variable>
         <Variable Name="DetectedSquares" />
-        <Variable Name="PixelRange_0" />
       </Task>
     </Module>
   </DefaultView>
