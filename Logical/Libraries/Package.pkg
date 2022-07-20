@@ -15,11 +15,16 @@
     <Object Type="Library" Language="binary" Description="The AsEPL library is used to access service data objects of Ethernet-Powerlink stations">AsEPL</Object>
     <Object Type="Library" Language="binary" Description="The AsIO library makes it possible to determine the states and values of a data point and carry out forcing operations.">AsIO</Object>
     <Object Type="Library" Language="binary" Description="The SYS_LIB library contains functions for memory management and operating system manipulation as well as hardware-specific functions.">sys_lib</Object>
-    <Object Type="Library" Language="Binary" Description="Communication library for mappView widgets">MpServer</Object>
-    <Object Type="Library" Language="Binary" Description="Advanced alarm management">MpAlarmX</Object>
+    <Object Type="Library" Language="binary" Description="[mapp Motion] Robotics library">MpRobotics</Object>
+    <Object Type="Library" Language="binary" Description="[mapp Motion] PLCopen axes group library">McAxGroup</Object>
     <Object Type="Library" Language="Binary" Description="Core library for mapp components">MpBase</Object>
-    <Object Type="Library" Language="binary" Description="User Role System">ArUser</Object>
-    <Object Type="Library" Language="Binary" Description="User management based on user role system">MpUserX</Object>
+    <Object Type="Library" Language="binary" Description="[mapp Motion] Robotics and CNC path generator library">McPathGen</Object>
+    <Object Type="Library" Language="binary" Description="[mapp Motion] PLCopen axis library">McAxis</Object>
+    <Object Type="Library" Language="binary" Description="[mapp Motion] Program interpreter library">McProgInt</Object>
+    <Object Type="Library" Language="binary" Description="[mapp Motion] ACOPOS axis library">McAcpAx</Object>
+    <Object Type="Library" Language="binary" Description="This library contains functionality to execute traces (to sample numeric values periodically for a defined time-span)">CoTrace</Object>
+    <Object Type="Library" Language="binary" Description="This library contains standard function blocks and functions for IEC 61131-3.">standard</Object>
     <Object Type="Library" Language="Binary" Description="OMAC PackML">MpPackML</Object>
+    <Object Type="Library" Language="Binary" Description="The AsOpcUac library supports communication with OPC-UA servers">AsOpcUac</Object>
   </Objects>
 </Package>

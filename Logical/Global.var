@@ -1,14 +1,13 @@
+VAR RETAIN
+	RestorePos : ARRAY[0..5] OF McAcpAxRestorePosType;
+END_VAR
 VAR
-	SquareArray : ARRAY[0..13] OF BOOL;
-	ElementsArray : ARRAY[0..13] OF USINT;
-	diStop : BOOL;
-	toStopped : BOOL;
-	diReset : BOOL;
-	
-	MpPackMLMode_Auto : MpPackMLMode;
-	MpPackMLMode_SemiAuto : MpPackMLMode;
-	MpPackMLMode_Manual : MpPackMLMode;
-	MpPackMLCore_0 : MpPackMLCore;
-	
-	test : USINT;
+	P2up : McPointType := (Pos:=(X:=410,Y:=200,Z:=200),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
+	P2 : McPointType := (Pos:=(X:=410,Y:=200,Z:=100),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
+	P1up : McPointType := (Pos:=(X:=510,Y:=-300,Z:=200),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
+	P1 : McPointType := (Pos:=(X:=510,Y:=-300,Z:=100),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
+	P0 : McPointType := (Pos:=(X:=435,Y:=0,Z:=405),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
+	HOME : McPointType := (Pos:=(X:=435,Y:=0,Z:=685),Orient:=(Angle1:=0,Angle2:=90,Angle3:=0));
+	PZ : McPointType := (Pos:=(X:=435,Y:=0,Z:=685),Orient:=(Angle1:=0,Angle2:=90,Angle3:=0));
+	gSafety : gSafeType;
 END_VAR

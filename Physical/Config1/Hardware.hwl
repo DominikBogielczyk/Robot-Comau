@@ -2,69 +2,66 @@
 <?AutomationStudio FileVersion="4.9"?>
 <BR.AS.HardwareTopology>
   <TimeStamps>
-    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="07/19/2022 09:11:56" />
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="07/20/2022 10:57:06" />
   </TimeStamps>
   <Modules>
-    <Module Name="5APC3100_KBU1_000" Type="5APC3100.KBU1-000" X="229" Y="131" />
-    <Module Name="5AC901.IPLK-00" Type="5AC901.IPLK-00" X="234.8" Y="154" />
-    <Module Name="8EI8X8MWT10.0100-1" Type="8EI8X8MWT10.0100-1" X="483" Y="94" />
+    <Module Name="5APC3100_KBU1_000" Type="5APC3100.KBU1-000" X="136" Y="182" />
+    <Module Name="5AC901.IPLK-00" Type="5AC901.IPLK-00" X="141.8" Y="205" />
     <Module Name="VSS112Q21.031P-000" Type="VSS112Q21.031P-000" X="409" Y="-94" />
-    <Module Name="X20BB80" Type="X20BB80" X="150" Y="-32" />
-    <Module Name="X20BM11" Type="X20BM11" X="188" Y="-32" />
-    <Module Name="X20DI9371" Type="X20DI9371" X="188" Y="-32" />
-    <Module Name="X20TB12a" Type="X20TB12" X="188" Y="-5" />
-    <Module Name="X20BM15" Type="X20BM15" X="201" Y="-32" />
-    <Module Name="X20DO9322" Type="X20DO9322" X="201" Y="-32" />
-    <Module Name="X20TB12b" Type="X20TB12" X="201" Y="-5" />
-    <Module Name="X20PS9400" Type="X20PS9400" X="175" Y="-32" />
-    <Module Name="X20TB12" Type="X20TB12" X="175" Y="-5" />
-    <Module Name="X20BC0083" Type="X20BC0083" X="150" Y="-32" />
-    <Module Name="8EI8X8MWT10.0500-1" Type="8EI8X8MWT10.0500-1" X="578" Y="94" />
+    <Module Name="X20BB80" Type="X20BB80" X="152" Y="-49" />
+    <Module Name="X20BM11" Type="X20BM11" X="190" Y="-49" />
+    <Module Name="X20DI9371" Type="X20DI9371" X="190" Y="-49" />
+    <Module Name="X20TB12a" Type="X20TB12" X="190" Y="-22" />
+    <Module Name="X20BM11a" Type="X20BM11" X="203" Y="-49" />
+    <Module Name="X20DO9322" Type="X20DO9322" X="203" Y="-49" />
+    <Module Name="X20TB12b" Type="X20TB12" X="203" Y="-22" />
+    <Module Name="X20PS9400" Type="X20PS9400" X="177" Y="-49" />
+    <Module Name="X20TB12" Type="X20TB12" X="177" Y="-22" />
+    <Module Name="X20BC0083" Type="X20BC0083" X="152" Y="-49" />
+    <Module Name="DriveQ2-Q4-Q6_Racer3_1" Type="8EI8X8MWT10.xxxx-1" X="409" Y="95" />
+    <Module Name="DriveQ1-Q3-Q5_Racer3_1" Type="8EI8X8MWT10.xxxx-1" X="315" Y="95" />
   </Modules>
   <Links>
+    <Link From="DriveQ1-Q3-Q5_Racer3_1" To="DriveQ2-Q4-Q6_Racer3_1" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="416.7" Y="105.5" />
+      <Point X="416.7" Y="105.5" />
+      <Point X="408.7" Y="105.5" />
+      <Point X="395" Y="105.5" />
+      <Point X="395" Y="85" />
+      <Point X="331.1" Y="85" />
+      <Point X="331.1" Y="94.5" />
+      <Point X="331.1" Y="105.5" />
+      <Point X="331.1" Y="105.5" />
+    </Link>
+    <Link From="DriveQ1-Q3-Q5_Racer3_1" To="X20BC0083" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="322.7" Y="105.5" />
+      <Point X="322.7" Y="105.5" />
+      <Point X="314.7" Y="105.5" />
+      <Point X="166" Y="105.5" />
+      <Point X="166" Y="51" />
+      <Point X="166" Y="41" />
+      <Point X="166" Y="41" />
+    </Link>
     <Link From="5AC901.IPLK-00" To="X20BC0083" FromPort="IF1" ToPort="PLK1" IsRoutedByUser="False">
-      <Point X="164" Y="43" />
-      <Point X="155.75" Y="43" />
-      <Point X="155.75" Y="68" />
-      <Point X="155.75" Y="75" />
-      <Point X="295" Y="75" />
-      <Point X="295" Y="162" />
-      <Point X="282.900024" Y="162" />
-      <Point X="275.900024" Y="162" />
-      <Point X="275.900024" Y="162" />
+      <Point X="182.8" Y="213" />
+      <Point X="182.8" Y="213" />
+      <Point X="189.8" Y="213" />
+      <Point X="195" Y="213" />
+      <Point X="195" Y="175" />
+      <Point X="157.75" Y="175" />
+      <Point X="157.75" Y="51" />
+      <Point X="157.75" Y="26" />
+      <Point X="166" Y="26" />
     </Link>
-    <Link From="8EI8X8MWT10.0100-1" To="8EI8X8MWT10.0500-1" FromPort="PLK1" ToPort="PLK1" IsRoutedByUser="False">
-      <Point X="586.5" Y="104.5" />
-      <Point X="586.5" Y="104.5" />
-      <Point X="578.5" Y="104.5" />
-      <Point X="565" Y="104.5" />
-      <Point X="565" Y="85" />
-      <Point X="475" Y="85" />
-      <Point X="475" Y="104.5" />
-      <Point X="482.7" Y="104.5" />
-      <Point X="490.7" Y="104.5" />
-      <Point X="490.7" Y="104.5" />
-    </Link>
-    <Link From="8EI8X8MWT10.0100-1" To="VSS112Q21.031P-000" FromPort="PLK2" ToPort="PLK2" IsRoutedByUser="False">
+    <Link From="VSS112Q21.031P-000" To="DriveQ2-Q4-Q6_Racer3_1" FromPort="PLK2" ToPort="PLK2" IsRoutedByUser="False">
       <Point X="472" Y="24" />
       <Point X="472" Y="24" />
       <Point X="472" Y="29" />
       <Point X="472" Y="35" />
-      <Point X="499.1" Y="35" />
-      <Point X="499.1" Y="93.5" />
-      <Point X="499.1" Y="104.5" />
-      <Point X="499.1" Y="104.5" />
-    </Link>
-    <Link From="8EI8X8MWT10.0500-1" To="X20BC0083" FromPort="PLK2" ToPort="PLK2" IsRoutedByUser="False">
-      <Point X="594.9" Y="104.5" />
-      <Point X="594.9" Y="112.375" />
-      <Point X="577.9" Y="112.375" />
-      <Point X="558" Y="112.375" />
-      <Point X="558" Y="85" />
-      <Point X="164" Y="85" />
-      <Point X="164" Y="68" />
-      <Point X="164" Y="58" />
-      <Point X="164" Y="58" />
+      <Point X="425.1" Y="35" />
+      <Point X="425.1" Y="94.5" />
+      <Point X="425.1" Y="105.5" />
+      <Point X="425.1" Y="105.5" />
     </Link>
   </Links>
   <InfoElements />

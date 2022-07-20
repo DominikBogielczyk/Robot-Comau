@@ -1,6 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ManualContent" height="650" width="1030" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="280" left="300" zIndex="0" text="MANUAL" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="velocityQ" top="180" left="180" zIndex="0" />
+    <Widget xsi:type="widgets.brease.Button" id="minusQ1" top="180" left="360" width="80" height="31" zIndex="1" text="-" />
+    <Widget xsi:type="widgets.brease.Button" id="plusQ1" top="180" left="480" width="80" height="31" zIndex="2" text="+" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="180" left="440" width="40" height="31" zIndex="3" text="" />
+    <Widget xsi:type="widgets.brease.Button" id="minusQ2" top="240" left="360" width="80" height="31" zIndex="4" text="-" />
+    <Widget xsi:type="widgets.brease.Button" id="plusQ2" top="240" left="480" width="80" height="31" zIndex="5" text="+" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="240" left="440" width="40" height="31" zIndex="6" text="" />
+    <Widget xsi:type="widgets.brease.Button" id="minusQ3" top="300" left="360" width="80" height="31" zIndex="7" text="-" />
+    <Widget xsi:type="widgets.brease.Button" id="plusQ3" top="300" left="480" width="80" height="31" zIndex="8" text="+" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="300" left="440" width="40" height="31" zIndex="9" text="" />
+    <Widget xsi:type="widgets.brease.Button" id="minusQ4" top="360" left="360" width="80" height="31" zIndex="10" text="-" />
+    <Widget xsi:type="widgets.brease.Button" id="plusQ4" top="360" left="480" width="80" height="31" zIndex="11" text="+" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="360" left="440" width="40" height="31" zIndex="12" text="" />
+    <Widget xsi:type="widgets.brease.Button" id="minusQ5" top="420" left="360" width="80" height="31" zIndex="13" text="-" />
+    <Widget xsi:type="widgets.brease.Button" id="plusQ5" top="420" left="480" width="80" height="31" zIndex="14" text="+" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="420" left="440" width="40" height="31" zIndex="15" text="" />
+    <Widget xsi:type="widgets.brease.Button" id="minusQ6" top="480" left="360" width="80" height="31" zIndex="16" text="-" />
+    <Widget xsi:type="widgets.brease.Button" id="plusQ6" top="480" left="480" width="80" height="31" zIndex="17" text="+" />
+    <Widget xsi:type="widgets.brease.Label" id="Label6" top="480" left="440" width="40" height="31" zIndex="18" text="" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="cord" top="120" left="300" width="280" zIndex="19" mouseDownText="układ współżędnych zewnętrznych" text="układ współżędnych wewnętrznych" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputX" top="180" left="720" zIndex="20" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputY" top="240" left="720" zIndex="21" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputZ" top="300" left="720" zIndex="22" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputA" top="360" left="720" zIndex="23" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputB" top="420" left="720" zIndex="24" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputC" top="480" left="720" zIndex="25" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputQ1" top="180" left="580" zIndex="26" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputQ2" top="240" left="580" zIndex="27" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputQ3" top="300" left="580" zIndex="28" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputQ4" top="360" left="580" zIndex="29" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputQ5" top="420" left="580" zIndex="30" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputQ6" top="480" left="580" zIndex="31" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto" top="60" left="400" zIndex="32" mouseDownText="manual" text="auto" />
+    <Widget xsi:type="widgets.brease.Label" id="Label7" top="140" left="600" zIndex="33" text="AXIS" />
+    <Widget xsi:type="widgets.brease.Label" id="Label8" top="140" left="740" zIndex="34" text="TCP" />
+    <Widget xsi:type="widgets.brease.Label" id="Label9" top="180" left="80" zIndex="35" text="Velocity" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto1" top="240" left="180" zIndex="36" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto2" top="300" left="180" zIndex="37" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto3" top="360" left="180" zIndex="38" />
+    <Widget xsi:type="widgets.brease.Label" id="Label10" top="240" left="80" zIndex="39" text="POWER" />
+    <Widget xsi:type="widgets.brease.Label" id="Label11" top="300" left="80" zIndex="40" text="HOME" />
+    <Widget xsi:type="widgets.brease.Label" id="Label12" top="360" left="60" width="100" zIndex="41" text="Error Reset" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto4" top="420" left="180" zIndex="42" disabledBackColor="rgba(85, 85, 85, 1)" disabledCheckedBackColor="rgba(105, 105, 105, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.Label" id="Label13" top="420" left="80" width="60" zIndex="43" text="Error" />
   </Widgets>
 </Content>
