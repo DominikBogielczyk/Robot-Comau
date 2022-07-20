@@ -4,7 +4,7 @@
   <Element ID="MappViewConfiguration" Type="MAPPVIEWCFG">
     <Group ID="Server">
       <Selector ID="WebServerProtocol" Value="1">
-        <Property ID="WebServerPort" Value="85" />
+        <Property ID="WebServerPort" Value="81" />
       </Selector>
       <Property ID="MaxClientConnections" Value="3" />
       <Property ID="MaxBRClientConnections" Value="3" />
