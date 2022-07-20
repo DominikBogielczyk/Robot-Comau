@@ -1,6 +1,0 @@
-VAR
-	MpPackMLMode_Auto : MpPackMLMode;
-	MpPackMLMode_SemiAuto : MpPackMLMode;
-	MpPackMLMode_Manual : MpPackMLMode;
-	MpPackMLCore_0 : MpPackMLCore;
-END_VAR

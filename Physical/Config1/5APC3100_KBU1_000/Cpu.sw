@@ -7,7 +7,8 @@
   <TaskClass Name="Cyclic#4">
     <Task Name="Elements_d" Source="Elements_detection.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Alarms" Source="Alarms.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="PackML" Source="PackML.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="PackML_Log" Source="PackML_Logic.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="PackML_Aut" Source="PackML_Auto.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />

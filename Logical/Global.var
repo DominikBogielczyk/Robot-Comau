@@ -1,4 +1,14 @@
 VAR
 	SquareArray : ARRAY[0..13] OF BOOL;
 	ElementsArray : ARRAY[0..13] OF USINT;
+	diStop : BOOL;
+	toStopped : BOOL;
+	diReset : BOOL;
+	
+	MpPackMLMode_Auto : MpPackMLMode;
+	MpPackMLMode_SemiAuto : MpPackMLMode;
+	MpPackMLMode_Manual : MpPackMLMode;
+	MpPackMLCore_0 : MpPackMLCore;
+	
+	test : USINT;
 END_VAR
