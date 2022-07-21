@@ -51,6 +51,7 @@
           <Variable Name="Home" />
           <Variable Name="Info">
             <Variable Name="JointAxisPosition" EnableArrayElements="True" />
+            <Variable Name="ReadyToPowerOn" />
           </Variable>
           <Variable Name="Power" />
           <Variable Name="MoveProgram" />
@@ -58,6 +59,8 @@
           <Variable Name="Jog" />
           <Variable Name="ErrorReset" />
           <Variable Name="Error" />
+          <Variable Name="IsHomed" />
+          <Variable Name="Enable" />
         </Variable>
         <Variable Name="manual" />
         <Variable Name="RoboParameters">
@@ -80,6 +83,7 @@
         <Variable Name="Z1" />
         <Variable Name="TCPvalue" />
         <Variable Name="cartezianVSjog" />
+        <Variable Name="doMagnet" />
       </Task>
       <Task Name="Clock">
         <Variable Name="TON_0">

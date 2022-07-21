@@ -17,5 +17,6 @@ VAR
 	VelocityQ5 : REAL; (*Przypisanie predkosci do parametru 5 w zalerznosci od wyboru wspólrzednych*)
 	VelocityQ6 : REAL; (*Przypisanie predkosci do parametru 6 w zalerznosci od wyboru wspólrzednych*)
 	VelocityQ : REAL;
+	doMagnet : BOOL;
 	RoboParameters : MpRoboArm6AxisParType;
 END_VAR

@@ -59,10 +59,7 @@
 <Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="NumericOutputQ1" attribute="value" />
 </Binding>
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Comau:manual" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="auto" attribute="value" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.Power" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="auto1" attribute="value" />
@@ -78,6 +75,19 @@
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.Error" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="auto4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Comau:doMagnet" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="auto5" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.IsHomed" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="auto7" attribute="value" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.Info.ReadyToPowerOn" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="auto6" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

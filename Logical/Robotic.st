@@ -3,7 +3,7 @@
 
 	PROGRAM _MAIN          
 	Feedrate(3500);    //move with reduced speed      
-	 MoveJ(HOME); 
+	 MoveJ(PO); 
 //	 MoveJ(P0);        //move system to point P2 
 //	 MoveL(P1up);        //move system to point Home     
 //	 MoveL(P1);

@@ -725,5 +725,27 @@
         </Sequence>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="EventBinding_2">
+      <Source xsi:type="opcUa.Event" refId="::Comau:MpRoboArm6Axis_0.IsHomed" event="ValueChanged" />
+      <Operand datatype="BOOL" name="ChceckIsHome">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:MpRoboArm6Axis_0.IsHomed">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="ChceckIsHome=TRUE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label15">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="ChceckIsHome=FALSE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label15">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>
