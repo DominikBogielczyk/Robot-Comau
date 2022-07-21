@@ -9,6 +9,37 @@
   </Aliases>
   <DefaultView>
     <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="diReset" />
+        <Variable Name="diStop" />
+        <Variable Name="ElementsArray" EnableArrayElements="True" />
+        <Variable Name="gAlarmXCore0" />
+        <Variable Name="gAxesGroup_Racer3_1" />
+        <Variable Name="gAxisQ1_Racer3_1" />
+        <Variable Name="gAxisQ2_Racer3_1" />
+        <Variable Name="gAxisQ3_Racer3_1" />
+        <Variable Name="gAxisQ4_Racer3_1" />
+        <Variable Name="gAxisQ5_Racer3_1" />
+        <Variable Name="gAxisQ6_Racer3_1" />
+        <Variable Name="gCamera" />
+        <Variable Name="gPackMLCore" />
+        <Variable Name="gSafety" />
+        <Variable Name="HOME" />
+        <Variable Name="MpPackMLCore_0" />
+        <Variable Name="MpPackMLMode_Auto" />
+        <Variable Name="MpPackMLMode_Manual" />
+        <Variable Name="MpPackMLMode_SemiAuto" />
+        <Variable Name="P0" />
+        <Variable Name="P1" />
+        <Variable Name="P1up" />
+        <Variable Name="P2" />
+        <Variable Name="P2up" />
+        <Variable Name="PZ" />
+        <Variable Name="RestorePos" />
+        <Variable Name="SquareArray" EnableArrayElements="True" />
+        <Variable Name="test" />
+        <Variable Name="toStopped" />
+      </GlobalVariables>
       <Task Name="Comau">
         <Variable Name="MpRoboArm6Axis_0">
           <Variable Name="X" />
