@@ -747,5 +747,27 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="EventBinding_3">
+      <Source xsi:type="opcUa.Event" refId="::Comau:MpRoboArm6Axis_0.Info.ReadyToPowerOn" event="ValueChanged" />
+      <Operand datatype="BOOL" name="ReadyValue">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:MpRoboArm6Axis_0.Info.ReadyToPowerOn">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="ReadyValue=TRUE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="lblSafetyReset">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="ReadyValue=FALSE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="lblSafetyReset">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>

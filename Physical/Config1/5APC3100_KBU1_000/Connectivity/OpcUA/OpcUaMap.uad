@@ -91,7 +91,6 @@
         </Variable>
         <Variable Name="STEP" />
       </Task>
-      <Task Name="PackML" />
       <Task Name="Alarms">
         <Variable Name="MpAlarmXCore_0" />
       </Task>
