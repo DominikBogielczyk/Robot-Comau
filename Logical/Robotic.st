@@ -1,20 +1,28 @@
-#include 'Global.var'
+#include'Global.var'
 
+PROGRAM _MAIN          
+	Feedrate(5000);    //move with reduced speed      
 
-	PROGRAM _MAIN          
-	Feedrate(3500);    //move with reduced speed      
-	 MoveJ(PO); 
-//	 MoveJ(P0);        //move system to point P2 
-//	 MoveL(P1up);        //move system to point Home     
-//	 MoveL(P1);
-//	 WaitTime(3);        //wait for 3 seconds 
-//	 MoveL(P1up);
-//	 MoveL(P2up);
-//	 MoveL(P2);
-//	 WaitTime(3);
-//	 MoveL(P2up);
-//	 MoveL(P0);
-//	 MoveJ(HOME);
+	MoveJ(HOME); //move HOME
 
+	MoveJ(P0);   //move to lower HOME pose
 
-	END_PROGRAM
+	MoveL(P1up); //move over the aim 1 pose
+	Feedrate(2000);
+
+	MoveL(P1);  //move to aim 1
+	WaitTime(1);        
+	MoveL(P1up); //move over the aim 1 pose
+	Feedrate(5000);	
+	MoveL(P2up); //move over the aim 2 pose
+	Feedrate(2000);
+
+	MoveL(P2);    //move to aim 2
+	WaitTime(1);
+	MoveL(P2up); //move over the aim 2 pose
+	Feedrate(5000);	
+
+	MoveL(P0);   //move to lower HOME pose
+	MoveJ(HOME); //move to  HOME
+
+END_PROGRAM

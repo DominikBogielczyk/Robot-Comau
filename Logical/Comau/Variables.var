@@ -1,4 +1,3 @@
-(*Insert your comment here.*)
 VAR
 	TCPvalue : INT;
 	manual : BOOL; (*Zalacza wybur trybu 0 - auto 1 - manual *)
@@ -19,4 +18,24 @@ VAR
 	VelocityQ : REAL;
 	doMagnet : BOOL;
 	RoboParameters : MpRoboArm6AxisParType;
+	
+	x : INT := 0;
+	AimIsGood : BOOL := FALSE;
+	Step : {REDUND_UNREPLICABLE} Step_typ := (0);
+	cmdTurnOn : BOOL := FALSE;
+	cmdTurnOff : BOOL := FALSE;
+	cmdExecute : BOOL := FALSE;
+	P1P2_Ok : BOOL := FALSE;
+	cmdAck : BOOL;
+	cmdStop : BOOL;
+	cmdStart : BOOL;
+	cmdContinue : BOOL;
+	
+	
+END_VAR
+
+VAR CONSTANT
+	SizeOfArray : INT := 13;
+	IndexSize : INT := 3;
+	Index : ARRAY[0..2] OF INT := [1,2,3];
 END_VAR

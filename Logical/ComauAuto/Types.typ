@@ -1,3 +1,4 @@
+
 TYPE
 	Step_typ : 
 		(
@@ -17,5 +18,5 @@ TYPE
 		ROBOTCTRL_ERROR,
 		ROBOTCTRL_STOP,
 		ROBOTCTRL_CONTINUE
-	);
+		);
 END_TYPE

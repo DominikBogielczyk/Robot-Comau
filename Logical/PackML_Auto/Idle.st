@@ -1,4 +1,4 @@
 
-ACTION Action_1: 
+ACTION Idle: 
 
 END_ACTION

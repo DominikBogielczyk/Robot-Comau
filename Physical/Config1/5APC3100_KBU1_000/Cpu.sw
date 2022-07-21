@@ -4,6 +4,7 @@
   <TaskClass Name="Cyclic#1">
     <Task Name="Comau" Source="Comau.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="OpcCtrl" Source="Sources.OpcCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ComauAuto" Source="ComauAuto.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
     <Task Name="RobotMove" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
@@ -60,6 +61,10 @@
     <BinaryObject Name="Config_6" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_7" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config_9" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="PixelCount" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config_8" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Matching15" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
     <LibraryObject Name="McBase" Source="Libraries.McBase.lby" Memory="UserROM" Language="binary" Debugging="true" />
@@ -83,6 +88,9 @@
     <LibraryObject Name="CoTrace" Source="Libraries.CoTrace.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="standard" Source="Libraries.standard.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="MpPackML" Source="Libraries.MpPackML.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpAlarmX" Source="Libraries.MpAlarmX.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpServer" Source="Libraries.MpServer.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpUserX" Source="Libraries.MpUserX.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asarprof" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asieccon" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asarlog" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -90,8 +98,10 @@
     <LibraryObject Name="brsystem" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="dataobj" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="MpAlarmX" Source="Libraries.MpAlarmX.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="MpServer" Source="Libraries.MpServer.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="MpUserX" Source="Libraries.MpUserX.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="asopcuac" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="aseth" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="arcert" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="aruser" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

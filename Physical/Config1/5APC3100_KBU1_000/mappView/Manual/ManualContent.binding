@@ -68,11 +68,7 @@
 <Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.Home" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="auto2" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.ErrorReset" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="auto3" attribute="value" />
-</Binding>
-<Binding mode="oneWay">
+		<Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.Error" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="auto4" attribute="value" />
 </Binding>

@@ -4,7 +4,7 @@ ACTION Stopped:
 		mpPACKML_STATE_STOPPED,
 		1) THEN
 		
-		MpPackMLMode_Auto.Reset := 0;
+		//MpPackMLMode_Auto.Reset := 0;
 		
 		IF diReset THEN
 			MpPackMLStateComplete(gPackMLCore, 1);

@@ -1,3 +1,6 @@
+VAR
+	toAbort : BOOL;
+END_VAR
 VAR RETAIN
 	RestorePos : ARRAY[0..5] OF McAcpAxRestorePosType;
 END_VAR
@@ -20,4 +23,11 @@ VAR
 	MpPackMLMode_Manual : MpPackMLMode;
 	MpPackMLCore_0 : MpPackMLCore;
 	test : USINT;
+	pom : ARRAY[0..9] OF BOOL := [10(0)];
+	
+	gRobPos : ARRAY[0..13] OF McPointType := [(Pos:=(X:=510,Y:=-300,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=-200,Z:=40),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=510,Y:=-100,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=0,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=100,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=200,Z:=40),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=510,Y:=300,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=-300,Z:=40),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=410,Y:=-200),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=410,Y:=-100,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=0,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=100,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=200,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=300,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0))];
+	gActPos : ARRAY[0..13] OF INT := [2(0),1,2(0),2,0,3,6(0)];
+	gAimPos : ARRAY[0..13] OF INT := [11(0),1,2,3];
+	gIsPosGood : ARRAY[0..13] OF BOOL := [11(0),3(1)];
+	y : USINT;
 END_VAR

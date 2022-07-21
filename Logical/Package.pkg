@@ -15,5 +15,6 @@
     <Object Type="Program" Language="IEC">Elements_detection</Object>
     <Object Type="Program" Language="IEC">PackML_Logic</Object>
     <Object Type="Program" Language="IEC">PackML_Auto</Object>
+    <Object Type="Program" Language="IEC">ComauAuto</Object>
   </Objects>
 </Package>

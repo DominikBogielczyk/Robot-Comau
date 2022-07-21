@@ -38,21 +38,19 @@
     <Widget xsi:type="widgets.brease.Label" id="Label9" top="340" left="0" width="140" zIndex="34" text="VELOCITY" fontSize="14px" bold="true" />
     <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto1" top="400" left="160" width="140" height="40" zIndex="35" mouseDownBackColor="rgba(255, 140, 0, 1)" />
     <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto2" top="460" left="160" width="140" height="40" zIndex="36" mouseDownBackColor="rgba(255, 140, 0, 1)" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto3" top="580" left="160" width="140" height="40" zIndex="37" mouseDownBackColor="rgba(255, 140, 0, 1)" />
-    <Widget xsi:type="widgets.brease.Label" id="Label10" top="400" left="0" zIndex="38" text="POWER" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="Label11" top="460" left="0" zIndex="39" text="HOME" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="Label12" top="580" left="0" width="180" zIndex="40" text="ERROR RESET" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto4" top="40" left="160" width="140" height="40" zIndex="41" backColor="rgba(255, 140, 0, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
-    <Widget xsi:type="widgets.brease.Label" id="Label13" top="40" left="0" width="100" zIndex="42" text="ERROR" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto5" top="520" left="160" width="140" height="40" zIndex="43" mouseDownBackColor="rgba(255, 140, 0, 1)" />
-    <Widget xsi:type="widgets.brease.Label" id="Label14" top="520" left="0" width="180" zIndex="44" text="ELEKTROMAGNES" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="Label15" top="160" left="320" width="400" height="40" zIndex="45" text="ROBOT NIE ODCZYTAŁ POZYCJI HOME" backColor="rgba(220, 220, 220, 1)" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto6" top="100" left="160" width="140" height="40" zIndex="46" backColor="rgba(85, 85, 85, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
-    <Widget xsi:type="widgets.brease.Label" id="Label16" top="100" left="0" width="100" zIndex="47" text="READY" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto7" top="160" left="160" width="140" height="40" zIndex="48" backColor="rgba(85, 85, 85, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
-    <Widget xsi:type="widgets.brease.Label" id="Label17" top="160" left="0" width="100" zIndex="49" text="IS HOME" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="Label18" top="300" left="80" width="140" zIndex="50" text="STEROWANIE" fontSize="18px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="Label19" top="0" left="100" width="140" zIndex="51" text="STATUS" fontSize="18px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="lblSafetyReset" top="100" left="320" width="400" height="40" zIndex="52" text="ZRESETUJ SYSTEM SAFETY" backColor="rgba(220, 220, 220, 1)" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label10" top="400" left="0" zIndex="37" text="POWER" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label11" top="460" left="0" zIndex="38" text="HOME" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto4" top="40" left="160" width="140" height="40" zIndex="39" backColor="rgba(255, 140, 0, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.Label" id="Label13" top="40" left="0" width="100" zIndex="40" text="ERROR" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto5" top="520" left="160" width="140" height="40" zIndex="41" mouseDownBackColor="rgba(255, 140, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="Label14" top="520" left="0" width="180" zIndex="42" text="ELEKTROMAGNES" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label15" top="160" left="320" width="400" height="40" zIndex="43" text="ROBOT NIE ODCZYTAŁ POZYCJI HOME" backColor="rgba(220, 220, 220, 1)" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto6" top="100" left="160" width="140" height="40" zIndex="44" backColor="rgba(85, 85, 85, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.Label" id="Label16" top="100" left="0" width="100" zIndex="45" text="READY" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto7" top="160" left="160" width="140" height="40" zIndex="46" backColor="rgba(85, 85, 85, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.Label" id="Label17" top="160" left="0" width="100" zIndex="47" text="IS HOME" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label18" top="300" left="80" width="140" zIndex="48" text="STEROWANIE" fontSize="18px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label19" top="0" left="100" width="140" zIndex="49" text="STATUS" fontSize="18px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="lblSafetyReset" top="100" left="320" width="400" height="40" zIndex="50" text="ZRESETUJ SYSTEM SAFETY" backColor="rgba(220, 220, 220, 1)" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" />
   </Widgets>
 </Content>

@@ -4,14 +4,10 @@
   <Objects>
     <Object Type="File">Visualizat.vis</Object>
     <Object Type="File">Config.mappviewcfg</Object>
-    <Object Type="File">TopContent.eventbinding</Object>
-    <Object Type="File">TopContent.binding</Object>
-    <Object Type="File">MainContent.binding</Object>
-    <Object Type="File">ManualContent.binding</Object>
-    <Object Type="File">ManualContent.eventbinding</Object>
-    <Object Type="File">MainContent.eventbinding</Object>
-    <Object Type="File">AlarmContent.binding</Object>
-    <Object Type="File">UsersContent.eventbinding</Object>
-    <Object Type="File">AlarmContent.eventbinding</Object>
+    <Object Type="Package">Main</Object>
+    <Object Type="Package">Top</Object>
+    <Object Type="Package">Manual</Object>
+    <Object Type="Package">Alarm</Object>
+    <Object Type="Package">Users</Object>
   </Objects>
 </Package>

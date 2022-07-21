@@ -1,8 +1,6 @@
 
 PROGRAM _INIT
-	RestorePos;
-	MpRoboArm6Axis_0.Enable := TRUE;
-
+	
 	MpRoboArm6Axis_0.Override  := 100.0;
 	RoboParameters.CoordSystem := 0; 
 	RoboParameters.Velocity := 100; 
@@ -22,6 +20,8 @@ PROGRAM _CYCLIC
 	RoboParameters.Jog.Velocity[3] := VelocityQ4;
 	RoboParameters.Jog.Velocity[4] := VelocityQ5;
 	RoboParameters.Jog.Velocity[5] := VelocityQ6;
+	
+
 	    
 	IF cartezianVSjog THEN 
 		RoboParameters.Jog.CoordSystem := 10;
@@ -147,7 +147,7 @@ PROGRAM _CYCLIC
 			Step:=ROBOTCTRL_CALCULATE_P2;
 
 		ROBOTCTRL_CALCULATE_P2:	
-			//assigning values to P2 and P2up
+				//assigning values to P2 and P2up
 			FOR x:=0  TO SizeOfArray DO
 				IF gAimPos[x]=Index[y] THEN
 					pom[4]:=1;
@@ -244,10 +244,8 @@ END_PROGRAM
 
 
 PROGRAM _EXIT
-	MpRoboArm6Axis_0.Enable :=FALSE;
-	MpRoboArm6Axis_0();
-END_PROGRAM
+				(* Insert code here *)
+	 
+				END_PROGRAM
 
 			
-
-

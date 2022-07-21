@@ -72,6 +72,7 @@
         <Property ID="FeatureRef[2]" Value="Feature_FeedForward_Racer3_1" />
         <Property ID="FeatureRef[3]" Value="Feature_Jogging_Racer3_1" />
         <Property ID="FeatureRef[4]" Value="Feature_SharedBrakesSignals_Racer3_1" />
+        <Property ID="FeatureRef[5]" Value="Feature_WorkspaceMonitoring" />
       </Group>
     </Selector>
     <Selector ID="Alarms" Value="None" />
