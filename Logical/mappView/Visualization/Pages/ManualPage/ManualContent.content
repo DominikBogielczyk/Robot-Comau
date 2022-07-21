@@ -20,7 +20,7 @@
     <Widget xsi:type="widgets.brease.Button" id="minusQ6" top="580" left="440" height="40" zIndex="16" text="-" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="30px" bold="false" />
     <Widget xsi:type="widgets.brease.Button" id="plusQ6" top="580" left="600" height="40" zIndex="17" text="+" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="30px" />
     <Widget xsi:type="widgets.brease.Label" id="Label6" top="580" left="540" width="100" height="40" zIndex="18" text="" fontSize="18px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="cord" top="220" left="440" width="320" height="40" zIndex="19" mouseDownText="WSPÓŁRZĘDNE ZEWNĘTRZNE" text="WSPÓŁRZĘDNE WEWNĘTRZNE" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="cord" top="220" left="440" width="320" height="40" zIndex="19" mouseDownText="WSPÓŁRZĘDNE TCP" text="WSPÓŁRZĘDNE OSI" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" fontSize="16px" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputX" top="290" left="900" zIndex="20" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputY" top="350" left="900" zIndex="21" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputZ" top="410" left="900" zIndex="22" />
@@ -43,7 +43,7 @@
     <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto4" top="40" left="160" width="140" height="40" zIndex="39" backColor="rgba(255, 140, 0, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
     <Widget xsi:type="widgets.brease.Label" id="Label13" top="40" left="0" width="100" zIndex="40" text="ERROR" fontSize="14px" bold="true" />
     <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto5" top="520" left="160" width="140" height="40" zIndex="41" mouseDownBackColor="rgba(255, 140, 0, 1)" />
-    <Widget xsi:type="widgets.brease.Label" id="Label14" top="520" left="0" width="180" zIndex="42" text="ELEKTROMAGNES" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label14" top="520" left="0" width="180" zIndex="42" text="ELEKTROMAGNET" fontSize="14px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="Label15" top="160" left="320" width="400" height="40" zIndex="43" text="ROBOT NIE ODCZYTAŁ POZYCJI HOME" backColor="rgba(220, 220, 220, 1)" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" />
     <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto6" top="100" left="160" width="140" height="40" zIndex="44" backColor="rgba(85, 85, 85, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
     <Widget xsi:type="widgets.brease.Label" id="Label16" top="100" left="0" width="100" zIndex="45" text="READY" fontSize="14px" bold="true" />

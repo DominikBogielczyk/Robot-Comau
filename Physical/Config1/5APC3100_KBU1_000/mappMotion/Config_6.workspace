@@ -19,7 +19,7 @@
           <Group ID="Dimension">
             <Property ID="X" Value="700" />
             <Property ID="Y" Value="800" />
-            <Property ID="Z" Value="850" />
+            <Property ID="Z" Value="1000" />
           </Group>
         </Group>
       </Group>
