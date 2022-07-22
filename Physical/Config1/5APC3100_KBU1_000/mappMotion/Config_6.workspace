@@ -19,7 +19,7 @@
           <Group ID="Dimension">
             <Property ID="X" Value="700" />
             <Property ID="Y" Value="800" />
-            <Property ID="Z" Value="850" />
+            <Property ID="Z" Value="1000" />
           </Group>
         </Group>
       </Group>
@@ -29,10 +29,10 @@
     <Group ID="SafeSpace">
       <Group ID="Cuboids">
         <Group ID="Cuboid[1]">
-          <Property ID="ID" Value="2" />
+          <Property ID="ID" Value="0" />
           <Group ID="Translation">
             <Property ID="X" Value="100" />
-            <Property ID="Y" Value="-500" />
+            <Property ID="Y" Value="-400" />
             <Property ID="Z" Value="0.0" />
           </Group>
           <Group ID="Orientation">
@@ -41,9 +41,9 @@
             <Property ID="Angle3" Value="0.0" />
           </Group>
           <Group ID="Dimension">
-            <Property ID="X" Value="1000" />
-            <Property ID="Y" Value="500" />
-            <Property ID="Z" Value="100" />
+            <Property ID="X" Value="500" />
+            <Property ID="Y" Value="800" />
+            <Property ID="Z" Value="62" />
           </Group>
         </Group>
       </Group>

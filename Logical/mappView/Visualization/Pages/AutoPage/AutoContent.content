@@ -31,5 +31,40 @@
     <Widget xsi:type="widgets.brease.Image" id="ImgSquare11" top="345" left="335" width="100" zIndex="27" />
     <Widget xsi:type="widgets.brease.Image" id="ImgSquare12" top="345" left="195" width="100" zIndex="28" />
     <Widget xsi:type="widgets.brease.Image" id="ImgSquare13" top="345" left="55" width="100" zIndex="29" />
+    <Widget xsi:type="widgets.brease.Button" id="POWER_ON" top="80" left="800" width="160" height="70" zIndex="0" text="POWER ON" backColor="rgba(0, 255, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="POWER_OFF" top="80" left="600" width="160" height="70" zIndex="1" text="POWER OFF" backColor="rgba(255, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="EXECUTE" top="180" left="800" width="160" height="70" zIndex="2" text="EXECUTE" backColor="rgba(255, 128, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="STOP" top="380" left="800" width="160" height="70" zIndex="3" text="STOP" backColor="rgba(255, 128, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="INTERRUPT" top="280" left="800" width="160" height="70" zIndex="4" text="INTERRUPT" backColor="rgba(255, 128, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="CONTINUE" top="480" left="800" width="160" height="70" zIndex="5" text="CONTINUE" backColor="rgba(255, 128, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="160" left="60" width="40" height="40" zIndex="6" backColor="rgba(224, 224, 224, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle2" top="40" left="60" width="40" height="40" zIndex="7" backColor="rgba(224, 224, 224, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="160" left="120" width="100" height="40" zIndex="8" text="IS HOMED" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="40" left="120" width="100" height="40" zIndex="9" text="ENABLE" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle3" top="100" left="60" width="40" height="40" zIndex="10" backColor="rgba(224, 224, 224, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle4" top="220" left="60" width="40" height="40" zIndex="11" backColor="rgba(224, 224, 224, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="100" left="120" width="100" height="40" zIndex="12" text="POWER" wordWrap="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="220" left="120" width="120" height="40" zIndex="13" text="MoveProgram" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle6" top="300" left="60" width="40" height="40" zIndex="14" backColor="rgba(224, 224, 224, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="Label6" top="300" left="120" width="100" height="40" zIndex="15" text="ERROR" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle10" top="380" left="160" width="80" height="80" zIndex="16" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle21" top="160" left="60" width="40" height="40" zIndex="17" backColor="rgba(255, 128, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle22" top="300" left="60" width="40" height="40" zIndex="18" backColor="rgba(255, 0, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle23" top="40" left="60" width="40" height="40" zIndex="19" backColor="rgba(255, 128, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle24" top="100" left="60" width="40" height="40" zIndex="20" backColor="rgba(255, 128, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle26" top="220" left="60" width="40" height="40" zIndex="21" backColor="rgba(255, 128, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle11" top="460" left="160" width="80" height="80" zIndex="22" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle12" top="380" left="240" width="80" height="80" zIndex="23" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle13" top="460" left="240" width="80" height="80" zIndex="24" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle14" top="380" left="320" width="80" height="80" zIndex="25" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle15" top="460" left="320" width="80" height="80" zIndex="26" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle16" top="380" left="400" width="80" height="80" zIndex="27" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle17" top="460" left="400" width="80" height="80" zIndex="28" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle18" top="380" left="480" width="80" height="80" zIndex="29" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle19" top="460" left="480" width="80" height="80" zIndex="30" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle20" top="380" left="560" width="80" height="80" zIndex="31" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle25" top="460" left="560" width="80" height="80" zIndex="32" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle27" top="380" left="640" width="80" height="80" zIndex="33" backColor="rgba(192, 192, 192, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle28" top="460" left="640" width="80" height="80" zIndex="34" backColor="rgba(192, 192, 192, 1)" />
   </Widgets>
 </Content>

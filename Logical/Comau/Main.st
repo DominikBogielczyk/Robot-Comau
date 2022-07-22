@@ -33,7 +33,7 @@ PROGRAM _CYCLIC
 	IF MpRoboArm6Axis_0.Error THEN
 		Step := ROBOTCTRL_ERROR; 
 	END_IF;
-	
+		
 	CASE Step OF
 		
 		ROBOTCTRL_DISABLED: 
@@ -64,9 +64,10 @@ PROGRAM _CYCLIC
 			END_IF; 
 		
 		ROBOTCTRL_READY: 
+			MpRoboArm6Axis_0.MoveProgram:=0;
 			IF cmdTurnOff THEN
 				cmdTurnOff := FALSE; 
-				MpRoboArm6Axis_0.Power := FALSE; 
+			Step :=ROBOTCTRL_POWER_OFF;
 			END_IF; 
  
 			IF NOT(MpRoboArm6Axis_0.PowerOn) THEN
@@ -103,12 +104,15 @@ PROGRAM _CYCLIC
 				END_IF;		
 			END_FOR;
 			IF AimIsGood=TRUE THEN
-				
 				y:=0;
 				Step:=ROBOTCTRL_CALCULATE;
-				
 			END_IF;	
 			
+		ROBOTCTRL_POWER_OFF:	
+			MpRoboArm6Axis_0.Power := FALSE; 
+			IF NOT MpRoboArm6Axis_0.PowerOn THEN
+				Step:=ROBOTCTRL_DISABLED;
+			END_IF
 			
 		ROBOTCTRL_CALCULATE:
 			//checking if any move is needed and if all moves are done 
@@ -183,16 +187,20 @@ PROGRAM _CYCLIC
 		ROBOTCTRL_MOVE:
 			IF cmdTurnOff THEN
 				cmdTurnOff := FALSE;
-				MpRoboArm6Axis_0.Power := FALSE; 
-				Step:=ROBOTCTRL_DISABLED;
+				Step:=ROBOTCTRL_POWER_OFF;
 			END_IF; 
  
 			
-			IF cmdStop OR MpRoboArm6Axis_0.MoveInterrupted THEN
-				cmdStop := FALSE; 
-				Step:=ROBOTCTRL_STOP;
+			IF cmdInterrupt OR MpRoboArm6Axis_0.MoveInterrupted THEN
+				cmdInterrupt := FALSE; 
+				Step:=ROBOTCTRL_INTERRUPT;
 			END_IF; 
 			
+			IF cmdStop OR MpRoboArm6Axis_0.Stopped THEN
+				cmdStop := FALSE; 
+				Step:=ROBOTCTRL_STOP;
+				
+			END_IF; 
 			//executing move procedure
 			MpRoboArm6Axis_0.MoveProgram:=1;
 			IF MpRoboArm6Axis_0.MoveDone THEN
@@ -202,9 +210,9 @@ PROGRAM _CYCLIC
 				Step:=ROBOTCTRL_CALCULATE;
 			END_IF
 			
-		ROBOTCTRL_STOP:
+		ROBOTCTRL_INTERRUPT:
 			MpRoboArm6Axis_0.Interrupt:=TRUE; 
-			IF cmdContinue THEN
+			IF cmdContinue AND MpRoboArm6Axis_0.MoveInterrupted THEN
 				cmdContinue:=FALSE;
 				MpRoboArm6Axis_0.Interrupt:=FALSE; 
 				Step:=ROBOTCTRL_CONTINUE;
@@ -218,6 +226,13 @@ PROGRAM _CYCLIC
 			END_IF
 			
 				
+		ROBOTCTRL_STOP:
+			MpRoboArm6Axis_0.Stop:=TRUE;
+			IF MpRoboArm6Axis_0.Stopped THEN
+				MpRoboArm6Axis_0.Stop:=FALSE;
+				Step:=MpRoboArm6Axis_0.Stop:=0;
+				END_IF
+			
 			
 		ROBOTCTRL_ERROR_WRONG_AIM:
 			//handling wrong target error 

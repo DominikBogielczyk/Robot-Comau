@@ -32,8 +32,6 @@
   <Contents>
     <Content refId="LeftContent" />
     <Content refId="TopContent" />
-    <Content refId="AutoContent" />
-    <Content refId="ManualContent" />
     <Content refId="AlarmContent" />
     <Content refId="AuditContent" />
     <Content refId="PackMLContent" />

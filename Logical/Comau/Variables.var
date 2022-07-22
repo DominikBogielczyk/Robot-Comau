@@ -18,7 +18,6 @@ VAR
 	VelocityQ : REAL;
 	doMagnet : BOOL;
 	RoboParameters : MpRoboArm6AxisParType;
-	
 	x : INT := 0;
 	AimIsGood : BOOL := FALSE;
 	Step : {REDUND_UNREPLICABLE} Step_typ := (0);
@@ -29,13 +28,14 @@ VAR
 	cmdAck : BOOL;
 	cmdStop : BOOL;
 	cmdStart : BOOL;
+	cmdInterrupt : BOOL;
 	cmdContinue : BOOL;
-	
-	
 END_VAR
-
 VAR CONSTANT
 	SizeOfArray : INT := 13;
 	IndexSize : INT := 3;
 	Index : ARRAY[0..2] OF INT := [1,2,3];
+END_VAR
+VAR
+	ROBOTCTRL_POWER_OFF : BOOL;
 END_VAR

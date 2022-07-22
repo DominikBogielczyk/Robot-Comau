@@ -84,6 +84,14 @@
         <Variable Name="TCPvalue" />
         <Variable Name="cartezianVSjog" />
         <Variable Name="doMagnet" />
+        <Variable Name="cmdAck" />
+        <Variable Name="cmdContinue" />
+        <Variable Name="cmdExecute" />
+        <Variable Name="cmdInterrupt" />
+        <Variable Name="cmdStart" />
+        <Variable Name="cmdStop" />
+        <Variable Name="cmdTurnOff" />
+        <Variable Name="cmdTurnOn" />
       </Task>
       <Task Name="Clock">
         <Variable Name="TON_0">
