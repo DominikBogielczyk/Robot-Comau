@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ManualContent" height="650" width="1030" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.NumericInput" id="velocityQ" top="340" left="160" width="140" height="40" zIndex="0" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="velocityQ" top="340" left="160" width="140" height="40" zIndex="0" maxValue="50" />
     <Widget xsi:type="widgets.brease.Button" id="minusQ1" top="280" left="440" height="40" zIndex="1" text="-" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="30px" bold="false" />
     <Widget xsi:type="widgets.brease.Button" id="plusQ1" top="280" left="600" height="40" zIndex="2" text="+" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="30px" />
     <Widget xsi:type="widgets.brease.Label" id="Label1" top="280" left="540" width="100" height="40" zIndex="3" text="" fontSize="18px" bold="true" />
@@ -20,7 +20,7 @@
     <Widget xsi:type="widgets.brease.Button" id="minusQ6" top="580" left="440" height="40" zIndex="16" text="-" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="30px" bold="false" />
     <Widget xsi:type="widgets.brease.Button" id="plusQ6" top="580" left="600" height="40" zIndex="17" text="+" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="30px" />
     <Widget xsi:type="widgets.brease.Label" id="Label6" top="580" left="540" width="100" height="40" zIndex="18" text="" fontSize="18px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="cord" top="220" left="440" width="320" height="40" zIndex="19" mouseDownText="WSPÓŁRZĘDNE ZEWNĘTRZNE" text="WSPÓŁRZĘDNE WEWNĘTRZNE" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="cord" top="220" left="440" width="260" height="40" zIndex="19" mouseDownText="WSPÓŁRZĘDNE TCP" text="WSPÓŁRZĘDNE OSI" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" fontSize="16px" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputX" top="290" left="900" zIndex="20" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputY" top="350" left="900" zIndex="21" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputZ" top="410" left="900" zIndex="22" />
@@ -40,17 +40,17 @@
     <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto2" top="460" left="160" width="140" height="40" zIndex="36" mouseDownBackColor="rgba(255, 140, 0, 1)" />
     <Widget xsi:type="widgets.brease.Label" id="Label10" top="400" left="0" zIndex="37" text="POWER" fontSize="14px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="Label11" top="460" left="0" zIndex="38" text="HOME" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto4" top="40" left="160" width="140" height="40" zIndex="39" backColor="rgba(255, 140, 0, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
-    <Widget xsi:type="widgets.brease.Label" id="Label13" top="40" left="0" width="100" zIndex="40" text="ERROR" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto5" top="520" left="160" width="140" height="40" zIndex="41" mouseDownBackColor="rgba(255, 140, 0, 1)" />
-    <Widget xsi:type="widgets.brease.Label" id="Label14" top="520" left="0" width="180" zIndex="42" text="ELEKTROMAGNES" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="Label15" top="160" left="320" width="400" height="40" zIndex="43" text="ROBOT NIE ODCZYTAŁ POZYCJI HOME" backColor="rgba(220, 220, 220, 1)" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto6" top="100" left="160" width="140" height="40" zIndex="44" backColor="rgba(85, 85, 85, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
-    <Widget xsi:type="widgets.brease.Label" id="Label16" top="100" left="0" width="100" zIndex="45" text="READY" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto7" top="160" left="160" width="140" height="40" zIndex="46" backColor="rgba(85, 85, 85, 1)" disabledBackColor="rgba(85, 85, 85, 1)" mouseDownBackColor="rgba(255, 140, 0, 1)" disabledCheckedBackColor="rgba(255, 140, 0, 1)" disabledForeColor="rgba(255, 255, 255, 1)" enable="false" />
-    <Widget xsi:type="widgets.brease.Label" id="Label17" top="160" left="0" width="100" zIndex="47" text="IS HOME" fontSize="14px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="Label18" top="300" left="80" width="140" zIndex="48" text="STEROWANIE" fontSize="18px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="Label19" top="0" left="100" width="140" zIndex="49" text="STATUS" fontSize="18px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="lblSafetyReset" top="100" left="320" width="400" height="40" zIndex="50" text="ZRESETUJ SYSTEM SAFETY" backColor="rgba(220, 220, 220, 1)" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label13" top="40" left="0" width="100" zIndex="39" text="ERROR" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto5" top="520" left="160" width="140" height="40" zIndex="40" mouseDownBackColor="rgba(255, 140, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="Label14" top="520" left="0" width="180" zIndex="41" text="ELECTROMAGNET" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label15" top="160" left="320" width="400" height="40" zIndex="42" text="ROBOT NIE ODCZYTAŁ POZYCJI HOME" backColor="rgba(220, 220, 220, 1)" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label16" top="100" left="0" width="100" zIndex="43" text="READY" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label17" top="160" left="0" width="100" zIndex="44" text="IS HOME" fontSize="14px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label18" top="300" left="80" width="140" zIndex="45" text="STEROWANIE" fontSize="18px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label19" top="0" left="100" width="140" zIndex="46" text="STATUS" fontSize="18px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="lblSafetyReset" top="100" left="320" width="400" height="40" zIndex="47" text="ZRESETUJ SYSTEM SAFETY" backColor="rgba(220, 220, 220, 1)" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="40" left="160" width="140" height="40" zIndex="48" borderStyle="none" checkedBackColor="rgba(255, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton2" top="100" left="160" width="140" height="40" zIndex="49" borderStyle="none" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(192, 192, 192, 1)" mouseDownBackColor="rgba(192, 192, 192, 1)" checkedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBackColor="rgba(255, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton3" top="160" left="160" width="140" height="40" zIndex="50" borderStyle="none" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(192, 192, 192, 1)" mouseDownBackColor="rgba(192, 192, 192, 1)" checkedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBackColor="rgba(255, 0, 0, 1)" />
   </Widgets>
 </Content>
