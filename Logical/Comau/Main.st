@@ -230,7 +230,7 @@ PROGRAM _CYCLIC
 			MpRoboArm6Axis_0.Stop:=TRUE;
 			IF MpRoboArm6Axis_0.Stopped THEN
 				MpRoboArm6Axis_0.Stop:=FALSE;
-				Step:=MpRoboArm6Axis_0.Stop:=0;
+				Step:=ROBOTCTRL_DISABLED;
 				END_IF
 			
 			
