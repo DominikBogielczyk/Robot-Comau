@@ -4,21 +4,6 @@
   <Element ID="gAlarmXCore0" Type="mpalarmxcore">
     <Group ID="mapp.AlarmX.Core.Configuration">
       <Group ID="[0]">
-        <Property ID="Name" Value="SquaresAlarm" />
-        <Property ID="Message" Value="Za dużo podstawek" />
-        <Selector ID="Behavior" Value="LevelMonitoring">
-          <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Elements_d:testAlarm" />
-            <Selector ID="LowLimitEnable" Value="Static">
-              <Property ID="Limit" Value="6" />
-            </Selector>
-            <Selector ID="HighLimitEnable" Value="Static">
-              <Property ID="Limit" Value="8" />
-            </Selector>
-          </Group>
-        </Selector>
-      </Group>
-      <Group ID="[1]">
         <Property ID="Name" Value="Error" />
         <Property ID="Message" Value="ERROR" />
         <Property ID="Code" Value="1" />
@@ -26,7 +11,8 @@
           <Group ID="Monitoring">
             <Property ID="MonitoredPV" Value="::Comau:MpRoboArm6Axis_0.Error" />
             <Selector ID="HighLimitEnable" Value="Static">
-              <Property ID="Limit" Value="1" />
+              <Property ID="Limit" Value="0.7" />
+              <Property ID="LimitText" Value="ERROR MAKS NAPRAW" />
             </Selector>
           </Group>
         </Selector>
