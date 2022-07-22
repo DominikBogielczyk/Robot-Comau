@@ -16,23 +16,16 @@
     <BindingsSet refId="TopContent_binding" />
     <BindingsSet refId="MainContent_binding" />
     <BindingsSet refId="AlarmContent_binding" />
-
-
     <BindingsSet refId="ManualContent_binding" />
-    <BindingsSet refId="AutoContent_binding" />
     <BindingsSet refId="LoginContent_binding" />
   </BindingsSets>
-
   <EventBindingsSets>
     <EventBindingsSet refId="TopContent_eventbinding" />
     <EventBindingsSet refId="MainContent_eventbinding" />
     <EventBindingsSet refId="UsersContent_eventbinding" />
     <EventBindingsSet refId="AlarmContent_eventbinding" />
     <EventBindingsSet refId="ManualContent_eventbinding" />
-
-
     <EventBindingsSet refId="LeftContent_eventbinding" />
-    <EventBindingsSet refId="AutoContent_eventbinding" />
     <EventBindingsSet refId="LoginContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
@@ -48,6 +41,8 @@
     <Content refId="UsersContent" />
     <Content refId="LoginContent" />
     <Content refId="MainContent" />
+    <Content refId="AutoContent" />
+    <Content refId="ManualContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

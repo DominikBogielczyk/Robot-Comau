@@ -45,7 +45,7 @@
         </Action>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="EventBinding_5">
+    <EventBinding id="EventBinding_500">
       <Source xsi:type="clientSystem.Event" event="ContentLoaded" />
       <EventHandler condition="contentId = MainContent OR AutoContent OR ManualContent">
         <Action>
