@@ -1,4 +1,5 @@
 VAR
+	testAlarm : USINT;
 	i : USINT;
 	PixelRange_0 : PixelCounterLimits;
 	DetectedSquares : USINT;

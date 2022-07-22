@@ -92,7 +92,29 @@
         <Variable Name="STEP" />
       </Task>
       <Task Name="Alarms">
-        <Variable Name="MpAlarmXCore_0" />
+        <Variable Name="MpAlarmXCore_0">
+          <Variable Name="MpLink" />
+          <Variable Name="Enable" />
+          <Variable Name="ErrorReset" />
+          <Variable Name="Active" />
+          <Variable Name="Error" />
+          <Variable Name="StatusID" />
+          <Variable Name="ActiveAlarms" />
+          <Variable Name="PendingAlarms" />
+          <Variable Name="Info">
+            <Variable Name="Diag">
+              <Variable Name="StatusID">
+                <Variable Name="ID" />
+                <Variable Name="Severity" />
+                <Variable Name="Code" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="Internal">
+            <Variable Name="pObject" />
+            <Variable Name="State" />
+          </Variable>
+        </Variable>
       </Task>
       <Task Name="OpcCtrl" />
       <Task Name="RobotMove" />

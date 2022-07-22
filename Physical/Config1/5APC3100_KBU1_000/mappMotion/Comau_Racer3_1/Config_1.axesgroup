@@ -75,6 +75,6 @@
         <Property ID="FeatureRef[5]" Value="Feature_WorkspaceMonitoring" />
       </Group>
     </Selector>
-    <Selector ID="Alarms" Value="None" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
 </Configuration>

@@ -9,5 +9,6 @@
     <Object Type="Package">Manual</Object>
     <Object Type="Package">Alarm</Object>
     <Object Type="Package">Users</Object>
+    <Object Type="File">LeftContent.eventbinding</Object>
   </Objects>
 </Package>
