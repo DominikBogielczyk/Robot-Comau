@@ -61,5 +61,22 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="AutoContent.EXECUTE1.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="AutoContent" widgetRefId="EXECUTE1" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>
