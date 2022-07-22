@@ -42,5 +42,15 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="TopContent.btnInfo.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="TopContent" widgetRefId="btnInfo" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="InfoDialog" headerText="=INFO" autoRaise="enabled" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>
