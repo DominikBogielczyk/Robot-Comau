@@ -9,5 +9,10 @@
     <Object Type="Package">Manual</Object>
     <Object Type="Package">Alarm</Object>
     <Object Type="Package">Users</Object>
+    <Object Type="File">LeftContent.eventbinding</Object>
+    <Object Type="File">AutoContent.eventbinding</Object>
+    <Object Type="File">AutoContent.binding</Object>
+    <Object Type="File">LoginContent.binding</Object>
+    <Object Type="File">LoginContent.eventbinding</Object>
   </Objects>
 </Package>

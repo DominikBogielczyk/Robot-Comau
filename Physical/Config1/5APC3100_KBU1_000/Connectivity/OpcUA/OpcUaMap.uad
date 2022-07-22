@@ -84,6 +84,14 @@
         <Variable Name="TCPvalue" />
         <Variable Name="cartezianVSjog" />
         <Variable Name="doMagnet" />
+        <Variable Name="cmdAck" />
+        <Variable Name="cmdContinue" />
+        <Variable Name="cmdExecute" />
+        <Variable Name="cmdInterrupt" />
+        <Variable Name="cmdStart" />
+        <Variable Name="cmdStop" />
+        <Variable Name="cmdTurnOff" />
+        <Variable Name="cmdTurnOn" />
       </Task>
       <Task Name="Clock">
         <Variable Name="TON_0">
@@ -92,7 +100,29 @@
         <Variable Name="STEP" />
       </Task>
       <Task Name="Alarms">
-        <Variable Name="MpAlarmXCore_0" />
+        <Variable Name="MpAlarmXCore_0">
+          <Variable Name="MpLink" />
+          <Variable Name="Enable" />
+          <Variable Name="ErrorReset" />
+          <Variable Name="Active" />
+          <Variable Name="Error" />
+          <Variable Name="StatusID" />
+          <Variable Name="ActiveAlarms" />
+          <Variable Name="PendingAlarms" />
+          <Variable Name="Info">
+            <Variable Name="Diag">
+              <Variable Name="StatusID">
+                <Variable Name="ID" />
+                <Variable Name="Severity" />
+                <Variable Name="Code" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="Internal">
+            <Variable Name="pObject" />
+            <Variable Name="State" />
+          </Variable>
+        </Variable>
       </Task>
       <Task Name="OpcCtrl" />
       <Task Name="RobotMove" />

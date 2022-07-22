@@ -251,6 +251,6 @@
       </Selector>
       <Property ID="TorqueIsInvisible" Value="0" />
     </Selector>
-    <Selector ID="Alarms" Value="None" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
 </Configuration>
