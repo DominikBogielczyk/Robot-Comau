@@ -18,5 +18,25 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="EventBinding_9">
+      <Source xsi:type="clientSystem.Event" event="KeyUp" />
+      <EventHandler condition="keyASCII = 27">
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.Logout" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_10">
+      <Source xsi:type="clientSystem.Event" event="KeyUp" />
+      <EventHandler condition="keyASCII = 13">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Elements_d:Camera_0.diTrigger">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>
