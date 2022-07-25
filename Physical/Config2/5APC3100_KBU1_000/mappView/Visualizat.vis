@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<vdef:Visualization id="Comau" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
+  <StartPage pageRefId="MainPage" />
+  <Pages>
+    <Page refId="MainPage" />
+    <Page refId="AutoPage" />
+    <Page refId="ManualPage" />
+    <Page refId="AlarmPage" />
+    <Page refId="AuditPage" />
+    <Page refId="PackMLPage" />
+    <Page refId="RecepturePage" />
+    <Page refId="UsersPage" />
+  </Pages>
+  <Navigations />
+  <BindingsSets>
+    <BindingsSet refId="TopContent_binding" />
+    <BindingsSet refId="MainContent_binding" />
+    <BindingsSet refId="AlarmContent_binding" />
+    <BindingsSet refId="ManualContent_binding" />
+    <BindingsSet refId="LoginContent_binding" />
+    <BindingsSet refId="AutoContent_binding" />
+  </BindingsSets>
+	<EventBindingsSets>
+    <EventBindingsSet refId="TopContent_eventbinding" />
+    <EventBindingsSet refId="MainContent_eventbinding" />
+    <EventBindingsSet refId="UsersContent_eventbinding" />
+    <EventBindingsSet refId="AlarmContent_eventbinding" />
+    <EventBindingsSet refId="ManualContent_eventbinding" />
+    <EventBindingsSet refId="LeftContent_eventbinding" />
+    <EventBindingsSet refId="LoginContent_eventbinding" />
+    <EventBindingsSet refId="AutoContent_eventbinding" />
+  </EventBindingsSets>
+  <Dialogs>
+    <Dialog refId="LoginDialog" />
+    <Dialog refId="InfoDialog" />
+
+  </Dialogs>
+  <Contents>
+    <Content refId="LeftContent" />
+    <Content refId="TopContent" />
+    <Content refId="AlarmContent" />
+    <Content refId="AuditContent" />
+    <Content refId="PackMLContent" />
+    <Content refId="ReceptureContent" />
+    <Content refId="UsersContent" />
+    <Content refId="LoginContent" />
+    <Content refId="MainContent" />
+    <Content refId="AutoContent" />
+    <Content refId="ManualContent" />
+    <Content refId="InfoContent" />
+  </Contents>
+  <SnippetsSets />
+  <VariablesSets />
+  <ExpressionsSets />
+  <Configurations>
+    <Configuration key="activityCount" value="false" />
+    <Gestures>
+      <!--<SystemGesture1 touchPoints="2" />
+		  <SystemGesture2 touchPoints="2" />
+		  <SystemGesture3 touchPoints="2" />-->
+    </Gestures>
+    <VirtualKeyboards>
+      <!--<InputProcessing onKeyDown="true" />-->
+    </VirtualKeyboards>
+  </Configurations>
+</vdef:Visualization>

@@ -447,14 +447,14 @@
           <Method xsi:type="opcUa.NodeAction.GetValue" />
         </ReadTarget>
       </Operand>
-      <EventHandler condition="X &lt; 450 AND Z &gt; 550">
+      <EventHandler condition="X &lt; 450 OR Z &gt; 550">
         <Action>
           <Target xsi:type="widgets.brease.Label.Action" contentRefId="MainContent" widgetRefId="lblError">
             <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
           </Target>
         </Action>
       </EventHandler>
-      <EventHandler condition="X  &gt; 450 AND Z &lt; 550">
+      <EventHandler condition="X  &gt; 450 OR Z &lt; 550">
         <Action>
           <Target xsi:type="widgets.brease.Label.Action" contentRefId="MainContent" widgetRefId="lblError">
             <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="true" />

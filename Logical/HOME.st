@@ -1,6 +1,6 @@
 VAR
 
-	A : McAxisTargetType := (JointAxis:=[0, 0, -90, 0, 90, 0], SlaveAxis:=[100]);
+	A : McAxisTargetType := (JointAxis:=[0, 0, -90, 0, 0, 0], SlaveAxis:=[100]);
 
 END_VAR
 
