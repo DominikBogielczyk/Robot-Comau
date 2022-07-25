@@ -13,5 +13,8 @@
     <File>Completing.st</File>
     <File>Complete.st</File>
     <File>Stopped.st</File>
+    <File>Holding.st</File>
+    <File>Held.st</File>
+    <File>Unhold.st</File>
   </Files>
 </Program>

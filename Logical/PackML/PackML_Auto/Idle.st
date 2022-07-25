@@ -6,8 +6,26 @@ ACTION Idle:
 		1) THEN
 		
 		MpPackMLMode_Auto.Reset := 0;
+
 		
-		MpPackMLMode_Auto.Start := diStart;
+		CASE Step OF
+			ROBOTCTRL_READY: 
+				MpRoboArm6Axis_0.MoveProgram := 0;
+ 
+				IF NOT(MpRoboArm6Axis_0.PowerOn) THEN
+					Step := ROBOTCTRL_DISABLED; 
+					MpPackMLMode_Auto.Stop := TRUE;
+				END_IF;
+			 
+				IF diStart THEN
+					diStart := FALSE;
+					MpPackMLMode_Auto.Start := TRUE;
+					Step := ROBOTCTRL_CHECK; // if cmdexecute is active robot starts procedure 
+				END_IF;
+					
+			
+			
+		END_CASE;
 			
 	END_IF
 

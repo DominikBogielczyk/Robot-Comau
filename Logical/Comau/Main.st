@@ -287,8 +287,7 @@ END_PROGRAM
 
 
 PROGRAM _EXIT
-	MpRoboArm6Axis_0.Enable :=FALSE;
-	MpRoboArm6Axis_0();
+
 END_PROGRAM
 
 			
