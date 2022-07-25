@@ -4,11 +4,10 @@ ACTION Complete:
 		mpPACKML_STATE_COMPLETE,
 		1) THEN
 			
-		IF diStopped THEN
-			MpPackMLAbort(gPackMLCore,1);
-		END_IF
-		
-		
+	//MpPackMLMode_Auto.Stop := 1;
+		IF diReset THEN
+			MpPackMLStateComplete(gPackMLCore, 1);
+			END_IF;
 	END_IF
 
 END_ACTION

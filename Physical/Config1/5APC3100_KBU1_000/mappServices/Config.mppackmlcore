@@ -14,9 +14,6 @@
         <Selector ID="State[5]" Value="0" />
         <Selector ID="State[8]" Value="0" />
         <Selector ID="State[9]" Value="0" />
-        <Selector ID="State[10]" Value="0" />
-        <Selector ID="State[11]" Value="0" />
-        <Selector ID="State[12]" Value="0" />
         <Selector ID="State[13]" Value="0" />
         <Selector ID="State[14]" Value="0" />
       </Group>

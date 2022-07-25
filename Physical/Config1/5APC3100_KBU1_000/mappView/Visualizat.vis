@@ -28,6 +28,7 @@
     <EventBindingsSet refId="LeftContent_eventbinding" />
     <EventBindingsSet refId="LoginContent_eventbinding" />
     <EventBindingsSet refId="AutoContent_eventbinding" />
+    <EventBindingsSet refId="ManualContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />
@@ -52,7 +53,7 @@
   <ExpressionsSets />
   <Configurations>
     <Configuration key="activityCount" value="false" />
-    <Gestures>
+		<Gestures>
       <!--<SystemGesture1 touchPoints="2" />
 		  <SystemGesture2 touchPoints="2" />
 		  <SystemGesture3 touchPoints="2" />-->
