@@ -10,6 +10,13 @@
           </Target>
         </Action>
       </EventHandler>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="InfoDialog" mode="modal" headerText="Informacje ogólne" autoClose="false" />
+          </Target>
+        </Action>
+      </EventHandler>
     </EventBinding>
     <EventBinding id="EventBinding_5">
       <Source xsi:type="widgets.brease.LoginButton.Event" contentRefId="LoginContent" widgetRefId="btnLogin" event="AuthentificationFailed" />

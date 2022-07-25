@@ -47,7 +47,7 @@
       <EventHandler>
         <Action>
           <Target xsi:type="clientSystem.Action">
-            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="InfoDialog" />
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="InfoDialog" headerText="Informacje ogólne" />
           </Target>
         </Action>
       </EventHandler>

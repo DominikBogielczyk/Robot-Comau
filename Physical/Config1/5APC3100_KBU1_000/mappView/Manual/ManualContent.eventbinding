@@ -769,5 +769,25 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="EventBinding_9">
+      <Source xsi:type="clientSystem.Event" event="KeyUp" />
+      <EventHandler condition="key = &quot;PageUp&quot;">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Power">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_7">
+      <Source xsi:type="clientSystem.Event" event="KeyUp" />
+      <EventHandler condition="key = &quot;PageDown&quot;">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Power">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>
