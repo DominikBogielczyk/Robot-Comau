@@ -27,8 +27,6 @@ VAR
 	gActPos : ARRAY[0..13] OF INT := [2(0),1,2(0),2,0,3,6(0)];
 	gElementsArray : ARRAY[0..13] OF USINT;
 	
-	diAuto : BOOL;
-	diManual : BOOL;
-	diSemiAuto : BOOL;
+
 	
 END_VAR

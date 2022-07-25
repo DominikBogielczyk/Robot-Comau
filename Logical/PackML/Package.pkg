@@ -6,5 +6,7 @@
     <Object Type="Program" Language="IEC">PackML_Auto</Object>
     <Object Type="Program" Language="IEC">PackML_SemiAuto</Object>
     <Object Type="Program" Language="IEC">PackML_Manual</Object>
+    <Object Type="File" Private="true">Variables.var</Object>
+    <Object Type="File" Private="true">Types.typ</Object>
   </Objects>
 </Package>

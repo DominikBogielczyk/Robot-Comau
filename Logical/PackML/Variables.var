@@ -1,0 +1,14 @@
+
+VAR
+	Step : {REDUND_UNREPLICABLE} Step_typ := (0);
+	
+	diAuto : BOOL;
+	diManual : BOOL;
+	diSemiAuto : BOOL;
+	MpRoboArm6Axis_0 : MpRoboArm6Axis;
+	RoboParameters : MpRoboArm6AxisParType;
+END_VAR
+
+VAR CONSTANT
+
+END_VAR

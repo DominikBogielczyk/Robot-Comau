@@ -2,7 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
-    <Task Name="Comau" Source="Comau.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Comau" Source="Comau.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
     <Task Name="OpcCtrl" Source="Sources.OpcCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ComauManua" Source="PackML.PackML_Manual.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="PackML_Aut" Source="PackML.PackML_Auto.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -41,7 +41,6 @@
     <BinaryObject Name="FWRules" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="arcoal" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="arsvcreg" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="viApp" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Settings" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="iomap" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_3" Source="" Memory="UserROM" Language="Binary" />
@@ -65,6 +64,7 @@
     <BinaryObject Name="Config_9" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="PixelCount" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_8" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="viApp" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Matching15" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
