@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="AutoContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<EventBinding id="AutoContent.POWER_OFF.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="AutoContent" widgetRefId="POWER_OFF" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::Comau:cmdTurnOff">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="AutoContent.POWER_ON.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="AutoContent" widgetRefId="POWER_ON" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::Comau:cmdTurnOn">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="AutoContent.EXECUTE.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="AutoContent" widgetRefId="EXECUTE" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::Comau:cmdExecute">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="AutoContent.INTERRUPT.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="AutoContent" widgetRefId="INTERRUPT" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::Comau:cmdInterrupt">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="AutoContent.STOP.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="AutoContent" widgetRefId="STOP" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::Comau:cmdStop">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="AutoContent.CONTINUE.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="AutoContent" widgetRefId="CONTINUE" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::Comau:cmdContinue">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="AutoContent.EXECUTE1.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="AutoContent" widgetRefId="EXECUTE1" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+	</Bindings>
+</EventBindingSet>

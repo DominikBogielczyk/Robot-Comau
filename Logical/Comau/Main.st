@@ -38,6 +38,11 @@ PROGRAM _CYCLIC
 		RoboParameters.Jog.CoordSystem := 0;
 	END_IF
 	
+	IF manual THEN 
+		RoboParameters.ProgramName := 'HOME.st';
+	ELSE			
+		RoboParameters.ProgramName := 'Robotic.st';
+	END_IF
 
 	IF MpRoboArm6Axis_0.Error THEN
 		Step := ROBOTCTRL_ERROR; 

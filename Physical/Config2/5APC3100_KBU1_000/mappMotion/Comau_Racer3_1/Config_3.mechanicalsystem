@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="MechSys_Racer3_1" Type="mechanicalsystem">
+    <Property ID="TypeIsReadOnly" Value="0" />
+    <Selector ID="Type" Value="6AxesRoboarm">
+      <Property ID="SubtypeIsReadOnly" Value="0" />
+      <Selector ID="Subtype" Value="6AxesRoboarmB">
+        <Property ID="DescriptionIsReadOnly" Value="0" />
+        <Selector ID="Description" Value="Standard">
+          <Group ID="Dimensions">
+            <Property ID="TranslationFromBaseToQ1IsReadOnly" Value="1" />
+            <Group ID="TranslationFromBaseToQ1">
+              <Property ID="X" Value="0.0" />
+              <Property ID="Y" Value="0.0" />
+              <Property ID="Z" Value="0.0" />
+            </Group>
+            <Property ID="TranslationFromQ1ToQ2IsReadOnly" Value="1" />
+            <Group ID="TranslationFromQ1ToQ2">
+              <Property ID="X" Value="50.0" />
+              <Property ID="Y" Value="0.0" />
+              <Property ID="Z" Value="365.0" />
+            </Group>
+            <Property ID="TranslationFromQ2ToQ3IsReadOnly" Value="1" />
+            <Group ID="TranslationFromQ2ToQ3">
+              <Property ID="X" Value="0.0" />
+              <Property ID="Y" Value="0.0" />
+              <Property ID="Z" Value="270.0" />
+            </Group>
+            <Property ID="TranslationFromQ3ToQ4IsReadOnly" Value="1" />
+            <Group ID="TranslationFromQ3ToQ4">
+              <Property ID="X" Value="-50.0" />
+              <Property ID="Y" Value="0.0" />
+              <Property ID="Z" Value="0.0" />
+            </Group>
+            <Property ID="TranslationFromQ4ToQ5IsReadOnly" Value="1" />
+            <Group ID="TranslationFromQ4ToQ5">
+              <Property ID="Z" Value="305.94" />
+            </Group>
+            <Property ID="TranslationFromQ5ToQ6IsReadOnly" Value="1" />
+            <Group ID="TranslationFromQ5ToQ6">
+              <Property ID="Z" Value="0.0" />
+            </Group>
+            <Property ID="TranslationFromQ6ToFlangeIsReadOnly" Value="0" />
+            <Group ID="TranslationFromQ6ToFlange">
+              <Property ID="X" Value="0.0" />
+              <Property ID="Y" Value="0.0" />
+              <Property ID="Z" Value="80.0" />
+            </Group>
+          </Group>
+          <Group ID="Offsets">
+            <Property ID="JointAxisIsReadOnly" Value="1" />
+            <Property ID="JointAxis[1]" Value="0.0" />
+            <Property ID="JointAxis[2]" Value="0.0" />
+            <Property ID="JointAxis[3]" Value="0.0" />
+            <Property ID="JointAxis[4]" Value="0.0" />
+            <Property ID="JointAxis[5]" Value="0.0" />
+            <Property ID="JointAxis[6]" Value="0.0" />
+          </Group>
+          <Group ID="CountDirections">
+            <Property ID="JointAxisIsReadOnly" Value="1" />
+            <Property ID="JointAxis[1]" Value="Inverse" />
+            <Property ID="JointAxis[2]" Value="Standard" />
+            <Property ID="JointAxis[3]" Value="Inverse" />
+            <Property ID="JointAxis[4]" Value="Inverse" />
+            <Property ID="JointAxis[5]" Value="Standard" />
+            <Property ID="JointAxis[6]" Value="Inverse" />
+          </Group>
+        </Selector>
+        <Selector ID="CoordinatesNames" Value="Default">
+          <Property ID="XCoordinateName" Value="X" />
+          <Property ID="YCoordinateName" Value="Y" />
+          <Property ID="ZCoordinateName" Value="Z" />
+          <Property ID="ACoordinateName" Value="A" />
+          <Property ID="BCoordinateName" Value="B" />
+          <Property ID="CCoordinateName" Value="C" />
+        </Selector>
+        <Property ID="WireFrameModelIsReadOnly" Value="0" />
+        <Selector ID="WireFrameModel" Value="Standard">
+          <Property ID="Q1ToQ2IsReadOnly" Value="0" />
+          <Selector ID="Q1ToQ2" Value="ConnectionLine">
+            <Property ID="DistanceMin" Value="-1.79769313486231E308" />
+            <Property ID="DistanceMax" Value="1.79769313486231E308" />
+            <Property ID="Distance" Value="0.0" />
+          </Selector>
+          <Property ID="Q2ToQ3IsReadOnly" Value="0" />
+          <Selector ID="Q2ToQ3" Value="ConnectionLine">
+            <Property ID="DistanceMin" Value="-1.79769313486231E308" />
+            <Property ID="DistanceMax" Value="1.79769313486231E308" />
+            <Property ID="Distance" Value="0.0" />
+          </Selector>
+          <Property ID="Q3ToQ4IsReadOnly" Value="0" />
+          <Selector ID="Q3ToQ4" Value="ConnectionLine">
+            <Property ID="DistanceMin" Value="-1.79769313486231E308" />
+            <Property ID="DistanceMax" Value="1.79769313486231E308" />
+            <Property ID="Distance" Value="0.0" />
+          </Selector>
+          <Property ID="Q4ToQ5IsReadOnly" Value="0" />
+          <Selector ID="Q4ToQ5" Value="ConnectionLine">
+            <Property ID="DistanceMin" Value="-1.79769313486231E308" />
+            <Property ID="DistanceMax" Value="1.79769313486231E308" />
+            <Property ID="Distance" Value="0.0" />
+          </Selector>
+          <Property ID="Q5ToQ6IsReadOnly" Value="0" />
+          <Selector ID="Q5ToQ6" Value="ConnectionLine">
+            <Property ID="DistanceMin" Value="-1.79769313486231E308" />
+            <Property ID="DistanceMax" Value="1.79769313486231E308" />
+            <Property ID="Distance" Value="0.0" />
+          </Selector>
+          <Property ID="Q6ToFlangeIsReadOnly" Value="0" />
+          <Selector ID="Q6ToFlange" Value="ConnectionLine">
+            <Property ID="DistanceMin" Value="-1.79769313486231E308" />
+            <Property ID="DistanceMax" Value="1.79769313486231E308" />
+            <Property ID="Distance" Value="0.0" />
+          </Selector>
+          <Selector ID="FlangeToTcp" Value="ConnectionLine">
+            <Property ID="DistanceMin" Value="-1.79769313486231E308" />
+            <Property ID="DistanceMax" Value="1.79769313486231E308" />
+            <Property ID="Distance" Value="0.0" />
+          </Selector>
+        </Selector>
+        <Selector ID="DynamicModel" Value="DynParTable">
+          <Property ID="TableRef" />
+        </Selector>
+        <Property ID="InternalDynamicModelIsReadOnly" Value="0" />
+        <Selector ID="InternalDynamicModel" Value="Used">
+          <Property ID="TypeIsReadOnly" Value="1" />
+          <Property ID="Type" Value="Comau Racer 3" />
+          <Group ID="Row[1]">
+            <Property ID="Index" Value="0" />
+            <Property ID="Value" Value="4" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="TRF_DYN11D_typ" />
+          </Group>
+          <Group ID="Row[2]">
+            <Property ID="Index" Value="1" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[3]">
+            <Property ID="Index" Value="2" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[4]">
+            <Property ID="Index" Value="3" />
+            <Property ID="Value" Value="0.99502" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m1*rc1x^2+m1*rc1y^2+Jzz1+(0.0025)*m2+m2*rc2y^2+(0.5)*Jxx2+(-0.5)*Jyy2+(0.5)*Jzz2+(0.0025)*m3+m3*rc3y^2+(0.5)*Jxx3+(-0.5)*Jyy3+(0.5)*Jzz3+(0.0025)*m4+(0.0025)*m5+(0.0025)*m6+(6694.1851)*JDrive1+(-3200)*JDrive2" />
+          </Group>
+          <Group ID="Row[5]">
+            <Property ID="Index" Value="4" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[6]">
+            <Property ID="Index" Value="5" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[7]">
+            <Property ID="Index" Value="6" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[8]">
+            <Property ID="Index" Value="7" />
+            <Property ID="Value" Value="-0.0079739" />
+            <Property ID="Unit" Value="kgm" />
+            <Property ID="Description" Value="m2*rc2x" />
+          </Group>
+          <Group ID="Row[9]">
+            <Property ID="Index" Value="8" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[10]">
+            <Property ID="Index" Value="9" />
+            <Property ID="Value" Value="3.2569" />
+            <Property ID="Unit" Value="kgm" />
+            <Property ID="Description" Value="m2*rc2z+(0.27)*m3+(0.27)*m4+(0.27)*m5+(0.27)*m6" />
+          </Group>
+          <Group ID="Row[11]">
+            <Property ID="Index" Value="10" />
+            <Property ID="Value" Value="-0.01529" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m2*rc2x*rc2y" />
+          </Group>
+          <Group ID="Row[12]">
+            <Property ID="Index" Value="11" />
+            <Property ID="Value" Value="0.018218" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m2*rc2y*rc2z+(0.27)*m3*rc3y" />
+          </Group>
+          <Group ID="Row[13]">
+            <Property ID="Index" Value="12" />
+            <Property ID="Value" Value="-0.027" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m2*rc2x*rc2z" />
+          </Group>
+          <Group ID="Row[14]">
+            <Property ID="Index" Value="13" />
+            <Property ID="Value" Value="0.23153" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m2*rc2x^2+(-0.5)*Jxx2+(0.5)*Jyy2+(0.5)*Jzz2+(3200)*JDrive2" />
+          </Group>
+          <Group ID="Row[15]">
+            <Property ID="Index" Value="14" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[16]">
+            <Property ID="Index" Value="15" />
+            <Property ID="Value" Value="1.1014" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m2*rc2z^2+(0.5)*Jxx2+(0.5)*Jyy2+(-0.5)*Jzz2+(0.0729)*m3+(0.0729)*m4+(0.0729)*m5+(0.0729)*m6+(3200)*JDrive2" />
+          </Group>
+          <Group ID="Row[17]">
+            <Property ID="Index" Value="16" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[18]">
+            <Property ID="Index" Value="17" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[19]">
+            <Property ID="Index" Value="18" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[20]">
+            <Property ID="Index" Value="19" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[21]">
+            <Property ID="Index" Value="20" />
+            <Property ID="Value" Value="-0.32261" />
+            <Property ID="Unit" Value="kgm" />
+            <Property ID="Description" Value="m3*rc3x+(-0.05)*m4+(-0.05)*m5+(-0.05)*m6" />
+          </Group>
+          <Group ID="Row[22]">
+            <Property ID="Index" Value="21" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[23]">
+            <Property ID="Index" Value="22" />
+            <Property ID="Value" Value="1.1289" />
+            <Property ID="Unit" Value="kgm" />
+            <Property ID="Description" Value="m3*rc3z+m4*rc4z+(0.30594)*m5+(0.30594)*m6" />
+          </Group>
+          <Group ID="Row[24]">
+            <Property ID="Index" Value="23" />
+            <Property ID="Value" Value="-0.0059741" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m3*rc3x*rc3y" />
+          </Group>
+          <Group ID="Row[25]">
+            <Property ID="Index" Value="24" />
+            <Property ID="Value" Value="0.048102" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m3*rc3y*rc3z" />
+          </Group>
+          <Group ID="Row[26]">
+            <Property ID="Index" Value="25" />
+            <Property ID="Value" Value="-0.049555" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m3*rc3x*rc3z+(-0.05)*m4*rc4z+(-0.015297)*m5+(-0.015297)*m6" />
+          </Group>
+          <Group ID="Row[27]">
+            <Property ID="Index" Value="26" />
+            <Property ID="Value" Value="-0.026241" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m3*rc3x^2+(-0.5)*Jxx3+(0.5)*Jyy3+(0.5)*Jzz3+(0.0025)*m4+(0.0025)*m5+(0.0025)*m6" />
+          </Group>
+          <Group ID="Row[28]">
+            <Property ID="Index" Value="27" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[29]">
+            <Property ID="Index" Value="28" />
+            <Property ID="Value" Value="0.21145" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m3*rc3z^2+(0.5)*Jxx3+(0.5)*Jyy3+(-0.5)*Jzz3+m4*rc4z^2+(0.5)*Jxx4+(0.5)*Jyy4+(-0.5)*Jzz4+(0.093599)*m5+(0.093599)*m6" />
+          </Group>
+          <Group ID="Row[30]">
+            <Property ID="Index" Value="29" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[31]">
+            <Property ID="Index" Value="30" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[32]">
+            <Property ID="Index" Value="31" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[33]">
+            <Property ID="Index" Value="32" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[34]">
+            <Property ID="Index" Value="33" />
+            <Property ID="Value" Value="-0.0056373" />
+            <Property ID="Unit" Value="kgm" />
+            <Property ID="Description" Value="m4*rc4x" />
+          </Group>
+          <Group ID="Row[35]">
+            <Property ID="Index" Value="34" />
+            <Property ID="Value" Value="0.011806" />
+            <Property ID="Unit" Value="kgm" />
+            <Property ID="Description" Value="m4*rc4y+m5*rc5y" />
+          </Group>
+          <Group ID="Row[36]">
+            <Property ID="Index" Value="35" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[37]">
+            <Property ID="Index" Value="36" />
+            <Property ID="Value" Value="-0.0071612" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m4*rc4x*rc4y" />
+          </Group>
+          <Group ID="Row[38]">
+            <Property ID="Index" Value="37" />
+            <Property ID="Value" Value="-0.00018934" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m4*rc4y*rc4z+(0.30594)*m5*rc5y" />
+          </Group>
+          <Group ID="Row[39]">
+            <Property ID="Index" Value="38" />
+            <Property ID="Value" Value="0.002269" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m4*rc4x*rc4z" />
+          </Group>
+          <Group ID="Row[40]">
+            <Property ID="Index" Value="39" />
+            <Property ID="Value" Value="-0.0073563" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m4*rc4x^2+(-0.5)*Jxx4+(0.5)*Jyy4+(0.5)*Jzz4" />
+          </Group>
+          <Group ID="Row[41]">
+            <Property ID="Index" Value="40" />
+            <Property ID="Value" Value="-0.00050442" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m4*rc4y^2+(0.5)*Jxx4+(-0.5)*Jyy4+(0.5)*Jzz4+m5*rc5y^2+(0.5)*Jxx5+(-0.5)*Jyy5+(0.5)*Jzz5" />
+          </Group>
+          <Group ID="Row[42]">
+            <Property ID="Index" Value="41" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[43]">
+            <Property ID="Index" Value="42" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[44]">
+            <Property ID="Index" Value="43" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[45]">
+            <Property ID="Index" Value="44" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[46]">
+            <Property ID="Index" Value="45" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[47]">
+            <Property ID="Index" Value="46" />
+            <Property ID="Value" Value="-0.0030729" />
+            <Property ID="Unit" Value="kgm" />
+            <Property ID="Description" Value="m5*rc5x" />
+          </Group>
+          <Group ID="Row[48]">
+            <Property ID="Index" Value="47" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[49]">
+            <Property ID="Index" Value="48" />
+            <Property ID="Value" Value="0.0086628" />
+            <Property ID="Unit" Value="kgm" />
+            <Property ID="Description" Value="m5*rc5z+m6*rc6z" />
+          </Group>
+          <Group ID="Row[50]">
+            <Property ID="Index" Value="49" />
+            <Property ID="Value" Value="5.0384e-05" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m5*rc5x*rc5y" />
+          </Group>
+          <Group ID="Row[51]">
+            <Property ID="Index" Value="50" />
+            <Property ID="Value" Value="0.004449" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m5*rc5y*rc5z" />
+          </Group>
+          <Group ID="Row[52]">
+            <Property ID="Index" Value="51" />
+            <Property ID="Value" Value="0.00094987" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m5*rc5x*rc5z" />
+          </Group>
+          <Group ID="Row[53]">
+            <Property ID="Index" Value="52" />
+            <Property ID="Value" Value="-0.0039698" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m5*rc5x^2+(-0.5)*Jxx5+(0.5)*Jyy5+(0.5)*Jzz5" />
+          </Group>
+          <Group ID="Row[54]">
+            <Property ID="Index" Value="53" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[55]">
+            <Property ID="Index" Value="54" />
+            <Property ID="Value" Value="-0.0023413" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m5*rc5z^2+(0.5)*Jxx5+(0.5)*Jyy5+(-0.5)*Jzz5+m6*rc6z^2+(0.5)*Jxx6+(0.5)*Jyy6+(-0.5)*Jzz6" />
+          </Group>
+          <Group ID="Row[56]">
+            <Property ID="Index" Value="55" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[57]">
+            <Property ID="Index" Value="56" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[58]">
+            <Property ID="Index" Value="57" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[59]">
+            <Property ID="Index" Value="58" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[60]">
+            <Property ID="Index" Value="59" />
+            <Property ID="Value" Value="0.00052765" />
+            <Property ID="Unit" Value="kgm" />
+            <Property ID="Description" Value="m6*rc6x" />
+          </Group>
+          <Group ID="Row[61]">
+            <Property ID="Index" Value="60" />
+            <Property ID="Value" Value="-0.0030867" />
+            <Property ID="Unit" Value="kgm" />
+            <Property ID="Description" Value="m6*rc6y" />
+          </Group>
+          <Group ID="Row[62]">
+            <Property ID="Index" Value="61" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[63]">
+            <Property ID="Index" Value="62" />
+            <Property ID="Value" Value="5.0962e-05" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m6*rc6x*rc6y" />
+          </Group>
+          <Group ID="Row[64]">
+            <Property ID="Index" Value="63" />
+            <Property ID="Value" Value="-0.0015762" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m6*rc6y*rc6z" />
+          </Group>
+          <Group ID="Row[65]">
+            <Property ID="Index" Value="64" />
+            <Property ID="Value" Value="0.0005846" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m6*rc6x*rc6z" />
+          </Group>
+          <Group ID="Row[66]">
+            <Property ID="Index" Value="65" />
+            <Property ID="Value" Value="0.00067399" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m6*rc6x^2+(-0.5)*Jxx6+(0.5)*Jyy6+(0.5)*Jzz6" />
+          </Group>
+          <Group ID="Row[67]">
+            <Property ID="Index" Value="66" />
+            <Property ID="Value" Value="0.0013929" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="m6*rc6y^2+(0.5)*Jxx6+(-0.5)*Jyy6+(0.5)*Jzz6" />
+          </Group>
+          <Group ID="Row[68]">
+            <Property ID="Index" Value="67" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[69]">
+            <Property ID="Index" Value="68" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[70]">
+            <Property ID="Index" Value="69" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[71]">
+            <Property ID="Index" Value="70" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[72]">
+            <Property ID="Index" Value="71" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="mTool" />
+          </Group>
+          <Group ID="Row[73]">
+            <Property ID="Index" Value="72" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="mTool*rcToolx" />
+          </Group>
+          <Group ID="Row[74]">
+            <Property ID="Index" Value="73" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="mTool*rcTooly" />
+          </Group>
+          <Group ID="Row[75]">
+            <Property ID="Index" Value="74" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="mTool*rcToolz" />
+          </Group>
+          <Group ID="Row[76]">
+            <Property ID="Index" Value="75" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="mTool*rcToolx*rcTooly" />
+          </Group>
+          <Group ID="Row[77]">
+            <Property ID="Index" Value="76" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="mTool*rcTooly*rcToolz" />
+          </Group>
+          <Group ID="Row[78]">
+            <Property ID="Index" Value="77" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="mTool*rcToolx*rcToolz" />
+          </Group>
+          <Group ID="Row[79]">
+            <Property ID="Index" Value="78" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="mTool*rcToolx^2" />
+          </Group>
+          <Group ID="Row[80]">
+            <Property ID="Index" Value="79" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="mTool*rcTooly^2" />
+          </Group>
+          <Group ID="Row[81]">
+            <Property ID="Index" Value="80" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="mTool*rcToolz^2" />
+          </Group>
+          <Group ID="Row[82]">
+            <Property ID="Index" Value="81" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="JxxTool" />
+          </Group>
+          <Group ID="Row[83]">
+            <Property ID="Index" Value="82" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="JyyTool" />
+          </Group>
+          <Group ID="Row[84]">
+            <Property ID="Index" Value="83" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="JzzTool" />
+          </Group>
+          <Group ID="Row[85]">
+            <Property ID="Index" Value="84" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[86]">
+            <Property ID="Index" Value="85" />
+            <Property ID="Value" Value="0" />
+            <Property ID="Unit" Value="" />
+            <Property ID="Description" Value="" />
+          </Group>
+          <Group ID="Row[87]">
+            <Property ID="Index" Value="86" />
+            <Property ID="Value" Value="9.8824e-05" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="JDrive3" />
+          </Group>
+          <Group ID="Row[88]">
+            <Property ID="Index" Value="87" />
+            <Property ID="Value" Value="5.2689e-05" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="JDrive4" />
+          </Group>
+          <Group ID="Row[89]">
+            <Property ID="Index" Value="88" />
+            <Property ID="Value" Value="5.129e-05" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="JDrive5" />
+          </Group>
+          <Group ID="Row[90]">
+            <Property ID="Index" Value="89" />
+            <Property ID="Value" Value="5.2318e-05" />
+            <Property ID="Unit" Value="kgm^2" />
+            <Property ID="Description" Value="JDrive6" />
+          </Group>
+          <Group ID="Row[91]">
+            <Property ID="Index" Value="90" />
+            <Property ID="Value" Value="4.1946" />
+            <Property ID="Unit" Value="Nms" />
+            <Property ID="Description" Value="dV1" />
+          </Group>
+          <Group ID="Row[92]">
+            <Property ID="Index" Value="91" />
+            <Property ID="Value" Value="7.0888" />
+            <Property ID="Unit" Value="Nms" />
+            <Property ID="Description" Value="dV2" />
+          </Group>
+          <Group ID="Row[93]">
+            <Property ID="Index" Value="92" />
+            <Property ID="Value" Value="3.1195" />
+            <Property ID="Unit" Value="Nms" />
+            <Property ID="Description" Value="dV3" />
+          </Group>
+          <Group ID="Row[94]">
+            <Property ID="Index" Value="93" />
+            <Property ID="Value" Value="1.481" />
+            <Property ID="Unit" Value="Nms" />
+            <Property ID="Description" Value="dV4" />
+          </Group>
+          <Group ID="Row[95]">
+            <Property ID="Index" Value="94" />
+            <Property ID="Value" Value="1.1989" />
+            <Property ID="Unit" Value="Nms" />
+            <Property ID="Description" Value="dV5" />
+          </Group>
+          <Group ID="Row[96]">
+            <Property ID="Index" Value="95" />
+            <Property ID="Value" Value="0.67577" />
+            <Property ID="Unit" Value="Nms" />
+            <Property ID="Description" Value="dV6" />
+          </Group>
+          <Group ID="Row[97]">
+            <Property ID="Index" Value="96" />
+            <Property ID="Value" Value="25.5954" />
+            <Property ID="Unit" Value="Nm" />
+            <Property ID="Description" Value="dC1" />
+          </Group>
+          <Group ID="Row[98]">
+            <Property ID="Index" Value="97" />
+            <Property ID="Value" Value="14.3239" />
+            <Property ID="Unit" Value="Nm" />
+            <Property ID="Description" Value="dC2" />
+          </Group>
+          <Group ID="Row[99]">
+            <Property ID="Index" Value="98" />
+            <Property ID="Value" Value="7.6123" />
+            <Property ID="Unit" Value="Nm" />
+            <Property ID="Description" Value="dC3" />
+          </Group>
+          <Group ID="Row[100]">
+            <Property ID="Index" Value="99" />
+            <Property ID="Value" Value="7.9035" />
+            <Property ID="Unit" Value="Nm" />
+            <Property ID="Description" Value="dC4" />
+          </Group>
+          <Group ID="Row[101]">
+            <Property ID="Index" Value="100" />
+            <Property ID="Value" Value="3.5858" />
+            <Property ID="Unit" Value="Nm" />
+            <Property ID="Description" Value="dC5" />
+          </Group>
+          <Group ID="Row[102]">
+            <Property ID="Index" Value="101" />
+            <Property ID="Value" Value="5.2501" />
+            <Property ID="Unit" Value="Nm" />
+            <Property ID="Description" Value="dC6" />
+          </Group>
+        </Selector>
+        <Property ID="CouplingsIsInvisible" Value="0" />
+        <Group ID="Couplings">
+          <Group ID="LinearCoupling[1]">
+            <Property ID="SourceAxisIsReadOnly" Value="1" />
+            <Property ID="SourceAxis" Value="5" />
+            <Property ID="SourceAxisUnitsIsReadOnly" Value="1" />
+            <Property ID="SourceAxisUnits" Value="1.0" />
+            <Property ID="TargetJointAxisIsReadOnly" Value="1" />
+            <Property ID="TargetJointAxis" Value="6" />
+            <Property ID="TargetJointAxisUnitsIsReadOnly" Value="1" />
+            <Property ID="TargetJointAxisUnits" Value="0.02" />
+          </Group>
+        </Group>
+        <Group ID="JointAxesPositionLimits">
+          <Property ID="JointAxisIsReadOnly" Value="0" />
+          <Selector ID="JointAxis[1]" Value="ConfigureJointAxesLimits">
+            <Property ID="LowerLimitMin" Value="-170.0" />
+            <Property ID="UpperLimitMax" Value="170.0" />
+            <Property ID="LowerLimit" Value="-170.0" />
+            <Property ID="UpperLimit" Value="170.0" />
+          </Selector>
+          <Selector ID="JointAxis[2]" Value="ConfigureJointAxesLimits">
+            <Property ID="LowerLimitMin" Value="-95.0" />
+            <Property ID="UpperLimitMax" Value="135.0" />
+            <Property ID="LowerLimit" Value="-95.0" />
+            <Property ID="UpperLimit" Value="135.0" />
+          </Selector>
+          <Selector ID="JointAxis[3]" Value="ConfigureJointAxesLimits">
+            <Property ID="LowerLimitMin" Value="-155.0" />
+            <Property ID="UpperLimitMax" Value="90.0" />
+            <Property ID="LowerLimit" Value="-155.0" />
+            <Property ID="UpperLimit" Value="90.0" />
+          </Selector>
+          <Selector ID="JointAxis[4]" Value="ConfigureJointAxesLimits">
+            <Property ID="LowerLimitMin" Value="-200.0" />
+            <Property ID="UpperLimitMax" Value="200.0" />
+            <Property ID="LowerLimit" Value="-200.0" />
+            <Property ID="UpperLimit" Value="200.0" />
+          </Selector>
+          <Selector ID="JointAxis[5]" Value="ConfigureJointAxesLimits">
+            <Property ID="LowerLimitMin" Value="-125.0" />
+            <Property ID="UpperLimitMax" Value="125.0" />
+            <Property ID="LowerLimit" Value="-125.0" />
+            <Property ID="UpperLimit" Value="125.0" />
+          </Selector>
+          <Selector ID="JointAxis[6]" Value="ConfigureJointAxesLimits">
+            <Property ID="LowerLimitMin" Value="-2700.0" />
+            <Property ID="UpperLimitMax" Value="2700.0" />
+            <Property ID="LowerLimit" Value="-2700.0" />
+            <Property ID="UpperLimit" Value="2700.0" />
+          </Selector>
+        </Group>
+      </Selector>
+    </Selector>
+  </Element>
+</Configuration>

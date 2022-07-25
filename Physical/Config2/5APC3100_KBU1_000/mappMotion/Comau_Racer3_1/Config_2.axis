@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gAxisQ1_Racer3_1" Type="axis">
+    <Property ID="BaseTypeIsReadOnly" Value="1" />
+    <Selector ID="BaseType" Value="RotaryBounded">
+      <Property ID="MeasurementUnitIsReadOnly" Value="1" />
+      <Property ID="MeasurementUnit" Value="17476" />
+      <Property ID="MeasurementResolutionIsReadOnly" Value="1" />
+      <Property ID="MeasurementResolution" Value="0.001" />
+      <Property ID="CountDirectionIsReadOnly" Value="1" />
+      <Property ID="CountDirection" Value="Inverse" />
+    </Selector>
+    <Property ID="MovementLimitsIsReadOnly" Value="1" />
+    <Selector ID="MovementLimits" Value="InternalForPathControlledAxis">
+      <Group ID="Position">
+        <Property ID="LowerLimitMin" Value="-170.0" />
+        <Property ID="UpperLimitMax" Value="170.0" />
+        <Property ID="LowerLimit" Value="-170.0" />
+        <Property ID="UpperLimit" Value="170.0" />
+      </Group>
+      <Property ID="VelocityIsReadOnly" Value="1" />
+      <Selector ID="Velocity">
+        <Property ID="VelocityMax" Value="420.0" />
+        <Property ID="Velocity" Value="420.0" />
+      </Selector>
+      <Property ID="AccelerationIsReadOnly" Value="1" />
+      <Selector ID="Acceleration">
+        <Property ID="AccelerationMax" Value="1100.0" />
+        <Property ID="Acceleration" Value="1100.0" />
+      </Selector>
+      <Property ID="DecelerationIsReadOnly" Value="1" />
+      <Selector ID="Deceleration">
+        <Property ID="DecelerationMax" Value="1100.0" />
+        <Property ID="Deceleration" Value="1100.0" />
+      </Selector>
+      <Property ID="JerkIsReadOnly" Value="1" />
+      <Selector ID="Jerk" Value="Basic">
+        <Property ID="JerkMax" Value="3.4E38" />
+        <Property ID="Jerk" Value="11000.0" />
+      </Selector>
+      <Property ID="TorqueIsInvisible" Value="0" />
+    </Selector>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+  <Element ID="gAxisQ2_Racer3_1" Type="axis">
+    <Property ID="BaseTypeIsReadOnly" Value="1" />
+    <Selector ID="BaseType" Value="RotaryBounded">
+      <Property ID="MeasurementUnitIsReadOnly" Value="1" />
+      <Property ID="MeasurementUnit" Value="17476" />
+      <Property ID="MeasurementResolutionIsReadOnly" Value="1" />
+      <Property ID="MeasurementResolution" Value="0.001" />
+      <Property ID="CountDirectionIsReadOnly" Value="1" />
+      <Property ID="CountDirection" Value="Standard" />
+    </Selector>
+    <Property ID="MovementLimitsIsReadOnly" Value="1" />
+    <Selector ID="MovementLimits" Value="InternalForPathControlledAxis">
+      <Group ID="Position">
+        <Property ID="LowerLimitMin" Value="-95.0" />
+        <Property ID="UpperLimitMax" Value="135.0" />
+        <Property ID="LowerLimit" Value="-95.0" />
+        <Property ID="UpperLimit" Value="135.0" />
+      </Group>
+      <Property ID="VelocityIsReadOnly" Value="1" />
+      <Selector ID="Velocity">
+        <Property ID="VelocityMax" Value="450.0" />
+        <Property ID="Velocity" Value="450.0" />
+      </Selector>
+      <Property ID="AccelerationIsReadOnly" Value="1" />
+      <Selector ID="Acceleration">
+        <Property ID="AccelerationMax" Value="750.0" />
+        <Property ID="Acceleration" Value="750.0" />
+      </Selector>
+      <Property ID="DecelerationIsReadOnly" Value="1" />
+      <Selector ID="Deceleration">
+        <Property ID="DecelerationMax" Value="750.0" />
+        <Property ID="Deceleration" Value="750.0" />
+      </Selector>
+      <Property ID="JerkIsReadOnly" Value="1" />
+      <Selector ID="Jerk" Value="Basic">
+        <Property ID="JerkMax" Value="3.4E38" />
+        <Property ID="Jerk" Value="7500.0" />
+      </Selector>
+      <Property ID="TorqueIsInvisible" Value="0" />
+    </Selector>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+  <Element ID="gAxisQ3_Racer3_1" Type="axis">
+    <Property ID="BaseTypeIsReadOnly" Value="1" />
+    <Selector ID="BaseType" Value="RotaryBounded">
+      <Property ID="MeasurementUnitIsReadOnly" Value="1" />
+      <Property ID="MeasurementUnit" Value="17476" />
+      <Property ID="MeasurementResolutionIsReadOnly" Value="1" />
+      <Property ID="MeasurementResolution" Value="0.001" />
+      <Property ID="CountDirectionIsReadOnly" Value="1" />
+      <Property ID="CountDirection" Value="Inverse" />
+    </Selector>
+    <Property ID="MovementLimitsIsReadOnly" Value="1" />
+    <Selector ID="MovementLimits" Value="InternalForPathControlledAxis">
+      <Group ID="Position">
+        <Property ID="LowerLimitMin" Value="-155.0" />
+        <Property ID="UpperLimitMax" Value="90.0" />
+        <Property ID="LowerLimit" Value="-155.0" />
+        <Property ID="UpperLimit" Value="90.0" />
+      </Group>
+      <Property ID="VelocityIsReadOnly" Value="1" />
+      <Selector ID="Velocity">
+        <Property ID="VelocityMax" Value="480.0" />
+        <Property ID="Velocity" Value="480.0" />
+      </Selector>
+      <Property ID="AccelerationIsReadOnly" Value="1" />
+      <Selector ID="Acceleration">
+        <Property ID="AccelerationMax" Value="1250.0" />
+        <Property ID="Acceleration" Value="1250.0" />
+      </Selector>
+      <Property ID="DecelerationIsReadOnly" Value="1" />
+      <Selector ID="Deceleration">
+        <Property ID="DecelerationMax" Value="1250.0" />
+        <Property ID="Deceleration" Value="1250.0" />
+      </Selector>
+      <Property ID="JerkIsReadOnly" Value="1" />
+      <Selector ID="Jerk" Value="Basic">
+        <Property ID="JerkMax" Value="3.4E38" />
+        <Property ID="Jerk" Value="12500.0" />
+      </Selector>
+      <Property ID="TorqueIsInvisible" Value="0" />
+    </Selector>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+  <Element ID="gAxisQ4_Racer3_1" Type="axis">
+    <Property ID="BaseTypeIsReadOnly" Value="1" />
+    <Selector ID="BaseType" Value="RotaryBounded">
+      <Property ID="MeasurementUnitIsReadOnly" Value="1" />
+      <Property ID="MeasurementUnit" Value="17476" />
+      <Property ID="MeasurementResolutionIsReadOnly" Value="1" />
+      <Property ID="MeasurementResolution" Value="0.001" />
+      <Property ID="CountDirectionIsReadOnly" Value="1" />
+      <Property ID="CountDirection" Value="Standard" />
+    </Selector>
+    <Property ID="MovementLimitsIsReadOnly" Value="1" />
+    <Selector ID="MovementLimits" Value="InternalForPathControlledAxis">
+      <Group ID="Position">
+        <Property ID="LowerLimitMin" Value="-200.0" />
+        <Property ID="UpperLimitMax" Value="200.0" />
+        <Property ID="LowerLimit" Value="-200.0" />
+        <Property ID="UpperLimit" Value="200.0" />
+      </Group>
+      <Property ID="VelocityIsReadOnly" Value="1" />
+      <Selector ID="Velocity">
+        <Property ID="VelocityMax" Value="600.0" />
+        <Property ID="Velocity" Value="600.0" />
+      </Selector>
+      <Property ID="AccelerationIsReadOnly" Value="1" />
+      <Selector ID="Acceleration">
+        <Property ID="AccelerationMax" Value="1200.0" />
+        <Property ID="Acceleration" Value="1200.0" />
+      </Selector>
+      <Property ID="DecelerationIsReadOnly" Value="1" />
+      <Selector ID="Deceleration">
+        <Property ID="DecelerationMax" Value="1200.0" />
+        <Property ID="Deceleration" Value="1200.0" />
+      </Selector>
+      <Property ID="JerkIsReadOnly" Value="1" />
+      <Selector ID="Jerk" Value="Basic">
+        <Property ID="JerkMax" Value="3.4E38" />
+        <Property ID="Jerk" Value="12000.0" />
+      </Selector>
+      <Property ID="TorqueIsInvisible" Value="0" />
+    </Selector>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+  <Element ID="gAxisQ5_Racer3_1" Type="axis">
+    <Property ID="BaseTypeIsReadOnly" Value="1" />
+    <Selector ID="BaseType" Value="RotaryBounded">
+      <Property ID="MeasurementUnitIsReadOnly" Value="1" />
+      <Property ID="MeasurementUnit" Value="17476" />
+      <Property ID="MeasurementResolutionIsReadOnly" Value="1" />
+      <Property ID="MeasurementResolution" Value="0.001" />
+      <Property ID="CountDirectionIsReadOnly" Value="1" />
+      <Property ID="CountDirection" Value="Standard" />
+    </Selector>
+    <Property ID="MovementLimitsIsReadOnly" Value="1" />
+    <Selector ID="MovementLimits" Value="InternalForPathControlledAxis">
+      <Group ID="Position">
+        <Property ID="LowerLimitMin" Value="-125.0" />
+        <Property ID="UpperLimitMax" Value="125.0" />
+        <Property ID="LowerLimit" Value="-125.0" />
+        <Property ID="UpperLimit" Value="125.0" />
+      </Group>
+      <Property ID="VelocityIsReadOnly" Value="1" />
+      <Selector ID="Velocity">
+        <Property ID="VelocityMax" Value="600.0" />
+        <Property ID="Velocity" Value="600.0" />
+      </Selector>
+      <Property ID="AccelerationIsReadOnly" Value="1" />
+      <Selector ID="Acceleration">
+        <Property ID="AccelerationMax" Value="1200.0" />
+        <Property ID="Acceleration" Value="1200.0" />
+      </Selector>
+      <Property ID="DecelerationIsReadOnly" Value="1" />
+      <Selector ID="Deceleration">
+        <Property ID="DecelerationMax" Value="1200.0" />
+        <Property ID="Deceleration" Value="1200.0" />
+      </Selector>
+      <Property ID="JerkIsReadOnly" Value="1" />
+      <Selector ID="Jerk" Value="Basic">
+        <Property ID="JerkMax" Value="3.4E38" />
+        <Property ID="Jerk" Value="12000.0" />
+      </Selector>
+      <Property ID="TorqueIsInvisible" Value="0" />
+    </Selector>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+  <Element ID="gAxisQ6_Racer3_1" Type="axis">
+    <Property ID="BaseTypeIsReadOnly" Value="1" />
+    <Selector ID="BaseType" Value="RotaryBounded">
+      <Property ID="MeasurementUnitIsReadOnly" Value="1" />
+      <Property ID="MeasurementUnit" Value="17476" />
+      <Property ID="MeasurementResolutionIsReadOnly" Value="1" />
+      <Property ID="MeasurementResolution" Value="0.001" />
+      <Property ID="CountDirectionIsReadOnly" Value="1" />
+      <Property ID="CountDirection" Value="Standard" />
+    </Selector>
+    <Property ID="MovementLimitsIsReadOnly" Value="1" />
+    <Selector ID="MovementLimits" Value="InternalForPathControlledAxis">
+      <Group ID="Position">
+        <Property ID="LowerLimitMin" Value="-2700.0" />
+        <Property ID="UpperLimitMax" Value="2700.0" />
+        <Property ID="LowerLimit" Value="-2700.0" />
+        <Property ID="UpperLimit" Value="2700.0" />
+      </Group>
+      <Property ID="VelocityIsReadOnly" Value="1" />
+      <Selector ID="Velocity">
+        <Property ID="VelocityMax" Value="875.0" />
+        <Property ID="Velocity" Value="875.0" />
+      </Selector>
+      <Property ID="AccelerationIsReadOnly" Value="1" />
+      <Selector ID="Acceleration">
+        <Property ID="AccelerationMax" Value="1800.0" />
+        <Property ID="Acceleration" Value="1800.0" />
+      </Selector>
+      <Property ID="DecelerationIsReadOnly" Value="1" />
+      <Selector ID="Deceleration">
+        <Property ID="DecelerationMax" Value="1800.0" />
+        <Property ID="Deceleration" Value="1800.0" />
+      </Selector>
+      <Property ID="JerkIsReadOnly" Value="1" />
+      <Selector ID="Jerk" Value="Basic">
+        <Property ID="JerkMax" Value="3.4E38" />
+        <Property ID="Jerk" Value="18000.0" />
+      </Selector>
+      <Property ID="TorqueIsInvisible" Value="0" />
+    </Selector>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+</Configuration>
