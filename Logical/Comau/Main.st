@@ -16,6 +16,15 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
+	P2up;
+	P2 ;
+	P1up ;
+	P1 ;
+	P0;
+	HOME;
+	PZ;
+	A;
+	
 	RoboParameters.Jog.Velocity[0] := VelocityQ1;
 	RoboParameters.Jog.Velocity[1] := VelocityQ2;
 	RoboParameters.Jog.Velocity[2] := VelocityQ3;
@@ -29,10 +38,20 @@ PROGRAM _CYCLIC
 		RoboParameters.Jog.CoordSystem := 0;
 	END_IF
 	
-
+	IF manual THEN 
+		RoboParameters.ProgramName := 'HOME.st';
+	ELSE			
+		RoboParameters.ProgramName := 'Robotic.st';
+	END_IF
+//throwing error 
 	IF MpRoboArm6Axis_0.Error THEN
 		Step := ROBOTCTRL_ERROR; 
 	END_IF;
+//turning off 
+	IF cmdTurnOff THEN
+		cmdTurnOff := FALSE;
+		Step:=ROBOTCTRL_POWER_OFF;
+	END_IF; 
 		
 	CASE Step OF
 		
@@ -185,12 +204,6 @@ PROGRAM _CYCLIC
 			END_IF;
 
 		ROBOTCTRL_MOVE:
-			IF cmdTurnOff THEN
-				cmdTurnOff := FALSE;
-				Step:=ROBOTCTRL_POWER_OFF;
-			END_IF; 
- 
-			
 			IF cmdInterrupt OR MpRoboArm6Axis_0.MoveInterrupted THEN
 				cmdInterrupt := FALSE; 
 				Step:=ROBOTCTRL_INTERRUPT;
@@ -207,17 +220,31 @@ PROGRAM _CYCLIC
 				MpRoboArm6Axis_0.MoveProgram:=0;
 				y:=y+1;
 				P1P2_Ok:=0;
-				Step:=ROBOTCTRL_CALCULATE;
+				IF y=IndexSize THEN
+					Step:=ROBOTCTRL_COMPLITE;	
+				ELSE 
+					Step:=ROBOTCTRL_CALCULATE;
+				END_IF
 			END_IF
+			
+		ROBOTCTRL_COMPLITE:
+		Step:=ROBOTCTRL_POWER_OFF;
+
+			
 			
 		ROBOTCTRL_INTERRUPT:
 			MpRoboArm6Axis_0.Interrupt:=TRUE; 
-			IF cmdContinue AND MpRoboArm6Axis_0.MoveInterrupted THEN
+			IF MpRoboArm6Axis_0.MoveInterrupted THEN
+				Step:=ROBOTCTRL_INTERRUPTING;
+				END_IF
+			
+		ROBOTCTRL_INTERRUPTING:
+			IF cmdContinue THEN
 				cmdContinue:=FALSE;
 				MpRoboArm6Axis_0.Interrupt:=FALSE; 
 				Step:=ROBOTCTRL_CONTINUE;
 			END_IF
-		
+			
 		ROBOTCTRL_CONTINUE:
 			MpRoboArm6Axis_0.Continue:=1;
 			IF  MpRoboArm6Axis_0.InMotion THEN
@@ -247,6 +274,7 @@ PROGRAM _CYCLIC
 	END_CASE;	
 
 
+	
 	MpRoboArm6Axis_0.MpLink     := ADR(gAxesGroup_Racer3_1);
 	MpRoboArm6Axis_0.Parameters := ADR(RoboParameters);
 	MpRoboArm6Axis_0.Override := 100.0;

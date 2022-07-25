@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="AutoContent" height="650" width="1030" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-		<Widget xsi:type="widgets.brease.Button" id="POWER_ON11" top="80" left="800" width="160" height="70" zIndex="0" text="POWER ON" backColor="rgba(0, 255, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="POWER_ON" top="80" left="800" width="160" height="70" zIndex="0" text="POWER ON" backColor="rgba(0, 255, 0, 1)" />
     <Widget xsi:type="widgets.brease.Button" id="POWER_OFF" top="80" left="600" width="160" height="70" zIndex="1" text="POWER OFF" backColor="rgba(255, 0, 0, 1)" />
     <Widget xsi:type="widgets.brease.Button" id="EXECUTE" top="180" left="800" width="160" height="70" zIndex="2" text="EXECUTE" backColor="rgba(255, 128, 0, 1)" />
     <Widget xsi:type="widgets.brease.Button" id="STOP" top="380" left="800" width="160" height="70" zIndex="3" text="STOP" backColor="rgba(255, 128, 0, 1)" />

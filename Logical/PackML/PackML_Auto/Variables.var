@@ -1,0 +1,10 @@
+VAR	
+	diStop : BOOL; (*PackML Test*)
+	diReset : BOOL; (*PackML Test*)
+	diStart : BOOL; (*PackML Test*)
+	diStopped : BOOL; (*PackML Test*)
+	diIdle : BOOL; (*PackML Test*)
+	diExecute : BOOL; (*PackML Test*)
+	diCompleting : BOOL; (*PackML Test*)
+	diComplete : BOOL; (*PackML Test*)
+END_VAR

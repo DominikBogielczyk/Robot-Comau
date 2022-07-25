@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="ManualContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="ManualContent.plusQ1.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ1" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ1">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ1.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ1" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ1">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ1.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ1" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ1">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ1.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ1" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ1">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=-Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ2.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ2" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ2">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ2.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ2" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ2">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=-Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ3.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ3" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ3">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ3.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ3" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ3">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=-Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ4.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ4" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ4">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ4.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ4" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ4">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=-Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ5.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ5" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ5">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ5.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ5" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ5">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=-Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ6.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ6" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ6">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ6.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ6" event="MouseDown" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ6">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=-Vel" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ2.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ2" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ2">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ2.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ2" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ2">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ3.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ3" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ3">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ3.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ3" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ3">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ4.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ4" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ4">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ4.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ4" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ4">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ5.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ5" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ5">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ5.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ5" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ5">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.plusQ6.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="plusQ6" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ6">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.minusQ6.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="minusQ6" event="MouseUp" />
+      <Operand datatype="ANY_REAL" name="Vel">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:VelocityQ">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:VelocityQ6">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.Jog">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.cord.Click">
+      <Source xsi:type="widgets.brease.ToggleSwitch.Event" contentRefId="ManualContent" widgetRefId="cord" event="Click" />
+      <Operand datatype="BOOL" name="TCPvsAXIS">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:cartezianVSjog">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label21">
+                <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label22">
+                <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label23">
+                <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label24">
+                <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label25">
+                <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="5">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label26">
+                <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="TCPvsAXIS =FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label1">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="X" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label2">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="Y" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label3">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="Z" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label4">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="A" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label5">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="B" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="5">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label6">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="C" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="TCPvsAXIS=TRUE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label1">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="Q1" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label2">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="Q2" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label3">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="Q3" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label4">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="Q4" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label5">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="Q5" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="5">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label6">
+                <Method xsi:type="widgets.brease.Label.Action.SetText" text="Q6" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_2">
+      <Source xsi:type="opcUa.Event" refId="::Comau:MpRoboArm6Axis_0.IsHomed" event="ValueChanged" />
+      <Operand datatype="BOOL" name="ChceckIsHome">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:MpRoboArm6Axis_0.IsHomed">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="ChceckIsHome=TRUE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label15">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="ChceckIsHome=FALSE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="Label15">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_3">
+      <Source xsi:type="opcUa.Event" refId="::Comau:MpRoboArm6Axis_0.Info.ReadyToPowerOn" event="ValueChanged" />
+      <Operand datatype="BOOL" name="ReadyValue">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:MpRoboArm6Axis_0.Info.ReadyToPowerOn">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="ReadyValue=TRUE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="lblSafetyReset">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="ReadyValue=FALSE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="lblSafetyReset">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_7">
+      <Source xsi:type="opcUa.Event" refId="::Comau:MpRoboArm6Axis_0.Error" event="ValueChanged" />
+      <Operand datatype="BOOL" name="IsError">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:MpRoboArm6Axis_0.Error">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="IsError=0">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="lblError">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="IsError=TRUE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="lblError">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.MoveHomeBTN.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="MoveHomeBTN" event="MouseDown" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:manual">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.MoveProgram">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ManualContent.MoveHomeBTN.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ManualContent" widgetRefId="MoveHomeBTN" event="MouseUp" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:manual">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.MoveProgram">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="AlarmContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="AlarmContent.btnAck.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="AlarmContent" widgetRefId="btnAck" event="Click" />
+      <Operand datatype="BOOL" name="ErrorStatus">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:MpRoboArm6Axis_0.Error">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.AlarmList.Action" contentRefId="AlarmContent" widgetRefId="AlarmList1">
+            <Method xsi:type="widgets.brease.AlarmList.Action.Acknowledge" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="ErrorStatus = 1">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_20">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="AlarmContent" widgetRefId="btnAckAll" event="Click" />
+      <Operand datatype="BOOL" name="ErrorStatus">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:MpRoboArm6Axis_0.Error">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.AlarmList.Action" contentRefId="AlarmContent" widgetRefId="AlarmList1">
+            <Method xsi:type="widgets.brease.AlarmList.Action.AcknowledgeAll" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="ErrorStatus = 1">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_500">
+      <Source xsi:type="clientSystem.Event" event="ContentLoaded" />
+      <EventHandler condition="contentId = &quot;MainContent&quot;">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="contentId = &quot;ManualContent&quot;">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="contentId = &quot;AutoContent&quot;">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

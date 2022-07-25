@@ -31,5 +31,6 @@
     <Widget xsi:type="widgets.brease.Image" id="ImgSquare11" top="300" left="320" width="100" zIndex="29" />
     <Widget xsi:type="widgets.brease.Image" id="ImgSquare12" top="300" left="180" width="100" zIndex="30" />
     <Widget xsi:type="widgets.brease.Image" id="ImgSquare13" top="300" left="40" width="100" zIndex="31" />
+    <Widget xsi:type="widgets.brease.Label" id="lblError" top="100" left="640" width="400" height="40" zIndex="32" text="ROBOT ZASŁANIA KAMERE" backColor="rgba(220, 220, 220, 1)" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" visible="false" />
   </Widgets>
 </Content>

@@ -1,4 +1,0 @@
-
-ACTION Idle: 
-
-END_ACTION

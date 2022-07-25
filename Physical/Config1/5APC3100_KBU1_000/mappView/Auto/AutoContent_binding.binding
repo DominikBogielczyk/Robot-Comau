@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="AutoContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.IsHomed" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AutoContent" widgetRefId="Rectangle21" attribute="visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.Error" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AutoContent" widgetRefId="Rectangle22" attribute="visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.Enable" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AutoContent" widgetRefId="Rectangle23" attribute="visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.Power" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AutoContent" widgetRefId="Rectangle24" attribute="visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.MoveProgram" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AutoContent" widgetRefId="Rectangle26" attribute="visible" />
+		</Binding>
+	</Bindings>
+</BindingsSet>

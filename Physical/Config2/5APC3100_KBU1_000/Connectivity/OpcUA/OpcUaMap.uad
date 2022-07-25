@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="8" ArVersion="B4.92">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gAlarmXCore0" />
+        <Variable Name="gAxesGroup_Racer3_1" />
+        <Variable Name="gAxisQ1_Racer3_1" />
+        <Variable Name="gAxisQ2_Racer3_1" />
+        <Variable Name="gAxisQ3_Racer3_1" />
+        <Variable Name="gAxisQ4_Racer3_1" />
+        <Variable Name="gAxisQ5_Racer3_1" />
+        <Variable Name="gAxisQ6_Racer3_1" />
+        <Variable Name="gCamera" />
+        <Variable Name="gPackMLCore" />
+        <Variable Name="gSafety" />
+        <Variable Name="HOME" />
+        <Variable Name="MpPackMLCore_0" />
+        <Variable Name="MpPackMLMode_Auto" />
+        <Variable Name="MpPackMLMode_Manual" />
+        <Variable Name="MpPackMLMode_SemiAuto" />
+        <Variable Name="P0" />
+        <Variable Name="P1" />
+        <Variable Name="P1up" />
+        <Variable Name="P2" />
+        <Variable Name="P2up" />
+        <Variable Name="PZ" />
+        <Variable Name="RestorePos" />
+        <Variable Name="gSquareArray" />
+        <Variable Name="gElementsArray" />
+      </GlobalVariables>
+      <Task Name="Comau">
+        <Variable Name="MpRoboArm6Axis_0">
+          <Variable Name="X" />
+          <Variable Name="Y" />
+          <Variable Name="Z" />
+          <Variable Name="A" />
+          <Variable Name="B" />
+          <Variable Name="C" />
+          <Variable Name="Home" />
+          <Variable Name="Info">
+            <Variable Name="JointAxisPosition" EnableArrayElements="True" />
+            <Variable Name="ReadyToPowerOn" />
+          </Variable>
+          <Variable Name="Power" />
+          <Variable Name="MoveProgram" />
+          <Variable Name="MoveDirect" />
+          <Variable Name="Jog" />
+          <Variable Name="ErrorReset" />
+          <Variable Name="Error" />
+          <Variable Name="IsHomed" />
+          <Variable Name="Enable" />
+        </Variable>
+        <Variable Name="manual" />
+        <Variable Name="RoboParameters">
+          <Variable Name="Jog">
+            <Variable Name="Velocity" />
+          </Variable>
+        </Variable>
+        <Variable Name="VelocityQ" />
+        <Variable Name="VelocityQ1" />
+        <Variable Name="VelocityQ2" />
+        <Variable Name="A1" />
+        <Variable Name="B1" />
+        <Variable Name="C1" />
+        <Variable Name="VelocityQ3" />
+        <Variable Name="VelocityQ4" />
+        <Variable Name="VelocityQ5" />
+        <Variable Name="VelocityQ6" />
+        <Variable Name="X1" />
+        <Variable Name="Y1" />
+        <Variable Name="Z1" />
+        <Variable Name="TCPvalue" />
+        <Variable Name="cartezianVSjog" />
+        <Variable Name="doMagnet" />
+        <Variable Name="cmdAck" />
+        <Variable Name="cmdContinue" />
+        <Variable Name="cmdExecute" />
+        <Variable Name="cmdInterrupt" />
+        <Variable Name="cmdStart" />
+        <Variable Name="cmdStop" />
+        <Variable Name="cmdTurnOff" />
+        <Variable Name="cmdTurnOn" />
+      </Task>
+      <Task Name="Clock">
+        <Variable Name="TON_0">
+          <Variable Name="Q" />
+        </Variable>
+        <Variable Name="STEP" />
+      </Task>
+      <Task Name="Alarms">
+        <Variable Name="MpAlarmXCore_0">
+          <Variable Name="MpLink" />
+          <Variable Name="Enable" />
+          <Variable Name="ErrorReset" />
+          <Variable Name="Active" />
+          <Variable Name="Error" />
+          <Variable Name="StatusID" />
+          <Variable Name="ActiveAlarms" />
+          <Variable Name="PendingAlarms" />
+          <Variable Name="Info">
+            <Variable Name="Diag">
+              <Variable Name="StatusID">
+                <Variable Name="ID" />
+                <Variable Name="Severity" />
+                <Variable Name="Code" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="Internal">
+            <Variable Name="pObject" />
+            <Variable Name="State" />
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="OpcCtrl" />
+      <Task Name="RobotMove" />
+      <Task Name="Elements_d">
+        <Variable Name="Camera_0">
+          <Variable Name="ExposureTime" />
+          <Variable Name="Focus" />
+          <Variable Name="NumSearch" />
+          <Variable Name="Enable" />
+          <Variable Name="diTrigger" />
+          <Variable Name="ImageAcq" />
+          <Variable Name="PixelCntSquareArray" />
+          <Variable Name="Ready" />
+          <Variable Name="FlashColor" />
+          <Variable Name="ModelNumArray" />
+          <Variable Name="FlashSegment" />
+        </Variable>
+        <Variable Name="DetectedSquares" />
+      </Task>
+      <Task Name="ComauManua" />
+      <Task Name="PackML_Aut" />
+    </Module>
+  </DefaultView>
+</OpcUaSource>

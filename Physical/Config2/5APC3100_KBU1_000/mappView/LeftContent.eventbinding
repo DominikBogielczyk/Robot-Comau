@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="LeftContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="EventBinding_40">
+      <Source xsi:type="opcUa.Event" refId="::Alarms:MpAlarmXCore_0.ActiveAlarms" event="ValueChanged" />
+      <EventHandler condition="newValue &gt; 0">
+        <Action>
+          <Target xsi:type="widgets.brease.NavigationButton.Action" contentRefId="LeftContent" widgetRefId="btnAlarmy1">
+            <Method xsi:type="widgets.brease.NavigationButton.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.NavigationButton.Action" contentRefId="LeftContent" widgetRefId="btnAlarmy1">
+            <Method xsi:type="widgets.brease.NavigationButton.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>
