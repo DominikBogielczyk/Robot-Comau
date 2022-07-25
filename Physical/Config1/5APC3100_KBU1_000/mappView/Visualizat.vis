@@ -30,6 +30,7 @@
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />
+    <Dialog refId="InfoDialog" />
   </Dialogs>
   <Contents>
     <Content refId="LeftContent" />
@@ -43,6 +44,7 @@
     <Content refId="MainContent" />
     <Content refId="AutoContent" />
     <Content refId="ManualContent" />
+    <Content refId="InfoContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

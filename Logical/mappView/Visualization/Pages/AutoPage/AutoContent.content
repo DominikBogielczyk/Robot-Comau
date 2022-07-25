@@ -35,7 +35,7 @@
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle20" top="480" left="580" width="80" height="80" zIndex="31" backColor="rgba(192, 192, 192, 1)" />
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle25" top="560" left="580" width="80" height="80" zIndex="32" backColor="rgba(192, 192, 192, 1)" />
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle27" top="480" left="660" width="80" height="80" zIndex="33" backColor="rgba(192, 192, 192, 1)" />
-    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle28" top="560" left="660" width="80" height="80" zIndex="34" backColor="rgba(192, 192, 192, 1)" />
+		<Widget xsi:type="widgets.brease.Rectangle" id="Rectangle28" top="560" left="660" width="80" height="80" zIndex="34" backColor="rgba(192, 192, 192, 1)" />
     <Widget xsi:type="widgets.brease.Button" id="EXECUTE1" top="80" left="400" width="160" height="70" zIndex="35" text="ERROR_RES" backColor="rgba(224, 224, 224, 1)" />
   </Widgets>
 </Content>

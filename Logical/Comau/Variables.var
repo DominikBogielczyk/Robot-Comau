@@ -1,7 +1,7 @@
 VAR
 	TCPvalue : INT;
-	manual : BOOL; (*Zalacza wybur trybu 0 - auto 1 - manual *)
-	cartezianVSjog : BOOL; (*Wybór miedzy sterowaniem w wspólrzednych wewnetrznych - 0 a zewnentrznych - 1 *)
+	manual : BOOL; (*Zalacza wybór trybu 0 - auto 1 - manual *)
+	cartezianVSjog : BOOL; (*Wybór miedzy sterowaniem we wspólrzednych wewnetrznych - 0 / zewnêtrznych - 1 *)
 	MpRoboArm6Axis_0 : MpRoboArm6Axis;
 	X1 : LREAL; (*wspólrzedna przekazywana do próbnego programu gdybysmy chcieli dojechac w okreslone miejsce*)
 	Y1 : LREAL; (*wspólrzedna przekazywana do próbnego programu gdybysmy chcieli dojechac w okreslone miejsce*)
@@ -9,12 +9,12 @@ VAR
 	A1 : LREAL; (*wspólrzedna przekazywana do próbnego programu gdybysmy chcieli dojechac w okreslone miejsce*)
 	B1 : LREAL; (*wspólrzedna przekazywana do próbnego programu gdybysmy chcieli dojechac w okreslone miejsce*)
 	C1 : LREAL; (*wspólrzedna przekazywana do próbnego programu gdybysmy chcieli dojechac w okreslone miejsce*)
-	VelocityQ1 : REAL; (*Przypisanie predkosci do parametru 1 w zalerznosci od wyboru wspólrzednych*)
-	VelocityQ2 : REAL; (*Przypisanie predkosci do parametru 2 w zalerznosci od wyboru wspólrzednych*)
-	VelocityQ3 : REAL; (*Przypisanie predkosci do parametru 3 w zalerznosci od wyboru wspólrzednych*)
-	VelocityQ4 : REAL; (*Przypisanie predkosci do parametru 4 w zalerznosci od wyboru wspólrzednych*)
-	VelocityQ5 : REAL; (*Przypisanie predkosci do parametru 5 w zalerznosci od wyboru wspólrzednych*)
-	VelocityQ6 : REAL; (*Przypisanie predkosci do parametru 6 w zalerznosci od wyboru wspólrzednych*)
+	VelocityQ1 : REAL; (*Przypisanie predkosci do parametru 1 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ2 : REAL; (*Przypisanie predkosci do parametru 2 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ3 : REAL; (*Przypisanie predkosci do parametru 3 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ4 : REAL; (*Przypisanie predkosci do parametru 4 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ5 : REAL; (*Przypisanie predkosci do parametru 5 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ6 : REAL; (*Przypisanie predkosci do parametru 6 w zale¿nosci od wyboru wspólrzednych*)
 	VelocityQ : REAL;
 	doMagnet : BOOL;
 	RoboParameters : MpRoboArm6AxisParType;
