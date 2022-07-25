@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="FilesContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.Filter" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="tiFilter" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.Refresh" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="btnRefresh" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.EnterFolder" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="btnOpenFolder" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.FolderUp" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="btnFolderUp" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:tabInfo.LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="tiLastModified" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:tabInfo.Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="tiName" attribute="stringValue" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:tabInfo.Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="tiFileSize" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.Cut" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="btnCutFile" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.Copy" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="btnCopyFile" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.Paste" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="btnPasteFile" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.NewName" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="tiNewName" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.Rename" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="btnRenameFile" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.CreateFolder" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="btnCreateFolder" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:MpFileMngConnect.File.Delete" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="btnDeleteFile" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:tabInfo.SelectedRow" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="Table1" attribute="selectedRow" />
+</Binding>
+</Bindings>
+</BindingsSet>

@@ -12,5 +12,8 @@
     <Object Type="File">LeftContent.eventbinding</Object>
     <Object Type="Package">Login</Object>
     <Object Type="Package">Auto</Object>
+    <Object Type="File">FilesContent.binding</Object>
+    <Object Type="File">FilesContent.eventbinding</Object>
+    <Object Type="File">ReceptureContent.eventbinding</Object>
   </Objects>
 </Package>

@@ -11,5 +11,6 @@
     <Object Type="Package">PackMLPage</Object>
     <Object Type="Package">RecepturePage</Object>
     <Object Type="Package">UsersPage</Object>
+    <Object Type="Package">FilesPage</Object>
   </Objects>
 </Package>

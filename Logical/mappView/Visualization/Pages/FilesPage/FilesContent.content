@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="FilesContent" height="650" width="1030" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Table" id="Table1" top="180" left="60" width="580" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TableItem" id="tiName" zIndex="0" columnWidth="200" text="Nazwa" />
+        <Widget xsi:type="widgets.brease.TableItemDateTime" id="tiLastModified" zIndex="1" columnWidth="260" text="Ostatnio modyfikowany" />
+        <Widget xsi:type="widgets.brease.TableItem" id="tiFileSize" zIndex="2" columnWidth="120" text="Rozmiar" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.TextInput" id="tiFilter" top="60" left="200" width="260" height="50" zIndex="1" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnOpenFolder" top="520" left="140" width="140" height="60" zIndex="2" text="Otworz folder" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnRefresh" top="60" left="80" width="50" height="50" zIndex="3" image="Media/SymbolLib/Symbols/Restart.svg" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnFolderUp" top="520" left="340" width="140" height="60" zIndex="4" text="Folder up" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnDeleteFile" top="100" left="700" zIndex="5" text="USUŃ" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnCopyFile" top="140" left="700" zIndex="6" text="KOPIUJ" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnCutFile" top="180" left="700" zIndex="7" text="WYTNIJ" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnPasteFile" top="220" left="700" zIndex="8" text="WKLEJ" />
+    <Widget xsi:type="widgets.brease.TextInput" id="tiNewName" top="520" left="560" width="240" height="40" zIndex="9" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnRenameFile" top="580" left="620" width="120" zIndex="10" text="ZMIEŃ NAZWĘ" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnCreateFolder" top="260" left="700" zIndex="11" text="NOWY FOLDER" />
+  </Widgets>
+</Content>

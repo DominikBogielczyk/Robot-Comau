@@ -5,5 +5,6 @@
     <Object Type="File">Config.mppackmlcore</Object>
     <Object Type="File">Config_8.mpalarmxcore</Object>
     <Object Type="File">Config_9.mpuserx</Object>
+    <Object Type="File">Config_10.mpfilemanagerui</Object>
   </Objects>
 </Package>
