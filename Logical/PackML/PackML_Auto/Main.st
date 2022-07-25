@@ -22,7 +22,18 @@ PROGRAM _CYCLIC
 	Complete;
 	Stopped;
 	
-	MpPackMLMode_Auto.Stop := diStop;
+	//throwing error 
+	IF MpRoboArm6Axis_0.Error THEN
+		Step := ROBOTCTRL_ERROR;
+		MpPackMLMode_Auto.Abort := TRUE;
+	END_IF;
+	
+	
+	IF diStop THEN
+		MpRoboArm6Axis_0.Power := 0;
+		MpPackMLMode_Auto.Stop := 1;
+		diStop := 1;
+		END_IF
 	
 	MpPackMLCore_0;
 	MpPackMLMode_Auto;

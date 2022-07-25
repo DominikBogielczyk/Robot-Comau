@@ -7,8 +7,14 @@ VAR
 	diSemiAuto : BOOL;
 	MpRoboArm6Axis_0 : MpRoboArm6Axis;
 	RoboParameters : MpRoboArm6AxisParType;
+	
+	diAck : BOOL;
+	x : INT := 0;
+	AimIsGood : BOOL := FALSE;
 END_VAR
 
 VAR CONSTANT
-
+	SizeOfArray : INT := 13;
+	IndexSize : INT := 3;
+	Index : ARRAY[0..2] OF INT := [1,2,3];
 END_VAR

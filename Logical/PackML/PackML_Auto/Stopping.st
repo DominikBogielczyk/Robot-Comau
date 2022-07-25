@@ -5,6 +5,7 @@ ACTION Stopping:
 		1) THEN
 	
 		//STOP EVERYTHING
+		MpRoboArm6Axis_0.Power := FALSE; 
 		
 		IF diStopped THEN
 			MpPackMLStateComplete(gPackMLCore, 1);
