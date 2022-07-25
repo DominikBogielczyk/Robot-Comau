@@ -1,11 +1,22 @@
-#include'Global.var'
+VAR {AT PLC} 
+P2up : McPointType;
+P2 : McPointType;
+P1up : McPointType;
+P1 : McPointType;
+P0 : McPointType;
+HOME : McPointType;
+PZ : McPointType;
+A : McAxisTargetType;
 
-PROGRAM _MAIN          
+END_VAR
+
+	PROGRAM _MAIN 
+	
 	Feedrate(5000);    //move with reduced speed      
 
-	MoveJ(HOME); //move HOME
+	MoveA(A); //move HOME
 
-	MoveJ(P0);   //move to lower HOME pose
+//	MoveJ(P0);   //move to lower HOME pose
 
 	MoveL(P1up); //move over the aim 1 pose
 	Feedrate(2000);
@@ -20,9 +31,9 @@ PROGRAM _MAIN
 	MoveL(P2);    //move to aim 2
 	WaitTime(1);
 	MoveL(P2up); //move over the aim 2 pose
-	Feedrate(5000);	
+	Feedrate(2000);	
 
-	MoveL(P0);   //move to lower HOME pose
+//	MoveL(P0);   //move to lower HOME pose
 	MoveJ(HOME); //move to  HOME
 
 END_PROGRAM

@@ -4,10 +4,9 @@
   <TaskClass Name="Cyclic#1">
     <Task Name="Comau" Source="Comau.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="OpcCtrl" Source="Sources.OpcCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="ComauAuto" Source="ComauAuto.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
-    <Task Name="ComauManua" Source="PackML_Manual.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="PackML_Aut" Source="PackML_Auto.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="PackML_Log" Source="PackML_Logic.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ComauManua" Source="PackML.PackML_Manual.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="PackML_Aut" Source="PackML.PackML_Auto.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="PackML_Log" Source="PackML.PackML_Logic.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="RobotMove" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
@@ -16,7 +15,7 @@
     <Task Name="Clock" Source="Clock.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Alarms" Source="Alarms.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Elements_d" Source="Elements_detection.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="PackML_Sem" Source="PackML_SemiAuto.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="PackML_Sem" Source="PackML.PackML_SemiAuto.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />

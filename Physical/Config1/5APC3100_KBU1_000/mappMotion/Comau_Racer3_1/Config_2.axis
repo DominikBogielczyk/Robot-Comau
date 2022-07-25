@@ -41,7 +41,7 @@
       </Selector>
       <Property ID="TorqueIsInvisible" Value="0" />
     </Selector>
-    <Selector ID="Alarms" Value="None" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
   <Element ID="gAxisQ2_Racer3_1" Type="axis">
     <Property ID="BaseTypeIsReadOnly" Value="1" />
@@ -83,7 +83,7 @@
       </Selector>
       <Property ID="TorqueIsInvisible" Value="0" />
     </Selector>
-    <Selector ID="Alarms" Value="None" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
   <Element ID="gAxisQ3_Racer3_1" Type="axis">
     <Property ID="BaseTypeIsReadOnly" Value="1" />
@@ -125,7 +125,7 @@
       </Selector>
       <Property ID="TorqueIsInvisible" Value="0" />
     </Selector>
-    <Selector ID="Alarms" Value="None" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
   <Element ID="gAxisQ4_Racer3_1" Type="axis">
     <Property ID="BaseTypeIsReadOnly" Value="1" />
@@ -167,7 +167,7 @@
       </Selector>
       <Property ID="TorqueIsInvisible" Value="0" />
     </Selector>
-    <Selector ID="Alarms" Value="None" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
   <Element ID="gAxisQ5_Racer3_1" Type="axis">
     <Property ID="BaseTypeIsReadOnly" Value="1" />
@@ -209,7 +209,7 @@
       </Selector>
       <Property ID="TorqueIsInvisible" Value="0" />
     </Selector>
-    <Selector ID="Alarms" Value="None" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
   <Element ID="gAxisQ6_Racer3_1" Type="axis">
     <Property ID="BaseTypeIsReadOnly" Value="1" />

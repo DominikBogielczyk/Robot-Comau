@@ -41,7 +41,8 @@
     <Parameter ID="ConfigurationID" Value="RobotComau_Config1" />
     <Parameter ID="RemMemDevice" Value="PCI.2.IPLK.SRAM" />
     <Parameter ID="RemMemSize" Value="1024" />
-    <Parameter ID="RemanentGlobalPvSize" Value="1024" />
+    <Parameter ID="PermanentPvSize" Value="512" />
+    <Parameter ID="RemanentGlobalPvSize" Value="512" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="5AC901.IPLK-00.IF1" />
     <Parameter ID="TaskClassIdleTime" Value="2000" />
@@ -49,7 +50,12 @@
     <Parameter ID="Cyclic1Tolerance" Value="0" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="CNC_PrgDir" />
-    <Parameter ID="FileDevicePath1" Value="C:\projects\Comau\Robot-Comau-main\Logical" />
+    <Parameter ID="FileDevicePath1" Value="F:\RobotProgram" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="admin" />
+    <Parameter ID="FtpUserPassword1" Value="QCzPEyxrRcQJkbJUmFYJydudCaTwVAMxyUFRcNQN44M=" />
+    <Parameter ID="FtpUserSalt1" Value="07CFXo9y" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>

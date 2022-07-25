@@ -16,7 +16,10 @@ PROGRAM _INIT
 	MpPackMLMode_Manual.Enable := TRUE;
 	MpPackMLMode_Manual.ModeID := 3;
 	
-	//ACTIVATE := 1 ?????
+	MpPackMLMode_Auto.Activate := 0;
+	MpPackMLMode_SemiAuto.Activate := 0;
+	MpPackMLMode_Manual.Activate := 0;
+	
 	 
 END_PROGRAM
 
@@ -26,7 +29,13 @@ PROGRAM _CYCLIC
 	MpPackMLMode_SemiAuto();
 	MpPackMLMode_Manual();
 	
-	 
+	MpPackMLMode_Auto.Activate := 0;
+	MpPackMLMode_SemiAuto.Activate := 0;
+	MpPackMLMode_Manual.Activate := 0; 
+	
+	MpPackMLMode_Auto.Activate := diAuto AND (NOT diSemiAuto) AND (NOT diManual);
+	MpPackMLMode_SemiAuto.Activate := diSemiAuto AND (NOT diAuto) AND (NOT diManual);
+	MpPackMLMode_Manual.Activate := diManual AND (NOT diAuto) AND (NOT diSemiAuto);
 END_PROGRAM
 
 PROGRAM _EXIT
@@ -40,10 +49,8 @@ PROGRAM _EXIT
 	MpPackMLMode_SemiAuto();
 	MpPackMLMode_Manual();
 	
-	diReset;
-	diStop;
-	toStopped;
-	test;
+	
+	
 	
 	 
 END_PROGRAM

@@ -16,6 +16,15 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
+	P2up;
+	P2 ;
+	P1up ;
+	P1 ;
+	P0;
+	HOME;
+	PZ;
+	A;
+	
 	RoboParameters.Jog.Velocity[0] := VelocityQ1;
 	RoboParameters.Jog.Velocity[1] := VelocityQ2;
 	RoboParameters.Jog.Velocity[2] := VelocityQ3;

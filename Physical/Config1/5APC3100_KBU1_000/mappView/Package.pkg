@@ -10,7 +10,7 @@
     <Object Type="Package">Alarm</Object>
     <Object Type="Package">Users</Object>
     <Object Type="File">LeftContent.eventbinding</Object>
-    <Object Type="File">LoginContent.binding</Object>
-    <Object Type="File">LoginContent.eventbinding</Object>
+    <Object Type="Package">Login</Object>
+    <Object Type="Package">Auto</Object>
   </Objects>
 </Package>

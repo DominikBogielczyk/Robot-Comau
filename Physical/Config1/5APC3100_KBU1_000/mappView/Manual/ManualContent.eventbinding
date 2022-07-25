@@ -769,5 +769,27 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="EventBinding_7">
+      <Source xsi:type="opcUa.Event" refId="::Comau:MpRoboArm6Axis_0.Error" event="ValueChanged" />
+      <Operand datatype="BOOL" name="IsError">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:MpRoboArm6Axis_0.Error">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="IsError=0">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="lblError">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="IsError=TRUE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="ManualContent" widgetRefId="lblError">
+            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>

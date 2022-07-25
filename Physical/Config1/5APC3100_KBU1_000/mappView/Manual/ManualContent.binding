@@ -86,6 +86,10 @@
 
 
 
-	</Bindings>
+	<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Comau:MpRoboArm6Axis_0.Info.ReadyToPowerOn" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualContent" widgetRefId="ToggleButton411" attribute="value" />
+</Binding>
+</Bindings>
 
 </BindingsSet>

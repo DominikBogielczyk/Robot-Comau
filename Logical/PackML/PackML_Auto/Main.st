@@ -13,6 +13,26 @@ PROGRAM _CYCLIC
 	Completing;
 	Complete;
 	Stopped;
+	
+	MpPackMLMode_Auto.Stop := diStop;
+	
+	MpPackMLCore_0;
+	MpPackMLMode_Auto;
+	
+	diStop;
+	diStart;
+	
+	diReset;
+	diComplete;
+	diCompleting;
+	diExecute;
+	diStopped;
+	
+	diAuto;
+	diSemiAuto;
+	diManual;
+
+	
 END_PROGRAM
 
 PROGRAM _EXIT

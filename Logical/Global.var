@@ -1,33 +1,34 @@
 VAR
-	toAbort : BOOL;
+	y : USINT;
+	
+	gSquareArray : ARRAY[0..13] OF BOOL; (*1 IF is square in i position*)
 END_VAR
 VAR RETAIN
-	RestorePos : ARRAY[0..5] OF McAcpAxRestorePosType;
+	RestorePos : ARRAY[0..5] OF McAcpAxRestorePosType; (*Comau Home Position*)
 END_VAR
 VAR
-	P2up : McPointType := (Pos:=(X:=410,Y:=200,Z:=200),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
-	P2 : McPointType := (Pos:=(X:=410,Y:=200,Z:=100),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
-	P1up : McPointType := (Pos:=(X:=510,Y:=-300,Z:=200),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
-	P1 : McPointType := (Pos:=(X:=510,Y:=-300,Z:=100),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
-	P0 : McPointType := (Pos:=(X:=435,Y:=0,Z:=405),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
-	HOME : McPointType := (Pos:=(X:=435.9,Y:=0,Z:=685),Orient:=(Angle1:=0,Angle2:=90,Angle3:=0));
 	PZ : McPointType := (Pos:=(X:=435,Y:=0,Z:=685),Orient:=(Angle1:=0,Angle2:=90,Angle3:=0));
-	gSafety : gSafeType;
-	SquareArray : ARRAY[0..13] OF BOOL;
-	ElementsArray : ARRAY[0..13] OF USINT;
-	diStop : BOOL;
-	toStopped : BOOL;
-	diReset : BOOL;
-	MpPackMLMode_Auto : MpPackMLMode;
+	pom : ARRAY[0..9] OF BOOL := [10(0)];
+	P2up : McPointType := (Pos:=(X:=410,Y:=200,Z:=200),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
+	P2 : McPointType := (Pos:=(X:=410,Y:=200,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
+	P1up : McPointType := (Pos:=(X:=510,Y:=-300,Z:=200),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
+	P1 : McPointType := (Pos:=(X:=510,Y:=-300,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
+	P0 : McPointType := (Pos:=(X:=435,Y:=0,Z:=405),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0));
+	A : McAxisTargetType := (JointAxis:=[0,0,-90,0,90,0],SlaveAxis:=[100]);
 	MpPackMLMode_SemiAuto : MpPackMLMode;
 	MpPackMLMode_Manual : MpPackMLMode;
+	MpPackMLMode_Auto : MpPackMLMode;
 	MpPackMLCore_0 : MpPackMLCore;
-	test : USINT;
-	pom : ARRAY[0..9] OF BOOL := [10(0)];
-	
-	gRobPos : ARRAY[0..13] OF McPointType := [(Pos:=(X:=510,Y:=-300,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=-200,Z:=40),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=510,Y:=-100,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=0,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=100,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=200,Z:=40),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=510,Y:=300,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=-300,Z:=40),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=410,Y:=-200),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=410,Y:=-100,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=0,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=100,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=200,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=300,Z:=40),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0))];
-	gActPos : ARRAY[0..13] OF INT := [2(0),1,2(0),2,0,3,6(0)];
-	gAimPos : ARRAY[0..13] OF INT := [11(0),1,2,3];
+	HOME : McPointType := (Pos:=(X:=435.9,Y:=0,Z:=685),Orient:=(Angle1:=0,Angle2:=90,Angle3:=0));
+	gSafety : gSafeType;
+	gRobPos : ARRAY[0..13] OF McPointType := [(Pos:=(X:=510,Y:=-300,Z:=70),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=-200,Z:=140),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=510,Y:=-100,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=0,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=100,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=510,Y:=200,Z:=140),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=510,Y:=300,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=-300,Z:=140),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=410,Y:=-200,Z:=140),Orient:=(Angle1:=0,Angle2:=180)),(Pos:=(X:=410,Y:=-100,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=0,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=100,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=200,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0)),(Pos:=(X:=410,Y:=300,Z:=140),Orient:=(Angle1:=0,Angle2:=180,Angle3:=0))];
 	gIsPosGood : ARRAY[0..13] OF BOOL := [11(0),3(1)];
-	y : USINT;
+	gAimPos : ARRAY[0..13] OF INT := [11(0),1,2,3];
+	gActPos : ARRAY[0..13] OF INT := [2(0),1,2(0),2,0,3,6(0)];
+	gElementsArray : ARRAY[0..13] OF USINT;
+	
+	diAuto : BOOL;
+	diManual : BOOL;
+	diSemiAuto : BOOL;
+	
 END_VAR
