@@ -5,6 +5,8 @@ ACTION Resetting:
 		mpPACKML_STATE_RESETTING,
 		1) THEN
 		
+		y := 0;
+		
 		CASE Step OF
 			ROBOTCTRL_POWER: 
 				IF MpRoboArm6Axis_0.Info.ReadyToPowerOn THEN

@@ -2,7 +2,7 @@
 VAR
 	Step : {REDUND_UNREPLICABLE} Step_typ := (0);
 	
-	diAuto : BOOL;
+	diAuto : BOOL; 
 	diManual : BOOL;
 	diSemiAuto : BOOL;
 	MpRoboArm6Axis_0 : MpRoboArm6Axis;
@@ -19,7 +19,18 @@ VAR
 	diReset : BOOL; 
 	diStart : BOOL; 
 	diExecute : BOOL; 
+	
 
+	cartezianVSjog : BOOL; (*Wybór miedzy sterowaniem we wspólrzednych wewnetrznych - 0 / zewnêtrznych - 1 *)
+	VelocityQ1 : REAL; (*Przypisanie predkosci do parametru 1 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ2 : REAL; (*Przypisanie predkosci do parametru 2 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ3 : REAL; (*Przypisanie predkosci do parametru 3 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ4 : REAL; (*Przypisanie predkosci do parametru 4 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ5 : REAL; (*Przypisanie predkosci do parametru 5 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ6 : REAL; (*Przypisanie predkosci do parametru 6 w zale¿nosci od wyboru wspólrzednych*)
+	VelocityQ : REAL;
+	doMagnet : BOOL;
+	
 END_VAR
 
 VAR CONSTANT

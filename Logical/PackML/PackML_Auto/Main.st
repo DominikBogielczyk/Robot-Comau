@@ -12,6 +12,9 @@ PROGRAM _INIT
 	RoboParameters.Acceleration := 1000; 
 	RoboParameters.Deceleration := 1000; 
 	RoboParameters.ProgramName := 'Robotic.st';  
+	
+	Step := ROBOTCTRL_POWER_OFF;
+	MpPackMLMode_Auto.Stop := 1;
 	 
 END_PROGRAM
 
@@ -47,8 +50,7 @@ PROGRAM _CYCLIC
 	IF diStop THEN
 		MpRoboArm6Axis_0.Power := 0;
 		MpPackMLMode_Auto.Stop := 1;
-		diStop := 1;
-		END_IF
+	END_IF
 	
 	MpPackMLCore_0;
 	MpPackMLMode_Auto;
@@ -59,10 +61,10 @@ PROGRAM _CYCLIC
 	diExecute;
 	cmdContinue;
 	
-	
 	diAuto;
 	diSemiAuto;
 	diManual;
+	Step;
 	
 	MpRoboArm6Axis_0.MpLink     := ADR(gAxesGroup_Racer3_1);
 	MpRoboArm6Axis_0.Parameters := ADR(RoboParameters);
@@ -74,6 +76,6 @@ PROGRAM _CYCLIC
 END_PROGRAM
 
 PROGRAM _EXIT
-	 
+	 MpPackMLMode_Auto.Stop := 0;
 END_PROGRAM
 

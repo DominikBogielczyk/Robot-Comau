@@ -6,6 +6,7 @@ ACTION Stopped:
 		
 		MpRoboArm6Axis_0.Power := FALSE; 
 		MpRoboArm6Axis_0.Stop := FALSE;
+		diStop := 0;
 		MpPackMLMode_Auto.Abort := 0;
 		
 		IF diReset THEN

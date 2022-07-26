@@ -1,6 +1,7 @@
 
 PROGRAM _INIT
-	(* Insert code here *)
+	Step := ROBOTCTRL_POWER_OFF;
+	
 	 
 END_PROGRAM
 

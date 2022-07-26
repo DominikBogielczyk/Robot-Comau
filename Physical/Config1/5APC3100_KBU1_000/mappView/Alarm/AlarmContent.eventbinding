@@ -3,11 +3,6 @@
   <Bindings>
     <EventBinding id="AlarmContent.btnAck.Click">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="AlarmContent" widgetRefId="btnAck" event="Click" />
-      <Operand datatype="BOOL" name="ErrorStatus">
-        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:MpRoboArm6Axis_0.Error">
-          <Method xsi:type="opcUa.NodeAction.GetValue" />
-        </ReadTarget>
-      </Operand>
       <EventHandler>
         <Action>
           <Target xsi:type="widgets.brease.AlarmList.Action" contentRefId="AlarmContent" widgetRefId="AlarmList1">
@@ -15,7 +10,7 @@
           </Target>
         </Action>
       </EventHandler>
-      <EventHandler condition="ErrorStatus = 1">
+      <EventHandler condition="">
         <Action>
           <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
             <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
@@ -25,11 +20,6 @@
     </EventBinding>
     <EventBinding id="EventBinding_20">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="AlarmContent" widgetRefId="btnAckAll" event="Click" />
-      <Operand datatype="BOOL" name="ErrorStatus">
-        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Comau:MpRoboArm6Axis_0.Error">
-          <Method xsi:type="opcUa.NodeAction.GetValue" />
-        </ReadTarget>
-      </Operand>
       <EventHandler>
         <Action>
           <Target xsi:type="widgets.brease.AlarmList.Action" contentRefId="AlarmContent" widgetRefId="AlarmList1">
@@ -37,7 +27,7 @@
           </Target>
         </Action>
       </EventHandler>
-      <EventHandler condition="ErrorStatus = 1">
+      <EventHandler condition="">
         <Action>
           <Target xsi:type="opcUa.NodeAction" refId="::Comau:MpRoboArm6Axis_0.ErrorReset">
             <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
