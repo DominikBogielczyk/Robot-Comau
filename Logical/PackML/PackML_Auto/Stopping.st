@@ -5,8 +5,9 @@ ACTION Stopping:
 		1) THEN
 	
 		//STOP EVERYTHING
-		MpRoboArm6Axis_0.Power := FALSE; 
 		MpRoboArm6Axis_0.Stop := TRUE;
+		MpRoboArm6Axis_0.Power := FALSE; 
+	
 		
 		
 		IF NOT MpRoboArm6Axis_0.InMotion THEN

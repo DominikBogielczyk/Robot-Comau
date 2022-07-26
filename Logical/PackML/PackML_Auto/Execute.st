@@ -35,7 +35,7 @@ ACTION Execute:
 						P1up.Orient.Angle3:=gRobPos[x].Orient.Angle3;
 						P1up.Pos.X:=gRobPos[x].Pos.X;
 						P1up.Pos.Y:=gRobPos[x].Pos.Y;
-						P1up.Pos.Z:=gRobPos[x].Pos.Z+100;
+						P1up.Pos.Z:=gRobPos[x].Pos.Z+50;
 					
 					
 					
@@ -59,7 +59,7 @@ ACTION Execute:
 						P2up.Orient.Angle3:=gRobPos[x].Orient.Angle3;
 						P2up.Pos.X:=gRobPos[x].Pos.X;
 						P2up.Pos.Y:=gRobPos[x].Pos.Y;
-						P2up.Pos.Z:=gRobPos[x].Pos.Z+100;
+						P2up.Pos.Z:=gRobPos[x].Pos.Z+50;
 					
 					
 					END_IF;	
@@ -70,15 +70,15 @@ ACTION Execute:
 			ROBOTCTRL_IS_MOVE_NEEDED:
 				//checking if actual and aim positions are not the same 
 				IF P1.Orient.Angle1=P2.Orient.Angle1 AND P1.Pos.X=P2.Pos.X AND P1.Orient.Angle2=P2.Orient.Angle2 AND P1.Pos.Y=P2.Pos.Y AND P1.Orient.Angle3=P2.Orient.Angle3 AND P1.Pos.Z=P2.Pos.Z THEN
-					y:=y+1;
-					P1P2_Ok:=0;
-					Step:=ROBOTCTRL_CALCULATE;
+					y:=y+1; // index of next object 
+					P1P2_Ok:=0; // ready to assign new values to p1 p1up p2 p2up
+					Step:=ROBOTCTRL_CALCULATE; // next assigning procedure with new object 
 				ELSE
-					Step:=ROBOTCTRL_MOVE;
+					Step:=ROBOTCTRL_MOVE;   // going to move command 
 				END_IF;
 
 			ROBOTCTRL_MOVE:
-				IF cmdInterrupt OR MpRoboArm6Axis_0.MoveInterrupted THEN
+				IF cmdInterrupt OR MpRoboArm6Axis_0.MoveInterrupted THEN 
 					cmdInterrupt := FALSE; 
 					Step:=ROBOTCTRL_INTERRUPT;
 					MpPackMLMode_Auto.Hold := 1;
@@ -88,6 +88,7 @@ ACTION Execute:
 				//executing move procedure
 				MpRoboArm6Axis_0.MoveProgram:=1;
 				IF MpRoboArm6Axis_0.MoveDone THEN
+					//retaking assigning procedure with new object after finishing move 
 					MpRoboArm6Axis_0.MoveProgram:=0;
 					y:=y+1;
 					P1P2_Ok:=0;
