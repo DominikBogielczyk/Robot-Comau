@@ -14,6 +14,9 @@ PROGRAM _CYCLIC
 	Complete;
 	Stopped;
 	
+	VelocityQ;
+	doMagnet;
+	
 	RoboParameters.Jog.Velocity[0] := VelocityQ1;
 	RoboParameters.Jog.Velocity[1] := VelocityQ2;
 	RoboParameters.Jog.Velocity[2] := VelocityQ3;

@@ -35,5 +35,5 @@ VAR_CONFIG
 	::Elements_d:Camera_0.ModelNumArray[11] AT %IB."VSS112Q21.031P-000".ModelNum12;
 	::Elements_d:Camera_0.ModelNumArray[12] AT %IB."VSS112Q21.031P-000".ModelNum13;
 	::Elements_d:Camera_0.ModelNumArray[13] AT %IB."VSS112Q21.031P-000".ModelNum14;
-	::Comau:doMagnet AT %QX."X20DO9322".DigitalOutput05;
+	::doMagnet AT %QX."X20DO9322".DigitalOutput05;
 END_VAR

@@ -12,7 +12,6 @@
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
-    <Task Name="Clock" Source="Clock.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Alarms" Source="Alarms.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Elements_d" Source="Elements_detection.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="PackML_Sem" Source="PackML.PackML_SemiAuto.prg" Memory="UserROM" Language="IEC" Debugging="true" />

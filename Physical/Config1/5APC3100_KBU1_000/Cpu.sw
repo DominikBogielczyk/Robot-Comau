@@ -13,7 +13,6 @@
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
-    <Task Name="Clock" Source="Clock.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Alarms" Source="Alarms.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Elements_d" Source="Elements_detection.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="File_explo" Source="File_explorer.prg" Memory="UserROM" Language="IEC" Debugging="true" />

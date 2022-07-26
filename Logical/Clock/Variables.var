@@ -1,4 +1,0 @@
-VAR
-	TON_0 : TON;
-	STEP : USINT := 0;
-END_VAR
