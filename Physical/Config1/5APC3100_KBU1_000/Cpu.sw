@@ -4,7 +4,7 @@
   <TaskClass Name="Cyclic#1">
     <Task Name="Comau" Source="Comau.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
     <Task Name="OpcCtrl" Source="Sources.OpcCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="PackML_Man" Source="PackML.PackML_Manual.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ComauManua" Source="PackML.PackML_Manual.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="PackML_Aut" Source="PackML.PackML_Auto.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="PackML_Log" Source="PackML.PackML_Logic.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="PackML_Sem" Source="PackML.PackML_SemiAuto.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -15,7 +15,6 @@
   <TaskClass Name="Cyclic#4">
     <Task Name="Alarms" Source="Alarms.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Elements_d" Source="Elements_detection.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="File_explo" Source="File_explorer.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
@@ -64,7 +63,6 @@
     <BinaryObject Name="Config_9" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="PixelCount" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_8" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Config_10" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="viApp" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Matching15" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
@@ -105,8 +103,5 @@
     <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="arcert" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="aruser" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="asbrstr" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="asusb" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="mpfile" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

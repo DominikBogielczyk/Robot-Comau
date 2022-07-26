@@ -35,53 +35,6 @@
         <Variable Name="RestorePos" />
         <Variable Name="gSquareArray" EnableArrayElements="True" />
         <Variable Name="gElementsArray" EnableArrayElements="True" />
-        <Variable Name="cartezianVSjog" />
-        <Variable Name="diAck" />
-        <Variable Name="diAuto" />
-        <Variable Name="diExecute" />
-        <Variable Name="diManual" />
-        <Variable Name="diReset" />
-        <Variable Name="diSemiAuto" />
-        <Variable Name="diStart" />
-        <Variable Name="diStop" />
-        <Variable Name="doMagnet" />
-        <Variable Name="gActPos" />
-        <Variable Name="gAimPos" />
-        <Variable Name="MpRoboArm6Axis_0">
-          <Variable Name="MpLink" />
-          <Variable Name="Enable" />
-          <Variable Name="ErrorReset" />
-          <Variable Name="Parameters" />
-          <Variable Name="Update" />
-          <Variable Name="Override" />
-          <Variable Name="Power" />
-          <Variable Name="Home" />
-          <Variable Name="MoveProgram" />
-          <Variable Name="Interrupt" />
-          <Variable Name="Continue" />
-          <Variable Name="Jog" />
-          <Variable Name="Error" />
-          <Variable Name="StatusID" />
-          <Variable Name="PowerOn" />
-          <Variable Name="IsHomed" />
-          <Variable Name="Info">
-            <Variable Name="ReadyToPowerOn" />
-            <Variable Name="JointAxisPosition" EnableArrayElements="True" />
-          </Variable>
-          <Variable Name="X" />
-          <Variable Name="Y" />
-          <Variable Name="Z" />
-          <Variable Name="A" />
-          <Variable Name="B" />
-          <Variable Name="C" />
-        </Variable>
-        <Variable Name="VelocityQ" />
-        <Variable Name="VelocityQ1" />
-        <Variable Name="VelocityQ2" />
-        <Variable Name="VelocityQ3" />
-        <Variable Name="VelocityQ4" />
-        <Variable Name="VelocityQ5" />
-        <Variable Name="VelocityQ6" />
       </GlobalVariables>
       <Task Name="Comau">
         <Variable Name="MpRoboArm6Axis_0">
@@ -136,6 +89,12 @@
         <Variable Name="cmdTurnOff" />
         <Variable Name="cmdTurnOn" />
       </Task>
+      <Task Name="Clock">
+        <Variable Name="TON_0">
+          <Variable Name="Q" />
+        </Variable>
+        <Variable Name="STEP" />
+      </Task>
       <Task Name="Alarms">
         <Variable Name="MpAlarmXCore_0">
           <Variable Name="MpLink" />
@@ -179,9 +138,9 @@
         </Variable>
         <Variable Name="DetectedSquares" />
       </Task>
+      <Task Name="ComauManua" />
       <Task Name="PackML_Aut" />
       <Task Name="File_explo">
-        <Variable Name="iFile" />
         <Variable Name="MpFileMngConnect">
           <Variable Name="Status" />
           <Variable Name="DeviceList">
@@ -190,7 +149,7 @@
           </Variable>
           <Variable Name="File">
             <Variable Name="List">
-              <Variable Name="Items" />
+              <Variable Name="Items" EnableArrayElements="True" />
               <Variable Name="PageUp" />
               <Variable Name="StepUp" />
               <Variable Name="PageDown" />
@@ -226,81 +185,7 @@
           </Variable>
           <Variable Name="DefaultLayerStatus" />
         </Variable>
-        <Variable Name="MpFileManagerUI_0">
-          <Variable Name="MpLink">
-            <Variable Name="Internal" />
-          </Variable>
-          <Variable Name="Enable" />
-          <Variable Name="ErrorReset" />
-          <Variable Name="UISetup">
-            <Variable Name="FileListSize" />
-            <Variable Name="FileListScrollWindow" />
-          </Variable>
-          <Variable Name="UIConnect">
-            <Variable Name="Status" />
-            <Variable Name="DeviceList">
-              <Variable Name="DeviceNames" />
-              <Variable Name="SelectedIndex" />
-            </Variable>
-            <Variable Name="File">
-              <Variable Name="List">
-                <Variable Name="Items" />
-                <Variable Name="PageUp" />
-                <Variable Name="StepUp" />
-                <Variable Name="PageDown" />
-                <Variable Name="StepDown" />
-                <Variable Name="RangeStart" />
-                <Variable Name="RangeEnd" />
-              </Variable>
-              <Variable Name="Filter" />
-              <Variable Name="SortOrder" />
-              <Variable Name="Refresh" />
-              <Variable Name="PathInfo">
-                <Variable Name="CurrentDir" />
-                <Variable Name="FileCount" />
-                <Variable Name="FolderCount" />
-              </Variable>
-              <Variable Name="EnterFolder" />
-              <Variable Name="FolderUp" />
-              <Variable Name="MultiSelect" />
-              <Variable Name="Delete" />
-              <Variable Name="Copy" />
-              <Variable Name="Cut" />
-              <Variable Name="Paste" />
-              <Variable Name="NewName" />
-              <Variable Name="Rename" />
-              <Variable Name="CreateFolder" />
-            </Variable>
-            <Variable Name="MessageBox">
-              <Variable Name="LayerStatus" />
-              <Variable Name="Type" />
-              <Variable Name="ErrorNumber" />
-              <Variable Name="Confirm" />
-              <Variable Name="Cancel" />
-            </Variable>
-            <Variable Name="DefaultLayerStatus" />
-          </Variable>
-          <Variable Name="Active" />
-          <Variable Name="Error" />
-          <Variable Name="StatusID" />
-          <Variable Name="Info">
-            <Variable Name="Diag">
-              <Variable Name="StatusID">
-                <Variable Name="ID" />
-                <Variable Name="Severity" />
-                <Variable Name="Code" />
-              </Variable>
-            </Variable>
-          </Variable>
-          <Variable Name="Internal">
-            <Variable Name="pObject" />
-            <Variable Name="State" />
-          </Variable>
-        </Variable>
-        <Variable Name="MpFileMngSetup">
-          <Variable Name="FileListSize" />
-          <Variable Name="FileListScrollWindow" />
-        </Variable>
+        <Variable Name="iFile" />
         <Variable Name="tabInfo">
           <Variable Name="LastModified" />
           <Variable Name="Type" />
@@ -310,8 +195,6 @@
           <Variable Name="NumberOfElements" />
         </Variable>
       </Task>
-      <Task Name="PackML_Log" />
-      <Task Name="PackML_Sem" />
     </Module>
   </DefaultView>
 </OpcUaSource>

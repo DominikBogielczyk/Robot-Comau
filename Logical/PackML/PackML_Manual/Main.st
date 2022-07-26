@@ -13,6 +13,7 @@ PROGRAM _CYCLIC
 	Completing;
 	Complete;
 	Stopped;
+
 	
 	VelocityQ;
 	doMagnet;
@@ -35,6 +36,7 @@ PROGRAM _CYCLIC
 	ELSE			
 		RoboParameters.ProgramName := 'Robotic.st';
 	END_IF
+
 	 
 END_PROGRAM
 

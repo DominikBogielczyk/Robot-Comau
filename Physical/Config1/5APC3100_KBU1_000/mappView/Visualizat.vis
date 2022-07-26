@@ -9,8 +9,7 @@
     <Page refId="AuditPage" />
     <Page refId="PackMLPage" />
     <Page refId="RecepturePage" />
-		<Page refId="UsersPage" />
-		<Page refId="FilesPage" />
+    <Page refId="UsersPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -19,8 +18,7 @@
     <BindingsSet refId="AlarmContent_binding" />
     <BindingsSet refId="ManualContent_binding" />
     <BindingsSet refId="LoginContent_binding" />
-		<BindingsSet refId="AutoContent_binding" />
-		<BindingsSet refId="FilesContent_binding" />
+    <BindingsSet refId="AutoContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="TopContent_eventbinding" />
@@ -30,9 +28,7 @@
     <EventBindingsSet refId="LeftContent_eventbinding" />
     <EventBindingsSet refId="LoginContent_eventbinding" />
     <EventBindingsSet refId="AutoContent_eventbinding" />
-		<EventBindingsSet refId="ManualContent_eventbinding" />
-		 <EventBindingsSet refId="FilesContent_eventbinding" />
-		
+    <EventBindingsSet refId="ManualContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />
@@ -50,9 +46,7 @@
     <Content refId="MainContent" />
     <Content refId="AutoContent" />
     <Content refId="ManualContent" />
-		<Content refId="InfoContent" />
-		<Content refId="FilesContent" />
-		
+    <Content refId="InfoContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

@@ -21,7 +21,10 @@
 <Source xsi:type="opcUa" refId="::File_explo:tabInfo.LastModified" attribute="value" />
 <Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="tiLastModified" attribute="value" />
 </Binding>
-
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::File_explo:tabInfo.Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="tiName" attribute="stringValue" />
+</Binding>
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::File_explo:tabInfo.Size" attribute="value" />
 <Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="tiFileSize" attribute="value" />
@@ -57,10 +60,6 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::File_explo:tabInfo.SelectedRow" attribute="value" />
 <Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="Table1" attribute="selectedRow" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::File_explo:tabInfo.Name" attribute="value" />
-<Target xsi:type="brease" contentRefId="FilesContent" widgetRefId="tiName" attribute="stringValue" />
 </Binding>
 </Bindings>
 </BindingsSet>

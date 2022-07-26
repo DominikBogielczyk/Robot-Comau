@@ -61,7 +61,5 @@
     <Widget xsi:type="widgets.brease.Label" id="Label23" top="460" left="540" width="100" height="40" zIndex="57" text="Q4" fontSize="18px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="Label24" top="520" left="540" width="100" height="40" zIndex="58" text="Q5" fontSize="18px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="Label25" top="580" left="540" width="100" height="40" zIndex="59" text="Q6" fontSize="18px" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="auto3" top="240" left="160" width="140" height="40" zIndex="60" mouseDownBackColor="rgba(255, 140, 0, 1)" />
-    <Widget xsi:type="widgets.brease.Label" id="Label12" top="240" left="20" zIndex="61" text="MANUAL" fontSize="14px" bold="true" />
   </Widgets>
 </Content>
