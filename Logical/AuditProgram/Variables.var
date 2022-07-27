@@ -1,0 +1,8 @@
+VAR
+	MpAuditTrail_0 : MpAuditTrail := (0);
+	TriggerEvent : BOOL := FALSE;
+	TypeVar : WSTRING[100] := "0";
+	MessageVar : WSTRING[100] := "0";
+	CommentVar : WSTRING[100] := "0";
+	Status : DINT := 0;
+END_VAR

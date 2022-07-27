@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ReceptureContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:name" attribute="value" />
+<Target xsi:type="brease" contentRefId="ReceptureContent" widgetRefId="TextInput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:Screw" attribute="value" />
+<Target xsi:type="brease" contentRefId="ReceptureContent" widgetRefId="RadioButton3" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:Wrench" attribute="value" />
+<Target xsi:type="brease" contentRefId="ReceptureContent" widgetRefId="RadioButton2" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:ScrewWasher" attribute="value" />
+<Target xsi:type="brease" contentRefId="ReceptureContent" widgetRefId="bolt" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="ReceptureContent" widgetRefId="RadioButtonGroup1" attribute="selectedIndex" />
+<Target xsi:type="brease" contentRefId="ReceptureContent" widgetRefId="ImageList1" attribute="selectedIndex" />
+</Binding>
+</Bindings>
+</BindingsSet>

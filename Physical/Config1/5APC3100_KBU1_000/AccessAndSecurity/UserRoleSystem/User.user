@@ -7,16 +7,23 @@
       <Property ID="Role[1]" Value="Everyone" />
     </Group>
   </Element>
-  <Element ID="admin" Type="User">
-    <Property ID="UserID" Value="2" />
-    <Property ID="Password" Value="w/xOYb7hjON5ZGGXqtKZrGh0u25mKc1ZllcmKRt/7D0asaf+a4E=" />
+  <Element ID="jakub" Type="User">
+    <Property ID="UserID" Value="4" />
+    <Property ID="Password" Value="31Kllo1HrW1Ad0YBaaFc9DXlQIkkvQbvov5PWmpB9MdSYlrKBXE=" />
     <Group ID="Roles">
       <Property ID="Role[1]" Value="Administrators" />
     </Group>
   </Element>
-  <Element ID="operator1" Type="User">
-    <Property ID="UserID" Value="3" />
-    <Property ID="Password" Value="e2dXr+lG2gTqXVziHWext6B39wrZJO/4G3TrgmVViFobamk1LQw=" />
+  <Element ID="admin1" Type="User">
+    <Property ID="UserID" Value="5" />
+    <Property ID="Password" Value="THSbncTNevGS4O7VoBjlqljJhyR/hmLccR2nfS1U5vu8saB4cmo=" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Administrators" />
+    </Group>
+  </Element>
+  <Element ID="operator2" Type="User">
+    <Property ID="UserID" Value="6" />
+    <Property ID="Password" Value="goyVsC5VJAQGkS28YWm92Nr/99WTcBxYjJkPLstkDUxjxwnCXZM=" />
     <Group ID="Roles">
       <Property ID="Role[1]" Value="Operator" />
     </Group>

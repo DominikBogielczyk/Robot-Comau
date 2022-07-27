@@ -1,6 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ReceptureContent" height="650" width="1030" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="280" left="320" zIndex="0" text="RECEPTURE" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput1" top="60" left="260" width="120" zIndex="0" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="60" left="40" width="220" zIndex="1" text="Choose name of file" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare13" top="360" left="40" width="70" height="50" zIndex="2" text="13" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare12" top="360" left="120" width="70" height="50" zIndex="3" text="12" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare11" top="360" left="200" width="70" height="50" zIndex="4" text="11" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare10" top="360" left="280" width="70" height="50" zIndex="5" text="10" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare9" top="360" left="360" width="70" height="50" zIndex="6" text="9" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare8" top="360" left="440" width="70" height="50" zIndex="7" text="8" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare7" top="360" left="520" width="70" height="50" zIndex="8" text="7" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare6" top="420" left="40" width="70" height="50" zIndex="9" text="6" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare5" top="420" left="120" width="70" height="50" zIndex="10" text="5" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare4" top="420" left="200" width="70" height="50" zIndex="11" text="4" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare3" top="420" left="280" width="70" height="50" zIndex="12" text="3" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare2" top="420" left="360" width="70" height="50" zIndex="13" text="2" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare1" top="420" left="440" width="70" height="50" zIndex="14" text="1" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TgBtnSquare0" top="420" left="520" width="70" height="50" zIndex="15" text="0" disabledBackColor="rgba(255, 255, 255, 0)" fontSize="40px" bold="true" checkedBackColor="rgba(0, 0, 0, 1)" checkedTextColor="rgba(255, 255, 255, 1)" disabledCheckedBackColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare0" top="420" left="520" width="70" height="50" zIndex="16" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare1" top="420" left="440" width="70" height="50" zIndex="17" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare2" top="420" left="360" width="70" height="50" zIndex="18" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare3" top="420" left="280" width="70" height="50" zIndex="19" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare4" top="420" left="200" width="70" height="50" zIndex="20" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare5" top="420" left="120" width="70" height="50" zIndex="21" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare6" top="420" left="40" width="70" height="50" zIndex="22" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare7" top="360" left="520" width="70" height="50" zIndex="23" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare8" top="360" left="440" width="70" height="50" zIndex="24" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare9" top="360" left="360" width="70" height="50" zIndex="25" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare10" top="360" left="280" width="70" height="50" zIndex="26" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare11" top="360" left="200" width="70" height="50" zIndex="27" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare12" top="360" left="120" width="70" height="50" zIndex="28" />
+    <Widget xsi:type="widgets.brease.Image" id="ImgSquare13" top="360" left="40" width="70" height="50" zIndex="29" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="140" left="40" width="160" zIndex="30" text="Choose tool" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup1" top="140" left="220" width="140" height="160" zIndex="31">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.RadioButton" id="bolt" top="40" left="0" zIndex="0" text="ScrewWasher" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="RadioButton2" top="80" left="0" zIndex="1" text="Wrench" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="RadioButton3" top="0" left="0" zIndex="2" text="Screw" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="RadioButton4" top="120" left="0" zIndex="3" text="Nothing" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="320" left="40" width="200" zIndex="32" text="Choose positions" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Button" id="SaveRecipeBTN" top="520" left="60" width="140" height="40" zIndex="33" text="SAVE" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="30px" bold="false" />
+    <Widget xsi:type="widgets.brease.Button" id="ClearAimPosBTN" top="520" left="240" width="140" height="40" zIndex="34" text="CLEAR" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="30px" bold="false" />
+    <Widget xsi:type="widgets.brease.Button" id="LOADBTN" top="520" left="420" width="140" height="40" zIndex="35" text="LOAD" borderStyle="ridge" backColor="rgba(255, 140, 0, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="30px" bold="false" />
+    <Widget xsi:type="widgets.brease.ImageList" id="ImageList1" top="160" left="400" zIndex="36" imageList="['Media/SymbolLib/ScrewWasher.png', 'Media/SymbolLib/Wrench.png', 'Media/SymbolLib/Screw.png', '']" />
   </Widgets>
 </Content>

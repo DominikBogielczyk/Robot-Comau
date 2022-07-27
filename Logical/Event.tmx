@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">Audit/Event</prop>
+  </header>
+  <body>
+    <tu tuid="Root">
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Servus Welt!</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{&amp;evtime[TIME=%Y-%m-%d %H:%M]} {&amp;op} {=$Audit/Event/{&amp;ev}}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="19">
+      <tuv xml:lang="en">
+        <seg>OPC UA Change: Value {&amp;dpid}: Old value: {&amp;old}, New value: {&amp;new}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="2">
+      <tuv xml:lang="de">
+        <seg>{=$MpAudit/SysF/User/{&amp;act}}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{=$Audit/User/{&amp;act}}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="16">
+      <tuv xml:lang="de">
+        <seg>hat Wert {&amp;dpid} von {&amp;old} auf {&amp;new} geändert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>changed value of {&amp;dpid} from {&amp;old} to {&amp;new}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="17">
+      <tuv xml:lang="de">
+        <seg>hat Wert (UserID: {&amp;dpid}) von {&amp;old} auf {&amp;new} geändert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>changed value of (UserID: {&amp;dpid}) from {&amp;old} to {&amp;new}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="64">
+      <tuv xml:lang="de">
+        <seg>PackML Zustandsänderung: von {&amp;old} zu {&amp;new}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PackML State-Change: {&amp;old} to {&amp;new}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="65">
+      <tuv xml:lang="de">
+        <seg>PackML Modusänderung: von {&amp;old} zu {&amp;new}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PackML Mode-Change: {&amp;old} to {&amp;new}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="66">
+      <tuv xml:lang="de">
+        <seg>PackML Substatus-Änderung: von {&amp;old} zu {&amp;new}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PackML Substate-Change: {&amp;old} to {&amp;new}</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

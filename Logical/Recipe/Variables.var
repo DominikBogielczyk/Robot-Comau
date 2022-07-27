@@ -1,0 +1,13 @@
+VAR
+	clear : BOOL;
+	MpRecipeXml_0 : MpRecipeXml;
+	name : STRING[80];
+	ScrewWasher : BOOL;
+	Wrench : BOOL;
+	Screw : BOOL;
+	MpRecipeRegPar_0 : MpRecipeRegPar;
+	ScrewPosible : BOOL;
+	WrenchPosible : BOOL;
+	ScrewWasherPosible : BOOL;
+	i : INT;
+END_VAR

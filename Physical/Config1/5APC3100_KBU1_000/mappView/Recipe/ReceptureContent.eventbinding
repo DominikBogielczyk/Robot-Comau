@@ -1,0 +1,1718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="ReceptureContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="ReceptureContent.SaveRecipeBTN.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ReceptureContent" widgetRefId="SaveRecipeBTN" event="MouseDown" />
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="WrenchP = FALSE AND ScrewWasherP = FALSE AND ScrewP = FALSE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:MpRecipeXml_0.Save">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.SaveRecipeBTN.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ReceptureContent" widgetRefId="SaveRecipeBTN" event="MouseUp" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:MpRecipeXml_0.Save">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ClearAimPosBTN.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ReceptureContent" widgetRefId="ClearAimPosBTN" event="MouseDown" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:clear">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ClearAimPosBTN.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ReceptureContent" widgetRefId="ClearAimPosBTN" event="MouseUp" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:clear">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.LOADBTN.MouseDown">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ReceptureContent" widgetRefId="LOADBTN" event="MouseDown" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:MpRecipeXml_0.Load">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.LOADBTN.MouseUp">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ReceptureContent" widgetRefId="LOADBTN" event="MouseUp" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:MpRecipeXml_0.Load">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare13.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare13" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[13]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[13]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[13]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[13]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare12.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare12" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[12]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[12]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[12]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[12]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare11.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare11" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[11]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[11]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[11]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[11]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare10.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare10" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[10]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[10]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[10]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[10]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare9.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare9" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[9]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[9]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[9]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[9]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare8.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare8" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[8]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[8]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[8]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[8]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare7.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare7" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[7]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[7]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[7]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[7]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare6.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare6" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[6]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[6]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[6]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[6]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare5.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare5" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[5]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[5]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[5]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[5]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare4.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare4" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[4]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[4]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[4]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[4]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare3.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare3" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[3]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[3]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[3]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[3]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare2.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare2" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[2]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[2]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[2]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[2]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare1.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare1" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[1]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[1]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[1]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[1]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReceptureContent.ImgSquare0.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ReceptureContent" widgetRefId="ImgSquare0" event="Click" />
+      <Operand datatype="BOOL" name="Screw">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Screw">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasher">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasher">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="Wrench">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:Wrench">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="WrenchP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:WrenchPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewWasherP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewWasherPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ScrewP">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Recipe:ScrewPosible">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = FALSE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[0]">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewWasherPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:ScrewPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:WrenchPosible">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Screw = TRUE AND ScrewWasher = FALSE AND Wrench = FALSE AND ScrewP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[0]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = TRUE AND Wrench = FALSE AND ScrewWasherP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[0]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="Screw = FALSE AND ScrewWasher = FALSE AND Wrench = TRUE AND WrenchP = TRUE">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gAimPos[0]">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_4359">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[13]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare13">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare13">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare13">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare13">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_1330">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[12]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare12">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare12">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare12">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare12">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_132321">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[11]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare11">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare11">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare11">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare11">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_132322">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[10]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare10">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare10">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare10">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare10">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_13">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[9]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare9">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare9">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare9">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare9">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_132324">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[8]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare8">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare8">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare8">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare8">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_1522">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[7]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare7">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare7">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare7">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare7">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_323216">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[6]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare6">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare6">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare6">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare6">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_12327">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[5]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare5">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare5">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare5">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare5">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_183232">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[4]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare4">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare4">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare4">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare4">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_12329">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[3]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare3">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare3">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare3">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare3">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_232320">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[2]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare2">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare2">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare2">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare2">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_22321">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[1]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare1">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare1">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare1">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare1">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_22222">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gAimPos[0]" event="ValueChanged" />
+      <EventHandler condition="newValue = 1">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare0">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Screw.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 2">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare0">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/ScrewWasher.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 4">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare0">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="Media/SymbolLib/Wrench.png" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = 0">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="ReceptureContent" widgetRefId="ImgSquare0">
+            <Method xsi:type="widgets.brease.Image.Action.SetImage" image="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

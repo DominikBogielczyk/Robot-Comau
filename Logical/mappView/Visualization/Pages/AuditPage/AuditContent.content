@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="AuditContent" height="650" width="1030" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="260" left="200" zIndex="0" text="AUDIT" />
+    <Widget xsi:type="widgets.brease.AuditList" id="AuditList1" top="20" left="20" width="960" height="420" zIndex="0" itemsPerPage="6">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AuditListItem" id="AuditListItem1" width="240" zIndex="0" columnType="timestamp" text="Czas" />
+        <Widget xsi:type="widgets.brease.AuditListItem" id="AuditListItem2" width="560" zIndex="1" text="Info" />
+        <Widget xsi:type="widgets.brease.AuditListItem" id="AuditListItem3" zIndex="2" columnType="type" text="Typ" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="btnExport" top="440" left="480" width="180" height="40" zIndex="1" text="Eksportuj" backColor="rgba(255, 140, 0, 1)" fontSize="16px" bold="true" permissionOperate="['Administrators']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton1" top="440" left="720" width="180" height="40" zIndex="2" text="Wyczyść audyt" backColor="rgba(255, 140, 0, 1)" fontSize="16px" bold="true" />
   </Widgets>
 </Content>
